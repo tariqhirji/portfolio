@@ -1,0 +1,32 @@
+// Colours
+$blue: #6C63FF;
+$dark: #2B2B2B;
+$grey: #E7E7E7;
+$lightgrey: #EAEAEA;
+$white: #ffffff;
+
+// Socials colours
+$twitter : #00ACEE;
+$linkedin: #0077B5;
+
+// Bulma overides
+$primary: $blue;
+
+$tag-background-color: $dark; 
+$tag-color: $white;
+
+$card-background-color: $lightgrey;
+
+$input-background-color: $grey;
+
+// Smooth scroll
+html {
+  scroll-behavior:smooth;
+}
+
+#projects, #skills, #about, #contact {
+  min-height: 100vh;
+}
+
+@import "../../node_modules/bulma/bulma.sass";
+

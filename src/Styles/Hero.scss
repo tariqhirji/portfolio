@@ -1,0 +1,12 @@
+@import './Main.scss';
+  
+.hero {
+  font-family: "Share Tech Mono", monospace;
+}
+  
+#hero-footer {
+  font-size: 50px;
+  .icon :hover {
+    color: $primary;
+  }
+}  

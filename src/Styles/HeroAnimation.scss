@@ -1,0 +1,44 @@
+
+.static-text {
+    line-height: 60px;
+  }
+  
+  .dynamic-text {
+    line-height: 60px;
+    height: 60px;
+    overflow: hidden;
+  }
+  
+  .dynamic-text li {
+    color: blue;
+    position: relative;
+    top: 0;
+    animation: slide 15s steps(5) infinite;
+  }
+  
+  @keyframes slide {
+    100% {
+      top: -300px;
+    }
+  }
+  
+  .dynamic-text li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid blue;
+    animation: typing 3s steps(11) infinite;
+  }
+  
+  @keyframes typing {
+    40%, 60% {
+      left: calc(100% + 10px);
+    }
+    100% {
+      left: 0;
+    }
+  }
+  
