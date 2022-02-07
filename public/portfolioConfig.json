@@ -1,0 +1,108 @@
+{
+    "projects" : [
+        {
+            "title": "Degree Planner",
+            "subtitle": "Web Application",
+            "badges": [
+                {
+                    "name": "Reactjs"
+                },
+                {
+                    "name": "Bootstrap"
+                },
+                {
+                    "name": "MongoDB"
+                },
+                {
+                    "name": "Nodejs"
+                },
+                {
+                    "name": "Express"
+                },
+                {
+                    "name": "Apache echarts"
+                },
+                {
+                    "name": "UBC API"
+                }
+            ],
+            "description": "An application build for HackWestern7 that visually shows a students degree path",
+            "buttonText": "View Devpost",
+            "url": "https://devpost.com/software/degree-planner-m4hdal",
+            "img": "../src/img/project1.jpg"
+        },
+        {
+            "title": "Personal Portfolio",
+            "subtitle": "Website",
+            "badges": [
+                {
+                    "name": "Reactjs"
+                },
+                {
+                    "name": "Bulma"
+                },
+                {
+                    "name": "Sass"
+                },
+                {
+                    "name": "Nodejs"
+                },
+                {
+                    "name": "Animate.css"
+                }
+            ],
+            "description": "A website to keep track of my past, present and future projects",
+            "buttonText": "View src",
+            "url": "https://devpost.com/software/degree-planner-m4hdal",
+            "img": "../src/img/project2.jpg"
+        }
+    ],
+    "skills": [
+        {
+            "title": "frontend",
+            "technologies": [
+                {
+                    "name": "CSS3"
+                },
+                {
+                    "name": "Javascript"
+                },
+                {
+                    "name": "Bulma"
+                },
+                {
+                    "name": "Bootstrap"
+                },
+                {
+                    "name": "Reactjs"
+                },
+                {
+                    "name": "Sass"
+                }
+            ]
+        },
+        {
+            "title": "backend",
+            "technologies": [
+                {
+                    "name": "CSS3"
+                },
+                {
+                    "name": "Javascript"
+                },
+                {
+                    "name": "Bulma"
+                },
+                {
+                    "name": "Bootstrap"
+                },
+                {
+                    "name": "Reactjs"
+                },
+                {
+                    "name": "Sass"
+                }
+            ]
+        }
+    ]
+}

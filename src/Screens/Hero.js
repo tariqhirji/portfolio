@@ -8,8 +8,7 @@ import '../Styles/Hero.css'
 
 const Hero = () => {
   return (
-    <div>
-        <section className="section hero is-fullheight is-white">
+        <section className="section hero is-fullheight is-white" id='hero'>
             {/* Hero Top - Fixed Navbar */}
             <HeroNav />
 
@@ -35,7 +34,7 @@ const Hero = () => {
             {/* Hero Footer */}
             <HeroFooter />
         </section>
-    </div>);
+    );
 };
 
 export default Hero;

@@ -12935,15 +12935,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
-#hero {
-  font-family: "Share Tech Mono", monospace;
+#contact .title {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
 }
-
-#hero-footer {
-  font-size: 50px;
-}
-
-#hero-footer .icon :hover {
-  color: #6C63FF;
-}
-/*# sourceMappingURL=Hero.css.map */
+/*# sourceMappingURL=Contact.css.map */

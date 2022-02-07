@@ -1,9 +1,9 @@
 import React from 'react';
 import '../Styles/Main.css';
 
-const Badge = () => {
+const Badge = ({name}) => {
   return (
-        <span className="tag is-medium mr-2">PLEASE</span>
+        <span className="tag is-medium mr-2 mb-2">{name}</span>
     );
 };
 
