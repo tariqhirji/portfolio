@@ -21,10 +21,10 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="columns is-vcentered">
-                        <div className="column is-7">
+                        <div className="column is-6">
                             <HeroLeft />
                         </div>
-                        <div className="column is-5">
+                        <div className="column is-6">
                             <HeroRight />
                         </div>
                     </div>

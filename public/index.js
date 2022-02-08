@@ -47,16 +47,15 @@ function scroll() {
     // Less 50px to account for transition animation time of 1s 
     if (t > t4 - 50) {
         l4.style.color = "blue";
-        nav.style.backgroundColor = "grey";
     } else if (t > t3 - 50) {
         l3.style.color = "blue";
         nav.style.backgroundColor = "transparent";
     } else if (t > t2 - 50) {
         l2.style.color = "blue";
-        nav.style.backgroundColor = "#90e0ef";
+        nav.style.backgroundColor = "#EAEAEA";
     } else if (t > t1 - 50) {
         l1.style.color = "blue";
-        nav.style.backgroundColor = "#CAF0F8";
+        nav.style.backgroundColor = "#EAEAEA";
     } else {
         brand.style.color = "blue";
         hamburger.style.color = "black";

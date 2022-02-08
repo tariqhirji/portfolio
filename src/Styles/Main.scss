@@ -3,6 +3,7 @@ $blue: #6C63FF;
 $dark: #2B2B2B;
 $grey: #E7E7E7;
 $lightgrey: #EAEAEA;
+$darkgrey: #757575;
 $white: #ffffff;
 
 // Socials colours
@@ -17,7 +18,9 @@ $tag-color: $white;
 
 $card-background-color: $lightgrey;
 
-$input-background-color: $grey;
+$input-background-color: $lightgrey;
+$input-placeholder-color: $darkgrey;
+$input-icon-color: $darkgrey;
 
 // Smooth scroll
 html {

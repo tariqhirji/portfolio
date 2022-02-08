@@ -3431,7 +3431,7 @@ a.tag:hover {
 
 /* Bulma Form */
 .input, .textarea, .select select {
-  background-color: #E7E7E7;
+  background-color: #EAEAEA;
   border-color: #dbdbdb;
   border-radius: 4px;
   color: #363636;
