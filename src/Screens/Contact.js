@@ -21,7 +21,7 @@ const Contact = () => {
                   <ContactForm />
                 </div>
                 <div className="column is-7 is-flex is-justify-content-center ">
-                    <img src={contact} alt="Contact me" />
+                    <img src={contact} className='image' alt="Contact me" />
                 </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import '../Styles/Main.css';
 
 const Badge = ({name}) => {
   return (
-        <span className="tag is-medium mr-2 mb-2">{name}</span>
+        <span className="tag mr-2 mb-2">{name}</span>
     );
 };
 

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
     const [name, setName] = useState('');
@@ -7,11 +8,18 @@ const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (name === ''|| email === '' || message === '') {
-            alert("enter valid data");
-        } else {
-            alert("Submitted")
-        }
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
+        .then((result) => {
+            console.log(result.text);
+                // Reset form and let user know
+                setName('');
+                setEmail('');
+                setMessage('');
+                alert('Message sent!')
+        }, (error) => {
+                alert('Something went wrong!');
+                console.log(error);
+        });
     }
 
     return (
@@ -21,7 +29,7 @@ const ContactForm = () => {
         <div class="field">
             <label class="label">Name</label>
             <div class="control has-icons-left">
-                <input class="input" type="text"  placeholder='Your Name' onChange={e => (setName(e.target.value))} value={name} />
+                <input class="input" type="text"  placeholder='Your Name' onChange={e => (setName(e.target.value))} value={name} name='name'/>
                 <span class="icon is-small is-left">
                 <i class="fas fa-user"></i>
                 </span>
@@ -32,7 +40,7 @@ const ContactForm = () => {
         <div class="field">
             <label class="label">Email</label>
             <div class="control has-icons-left">
-                <input class="input" type="email" placeholder="Your Email" onChange={e => setEmail(e.target.value)} value={email}/>
+                <input class="input" type="email" placeholder="Your Email" onChange={e => setEmail(e.target.value)} value={email} name='email'/>
                 <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
                 </span>
@@ -42,7 +50,7 @@ const ContactForm = () => {
         {/* Message Field */}
         <div className="field">
             <label className="label">Message</label>
-            <textarea class="textarea" placeholder="Your Message" onChange={e => setMessage(e.target.value)} value={message}></textarea>
+            <textarea class="textarea" placeholder="Your Message" onChange={e => setMessage(e.target.value)} value={message} name='message'></textarea>
         </div>
 
         {/* Submit Button */}

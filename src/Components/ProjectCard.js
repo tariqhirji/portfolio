@@ -10,17 +10,17 @@ const ProjectCard = ({project}) => {
       }
 
     return (
-        <div className="card my-6 is-shadowless">
+        <div className="card my-6">
             <div className="columns is-vcentered">
                 <div className="column is-6">
                     <div className="card-content">
                         <div className="content">
-                            <div className="block">
-                                <h2 className="is-size-2">{project.title}</h2>
+                            <div className="block mb-4">
+                                <h2 className="is-size-1 title">{project.title}</h2>
                             </div>
 
-                            <div className="block">
-                                <h2 className="is-size-2 ">{project.subtitle}</h2>
+                            <div className="block mb-4">
+                                <h2 className="is-size-2 subtitle has-text-grey">{project.subtitle}</h2>
                                 {badges}
                             </div>
 

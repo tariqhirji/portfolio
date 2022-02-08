@@ -16,11 +16,6 @@ const Hero = () => {
             <div className="hero-body px-0">
                 <div className="container">
                     <div className="columns is-vcentered">
-                        <div className="column is-12">
-                            <HeroAnimation />
-                        </div>
-                    </div>
-                    <div className="columns is-vcentered">
                         <div className="column is-6">
                             <HeroLeft />
                         </div>

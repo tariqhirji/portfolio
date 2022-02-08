@@ -1,7 +1,6 @@
 // Colours
 $blue: #6C63FF;
 $dark: #2B2B2B;
-$grey: #E7E7E7;
 $lightgrey: #EAEAEA;
 $darkgrey: #757575;
 $white: #ffffff;
@@ -30,6 +29,14 @@ html {
 #projects, #skills, #about, #contact {
   min-height: 100vh;
 }
+
+.dynamic-text {
+  color: blue;
+}
+
+// #projects .card {
+//   border: black 1px solid;
+// }
 
 
 @import "../../node_modules/bulma/bulma.sass";

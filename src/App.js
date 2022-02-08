@@ -13,7 +13,7 @@ const App = () => {
     fetch("/portfolioConfig.json")
       .then((res) => res.json())
       .then((data) => setPortfolioData(data))
-  })
+  }, [])
 
   return (
     <div className="App"> 

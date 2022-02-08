@@ -1,25 +1,23 @@
 import React from 'react';
-import '../Styles/HeroAnimation.css'
+import { useTypewriter, Cursor} from 'react-simple-typewriter';
 
 const HeroAnimation = () => {
-  return (
-    <div>
-        <h1 className="is-1 title is-spaced is-large">
-            <div className="wrapper is-flex">
-                <h1 className="static-text">
-                    Hello World, I am 
-                </h1>
-                <ul className='dynamic-text ml-5'>
-                    <li><span>Tariq Hirji</span></li>
-                    <li><span>a developer</span></li>
-                    <li><span>a designer</span></li>
-                    <li><span>a dreamer</span></li>
-                    <li><span>a drifter</span></li>
-                </ul>
-            </div>
-        </h1>
-    </div>
-    );
-};
+
+    const {text} = useTypewriter({
+        words: ['Tariq Hirji', 'a developer', 'a designer', 'a sports fanatic', 'an innovator', 'a drifter'],
+        loop: 0,
+        typeSpeed: 100,
+        deleteSpeed: 80,
+    })
+
+    return (
+        <div className='HeroAnimation'>
+            <h1 className="is-size-1 title is-large">
+                Hello World, <br /> 
+                I am <span className='dynamic-text'>{text}<Cursor /></span>
+            </h1>
+        </div>
+    )
+}
 
 export default HeroAnimation;
