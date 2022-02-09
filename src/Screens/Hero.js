@@ -1,5 +1,4 @@
 import React from 'react';
-import HeroAnimation from '../Components/HeroAnimation';
 import HeroFooter from '../Components/HeroFooter';
 import HeroLeft from '../Components/HeroLeft';
 import HeroNav from '../Components/HeroNav';

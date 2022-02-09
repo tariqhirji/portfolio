@@ -15,7 +15,7 @@ $primary: $blue;
 $tag-background-color: $dark; 
 $tag-color: $white;
 
-$card-background-color: $lightgrey;
+$card-background-color: $white;
 
 $input-background-color: $lightgrey;
 $input-placeholder-color: $darkgrey;
@@ -32,6 +32,16 @@ html {
 
 .dynamic-text {
   color: blue;
+}
+
+#projects {
+  background-color: $lightgrey;
+}
+
+#skills {
+  .card {
+    background-color: $lightgrey;
+  }
 }
 
 // #projects .card {

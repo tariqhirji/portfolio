@@ -6,6 +6,10 @@ html {
   min-height: 100vh;
 }
 
+.dynamic-text {
+  color: blue;
+}
+
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
@@ -1880,7 +1884,7 @@ fieldset[disabled] .button {
 .button.is-static {
   background-color: whitesmoke;
   border-color: #dbdbdb;
-  color: #E7E7E7;
+  color: #7a7a7a;
   -webkit-box-shadow: none;
           box-shadow: none;
   pointer-events: none;
@@ -3472,7 +3476,7 @@ fieldset[disabled] .select select,
   border-color: whitesmoke;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #E7E7E7;
+  color: #7a7a7a;
 }
 
 .input[disabled]::-moz-placeholder, .textarea[disabled]::-moz-placeholder, .select select[disabled]::-moz-placeholder,
@@ -3480,7 +3484,7 @@ fieldset[disabled] .input::-moz-placeholder,
 fieldset[disabled] .textarea::-moz-placeholder,
 fieldset[disabled] .select select::-moz-placeholder,
 .select fieldset[disabled] select::-moz-placeholder {
-  color: rgba(231, 231, 231, 0.3);
+  color: rgba(122, 122, 122, 0.3);
 }
 
 .input[disabled]::-webkit-input-placeholder, .textarea[disabled]::-webkit-input-placeholder, .select select[disabled]::-webkit-input-placeholder,
@@ -3488,7 +3492,7 @@ fieldset[disabled] .input::-webkit-input-placeholder,
 fieldset[disabled] .textarea::-webkit-input-placeholder,
 fieldset[disabled] .select select::-webkit-input-placeholder,
 .select fieldset[disabled] select::-webkit-input-placeholder {
-  color: rgba(231, 231, 231, 0.3);
+  color: rgba(122, 122, 122, 0.3);
 }
 
 .input[disabled]:-moz-placeholder, .textarea[disabled]:-moz-placeholder, .select select[disabled]:-moz-placeholder,
@@ -3496,7 +3500,7 @@ fieldset[disabled] .input:-moz-placeholder,
 fieldset[disabled] .textarea:-moz-placeholder,
 fieldset[disabled] .select select:-moz-placeholder,
 .select fieldset[disabled] select:-moz-placeholder {
-  color: rgba(231, 231, 231, 0.3);
+  color: rgba(122, 122, 122, 0.3);
 }
 
 .input[disabled]:-ms-input-placeholder, .textarea[disabled]:-ms-input-placeholder, .select select[disabled]:-ms-input-placeholder,
@@ -3504,7 +3508,7 @@ fieldset[disabled] .input:-ms-input-placeholder,
 fieldset[disabled] .textarea:-ms-input-placeholder,
 fieldset[disabled] .select select:-ms-input-placeholder,
 .select fieldset[disabled] select:-ms-input-placeholder {
-  color: rgba(231, 231, 231, 0.3);
+  color: rgba(122, 122, 122, 0.3);
 }
 
 .input, .textarea {
@@ -3688,7 +3692,7 @@ fieldset[disabled] .checkbox,
 fieldset[disabled] .radio,
 .checkbox input[disabled],
 .radio input[disabled] {
-  color: #E7E7E7;
+  color: #7a7a7a;
   cursor: not-allowed;
 }
 
@@ -3936,7 +3940,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .select.is-disabled::after {
-  border-color: #E7E7E7;
+  border-color: #7a7a7a;
 }
 
 .select.is-fullwidth {
@@ -5438,7 +5442,7 @@ button.dropdown-item.is-active {
 }
 
 .menu-label {
-  color: #E7E7E7;
+  color: #7a7a7a;
   font-size: 0.75em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -7023,7 +7027,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   border-color: #dbdbdb;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #E7E7E7;
+  color: #7a7a7a;
   opacity: 0.5;
 }
 
@@ -7404,7 +7408,7 @@ label.panel-block:hover {
   text-align: center;
   vertical-align: top;
   width: 1em;
-  color: #E7E7E7;
+  color: #7a7a7a;
   margin-right: 0.75em;
 }
 
@@ -10192,11 +10196,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .has-text-grey {
-  color: #E7E7E7 !important;
+  color: #7a7a7a !important;
 }
 
 .has-background-grey {
-  background-color: #E7E7E7 !important;
+  background-color: #7a7a7a !important;
 }
 
 .has-text-grey-light {

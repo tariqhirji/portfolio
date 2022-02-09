@@ -11,7 +11,7 @@ const ProjectCard = ({project}) => {
 
     return (
         <div className="card my-6">
-            <div className="columns is-vcentered">
+            <div className="columns is-vcentered is-gapless">
                 <div className="column is-6">
                     <div className="card-content">
                         <div className="content">
