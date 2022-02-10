@@ -5,8 +5,12 @@ import HeroNav from '../Components/HeroNav';
 import HeroRight from '../Components/HeroRight';
 import '../Styles/Hero.css'
 
-const Hero = () => {
-  return (
+const Hero = ({data}) => {
+    if (data) {
+        var content = data.content;
+    }
+
+    return (
         <section className="section hero is-fullheight is-white" id='hero'>
             {/* Hero Top - Fixed Navbar */}
             <HeroNav />
@@ -16,9 +20,9 @@ const Hero = () => {
                 <div className="container">
                     <div className="columns is-vcentered">
                         <div className="column is-6">
-                            <HeroLeft />
+                            <HeroLeft content={content}/>
                         </div>
-                        <div className="column is-6">
+                        <div className="column is-6 is-flex is-justify-content-center">
                             <HeroRight />
                         </div>
                     </div>

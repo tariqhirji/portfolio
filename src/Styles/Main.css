@@ -18,6 +18,14 @@ html {
   background-color: #EAEAEA;
 }
 
+#hero .description, .base {
+  font-family: 'Fira Mono', monospace;
+}
+
+.iconic {
+  font-size: 100px;
+}
+
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
@@ -512,7 +520,7 @@ table th {
 
 /* Bulma Elements */
 .box {
-  background-color: #ffffff;
+  background-color: #EAEAEA;
   border-radius: 6px;
   -webkit-box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
           box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);

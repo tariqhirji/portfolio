@@ -17,6 +17,8 @@ $tag-color: $white;
 
 $card-background-color: $white;
 
+$box-background-color: $lightgrey;
+
 $input-background-color: $lightgrey;
 $input-placeholder-color: $darkgrey;
 $input-icon-color: $darkgrey;
@@ -42,6 +44,14 @@ html {
   .card {
     background-color: $lightgrey;
   }
+}
+
+#hero .description, .base{
+  font-family: 'Fira Mono', monospace;
+}
+
+.iconic {
+  font-size: 100px;
 }
 
 // #projects .card {

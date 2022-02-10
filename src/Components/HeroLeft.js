@@ -1,17 +1,23 @@
 import React from 'react';
 import HeroAnimation from './HeroAnimation';
 
-const HeroLeft = () => {
+const HeroLeft = ({content}) => {
+  if (content) {
+    var animation = content.animation;
+    var description = content.description;
+    var base = content.base;
+  }
+
   return (
     <div>
       <div className="block">
-        <HeroAnimation />
+        <HeroAnimation animation={animation}/>
       </div>
       <div className="block">
-        <h3 className="is-size-3">I love technology</h3>
+        <p className="is-size-5 description">{description}</p>
       </div>
       <div className="block">
-        <h5 className="is-size-5">Based in Ontario, Canada </h5>
+        <h5 className="is-size-5 base">{base}</h5>
       </div>
     </div>
   );

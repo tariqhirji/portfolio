@@ -1,4 +1,15 @@
 {
+    "hero": {
+        "content": {
+            "animation": {
+                "static1": "Hello World,",
+                "static2": "I am ", 
+                "dynamic": ["Tariq Hirji", "a developer", "a sports fanatic", "a freelancer", "an innovator"]
+            },
+            "description": "Welcome to my home on the internet! I am a guy who loves technology and works to make virtual worlds fun, engaging and easy to use spaces.",
+            "base": "Based in Ontario, Canada"
+        }
+    },
     "projects" : [
         {
             "title": "Degree Planner",
@@ -103,6 +114,47 @@
                     "name": "Sass"
                 }
             ]
+        }
+    ],
+    "about": {
+        "title": "About Me",
+        "content": {
+            "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac porta mauris. Fusce ac molestie elit, tincidunt iaculis elit. Phasellus ultricies nec ipsum vel condimentum. Mauris varius tincidunt turpis, vel tincidunt enim hendrerit a. Fusce nec dui nisi. Suspendisse bibendum nibh odio, ac gravida nunc commodo in. Nam lobortis luctus nunc, at imperdiet libero imperdiet vel. Praesent dignissim id turpis sit amet mollis. Etiam at tempus dolor. Praesent et ipsum pulvinar, fermentum dolor in, viverra metus. Duis sit amet pretium nunc. Maecenas sed justo magna.",
+            "p2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac porta mauris. Fusce ac molestie elit, tincidunt iaculis elit. Phasellus ultricies nec ipsum vel condimentum. Mauris varius tincidunt turpis, vel tincidunt enim hendrerit a. Fusce nec dui nisi. Suspendisse bibendum nibh odio, ac gravida nunc commodo in. Nam lobortis luctus nunc, at imperdiet libero imperdiet vel. Praesent dignissim id turpis sit amet mollis. Etiam at tempus dolor. Praesent et ipsum pulvinar, fermentum dolor in, viverra metus. Duis sit amet pretium nunc. Maecenas sed justo magna."
+        },
+        "icons": [
+            {
+                "trait": "Innovative",
+                "description": "I like to try new ways of improving what is in place.",
+                "className": "fas fa-lightbulb iconic"
+            },
+            {
+                "trait": "Team Player",
+                "description": "I enjoy working alongside others and want to help them succeed with me.",
+                "className": "fas fa-users iconic"
+            },
+            {
+                "trait": "Quick Learner",
+                "description": "I quickly develop new skills, while also being able to adapt to new environments.",
+                "className": "fas fa-bolt iconic"
+            }
+        ]
+    },
+    "socials": [
+        {
+            "name": "twitter",
+            "className": "fab fa-twitter twitter",
+            "url": "https://twitter.com/Tariq_Hirji"
+        },
+        {
+            "name": "github",
+            "className": "fab fa-github github",
+            "url": "https://github.com/tariqhirji"
+        },
+        {
+            "name": "linkedin",
+            "className": "fab fa-linkedin-in",
+            "url": "https://www.linkedin.com/in/tariq-hirji-272295189/"
         }
     ]
 }

@@ -17,10 +17,10 @@ const App = () => {
 
   return (
     <div className="App"> 
-      <Hero />
+      <Hero data={portfolioData.hero} />
       <Projects data={portfolioData.projects}/>
       <Skills data={portfolioData.skills}/>
-      <About />
+      <About data={portfolioData.about} />
       <Contact />
     </div>
   )

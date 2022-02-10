@@ -1,11 +1,41 @@
 import React from 'react';
+import AboutContent from '../Components/AboutContent';
+import IconCard from '../Components/IconCard';
 
-const About = () => {
+const About = ({data}) => {
+  if (data) {
+    var title = data.title;
+    var content = data.content;
+    var icons = data.icons.map(function (icon) {
+      return <IconCard icon={icon}/>
+    })
+  }
+
   return (
     <section className='section' id='about'>
         <div className="container">
-          <h1 className='is-size-1'>About</h1>
-          <h3 className="is-size-3">This is where I'll keep track of what I've been upto and project I'm fond of. </h3>
+          <div className="block">
+            <h1 className='is-size-1'>{title}</h1>
+          </div>
+          <div className="block">
+            <div className="columns">
+              <div className="column is-8">
+                <AboutContent content={content} />
+              </div>
+              <div className="column is-4">
+                Dynamics
+              </div>
+            </div>
+          </div>
+          <div className="block">
+            <div className="columns is-vcentered">
+                {icons}
+            </div>
+          </div>
+           
+
+
+
         </div>
     </section> 
     );
