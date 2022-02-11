@@ -29,7 +29,7 @@ const ContactForm = () => {
         <div class="field">
             <label class="label">Name</label>
             <div class="control has-icons-left">
-                <input class="input" type="text"  placeholder='Your Name' onChange={e => (setName(e.target.value))} value={name} name='name'/>
+                <input class="input" type="text"  placeholder='Your Name' onChange={e => (setName(e.target.value))} value={name} name='name' required/>
                 <span class="icon is-small is-left">
                 <i class="fas fa-user"></i>
                 </span>
@@ -40,7 +40,7 @@ const ContactForm = () => {
         <div class="field">
             <label class="label">Email</label>
             <div class="control has-icons-left">
-                <input class="input" type="email" placeholder="Your Email" onChange={e => setEmail(e.target.value)} value={email} name='email'/>
+                <input class="input" type="email" placeholder="Your Email" onChange={e => setEmail(e.target.value)} value={email} name='email' required/>
                 <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
                 </span>
@@ -50,7 +50,7 @@ const ContactForm = () => {
         {/* Message Field */}
         <div className="field">
             <label className="label">Message</label>
-            <textarea class="textarea" placeholder="Your Message" onChange={e => setMessage(e.target.value)} value={message} name='message'></textarea>
+            <textarea class="textarea" placeholder="Your Message" onChange={e => setMessage(e.target.value)} value={message} name='message' required></textarea>
         </div>
 
         {/* Submit Button */}

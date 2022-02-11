@@ -4,7 +4,7 @@
             "animation": {
                 "static1": "Hello World,",
                 "static2": "I am ", 
-                "dynamic": ["Tariq Hirji", "a developer", "a sports fanatic", "a freelancer", "an innovator"]
+                "dynamic": ["Tariq Hirji", "a developer", "a sports fanatic", "a designer", "an innovator"]
             },
             "description": "Welcome to my home on the internet! I am a guy who loves technology and works to make virtual worlds fun, engaging and easy to use spaces.",
             "base": "Based in Ontario, Canada"
@@ -40,7 +40,7 @@
             "description": "An application build for HackWestern7 that visually shows a students degree path",
             "buttonText": "View Devpost",
             "url": "https://devpost.com/software/degree-planner-m4hdal",
-            "img": "../src/img/project1.jpg"
+            "img": "./images/project2.jpg"
         },
         {
             "title": "Personal Portfolio",
@@ -65,7 +65,7 @@
             "description": "A website to keep track of my past, present and future projects",
             "buttonText": "View src",
             "url": "https://devpost.com/software/degree-planner-m4hdal",
-            "img": "../src/img/project2.jpg"
+            "img": "./images/project1.jpg"
         }
     ],
     "skills": [

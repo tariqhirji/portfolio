@@ -17,7 +17,7 @@ const HeroLeft = ({content}) => {
         <p className="is-size-5 description">{description}</p>
       </div>
       <div className="block">
-        <h5 className="is-size-5 base">{base}</h5>
+        <h5 className="is-size-5 base has-text-grey">{base}<i class="fas fa-map-marker-alt mx-3 pb-3"></i></h5>
       </div>
     </div>
   );
