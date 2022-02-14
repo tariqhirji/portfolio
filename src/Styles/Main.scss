@@ -5,10 +5,6 @@ $lightgrey: #EAEAEA;
 $darkgrey: #757575;
 $white: #ffffff;
 
-// Socials colours
-$twitter : #00ACEE;
-$linkedin: #0077B5;
-
 // Bulma overides
 $primary: $blue;
 
@@ -37,7 +33,7 @@ html {
 }
 
 #projects {
-  background-color: $lightgrey;
+  background-color: lightblue;
 }
 
 #skills {

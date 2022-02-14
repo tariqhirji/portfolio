@@ -23,7 +23,16 @@ const About = ({data}) => {
                 <AboutContent content={content} />
               </div>
               <div className="column is-4">
-                Dynamics
+                <div className="block">
+                  <div className="box">
+                    <h5 className="is-size-5">The weather where I am currently:</h5>
+                  </div>
+                </div>
+                <div className="block">
+                  <div className="box">
+                    <h5 className="is-size-5">My favourite team's next game:</h5>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ import HeroNav from '../Components/HeroNav';
 import HeroRight from '../Components/HeroRight';
 import '../Styles/Hero.css'
 
-const Hero = ({data}) => {
+const Hero = ({data, socials}) => {
     if (data) {
         var content = data.content;
     }
@@ -20,7 +20,7 @@ const Hero = ({data}) => {
                 <div className="container">
                     <div className="columns is-vcentered">
                         <div className="column is-6">
-                            <HeroLeft content={content}/>
+                            <HeroLeft content={content} socials={socials}/>
                         </div>
                         <div className="column is-6 is-flex is-justify-content-center">
                             <HeroRight />

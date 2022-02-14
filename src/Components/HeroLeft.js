@@ -1,7 +1,8 @@
 import React from 'react';
 import HeroAnimation from './HeroAnimation';
+import Socials from './Socials';
 
-const HeroLeft = ({content}) => {
+const HeroLeft = ({content, socials}) => {
   if (content) {
     var animation = content.animation;
     var description = content.description;
@@ -17,7 +18,12 @@ const HeroLeft = ({content}) => {
         <p className="is-size-5 description">{description}</p>
       </div>
       <div className="block">
-        <h5 className="is-size-5 base has-text-grey">{base}<i class="fas fa-map-marker-alt mx-3 pb-3"></i></h5>
+        <h5 className="is-size-5 base has-text-grey">{base}<i className="fas fa-map-marker-alt mx-3 pb-3"></i></h5>
+      </div>
+      <div className="block">
+        <h5 className="is-size-3">
+          <Socials socials={socials} />
+        </h5>
       </div>
     </div>
   );

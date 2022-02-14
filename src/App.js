@@ -17,11 +17,11 @@ const App = () => {
 
   return (
     <div className="App"> 
-      <Hero data={portfolioData.hero} />
+      <Hero data={portfolioData.hero} socials={portfolioData.socials}/>
       <Projects data={portfolioData.projects}/>
       <Skills data={portfolioData.skills}/>
       <About data={portfolioData.about} />
-      <Contact />
+      <Contact socials={portfolioData.socials}/>
     </div>
   )
 }

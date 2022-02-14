@@ -142,19 +142,22 @@
     },
     "socials": [
         {
-            "name": "twitter",
+            "id": "twitter",
             "className": "fab fa-twitter twitter",
-            "url": "https://twitter.com/Tariq_Hirji"
+            "url": "https://twitter.com/Tariq_Hirji",
+            "color": "#00ACEE"
         },
         {
-            "name": "github",
+            "id": "github",
             "className": "fab fa-github github",
-            "url": "https://github.com/tariqhirji"
+            "url": "https://github.com/tariqhirji",
+            "color": "#2B2B2B"
         },
         {
-            "name": "linkedin",
+            "id": "linkedin",
             "className": "fab fa-linkedin-in",
-            "url": "https://www.linkedin.com/in/tariq-hirji-272295189/"
+            "url": "https://www.linkedin.com/in/tariq-hirji-272295189/",
+            "color": "#0077B5"
         }
     ]
 }
