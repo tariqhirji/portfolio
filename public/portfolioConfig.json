@@ -68,54 +68,12 @@
             "img": "./images/project1.jpg"
         }
     ],
-    "skills": [
-        {
-            "title": "frontend",
-            "technologies": [
-                {
-                    "name": "CSS3"
-                },
-                {
-                    "name": "Javascript"
-                },
-                {
-                    "name": "Bulma"
-                },
-                {
-                    "name": "Bootstrap"
-                },
-                {
-                    "name": "Reactjs"
-                },
-                {
-                    "name": "Sass"
-                }
-            ]
-        },
-        {
-            "title": "backend",
-            "technologies": [
-                {
-                    "name": "CSS3"
-                },
-                {
-                    "name": "Javascript"
-                },
-                {
-                    "name": "Bulma"
-                },
-                {
-                    "name": "Bootstrap"
-                },
-                {
-                    "name": "Reactjs"
-                },
-                {
-                    "name": "Sass"
-                }
-            ]
-        }
-    ],
+    "skills": {
+        "title": "Skills",
+        "subtitle": "Over the years, I have used more technological tools than I care to count. Some I've liked, some I've loved and some I've loathed. With the world of technology constantly expanding, my passion for this world will help me continuously expand with it.",
+        "forward": "It therefore makes sense to have a priority of tools that updates as I do. I like to this of this section as my FIFA ultimate team card or my MyPlayer ratings.",
+        "goal": "Some new technologies I think are cool and will learn in 2022 are: React Native, Next.js and the .NET core" 
+    },
     "about": {
         "title": "About Me",
         "content": {

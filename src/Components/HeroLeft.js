@@ -18,13 +18,14 @@ const HeroLeft = ({content, socials}) => {
         <p className="is-size-5 description">{description}</p>
       </div>
       <div className="block">
-        <h5 className="is-size-5 base has-text-grey">{base}<i className="fas fa-map-marker-alt mx-3 pb-3"></i></h5>
+        <h5 className="is-size-5 base has-text-grey">{base}<i className="is-size-4 fas fa-map-marker-alt mx-3 pb-3"></i></h5>
       </div>
       <div className="block">
         <h5 className="is-size-3">
           <Socials socials={socials} />
         </h5>
       </div>
+     
     </div>
   );
 };

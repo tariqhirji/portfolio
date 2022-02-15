@@ -19,10 +19,10 @@ const Hero = ({data, socials}) => {
             <div className="hero-body px-0">
                 <div className="container">
                     <div className="columns is-vcentered">
-                        <div className="column is-6">
+                        <div className="column is-7">
                             <HeroLeft content={content} socials={socials}/>
                         </div>
-                        <div className="column is-6 is-flex is-justify-content-center">
+                        <div className="column is-5 is-flex is-justify-content-center">
                             <HeroRight />
                         </div>
                     </div>

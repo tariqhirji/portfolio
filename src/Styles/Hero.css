@@ -3349,7 +3349,7 @@ a.tag:hover {
 }
 
 .title.is-1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .title.is-2 {
@@ -3393,7 +3393,7 @@ a.tag:hover {
 }
 
 .subtitle.is-1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .subtitle.is-2 {
@@ -11081,7 +11081,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .is-size-1 {
-  font-size: 3rem !important;
+  font-size: 3.5rem !important;
 }
 
 .is-size-2 {
@@ -11110,7 +11110,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (max-width: 768px) {
   .is-size-1-mobile {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   .is-size-2-mobile {
     font-size: 2.5rem !important;
@@ -11134,7 +11134,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 769px), print {
   .is-size-1-tablet {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   .is-size-2-tablet {
     font-size: 2.5rem !important;
@@ -11158,7 +11158,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (max-width: 1023px) {
   .is-size-1-touch {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   .is-size-2-touch {
     font-size: 2.5rem !important;
@@ -11182,7 +11182,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 1024px) {
   .is-size-1-desktop {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   .is-size-2-desktop {
     font-size: 2.5rem !important;
@@ -11206,7 +11206,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 1216px) {
   .is-size-1-widescreen {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   .is-size-2-widescreen {
     font-size: 2.5rem !important;
@@ -11230,7 +11230,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 1408px) {
   .is-size-1-fullhd {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
   .is-size-2-fullhd {
     font-size: 2.5rem !important;
