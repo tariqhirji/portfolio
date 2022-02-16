@@ -9,6 +9,8 @@ const HeroLeft = ({content, socials}) => {
     var base = content.base;
   }
 
+  var margin = "mr-6"
+
   return (
     <div>
       <div className="block">
@@ -22,7 +24,7 @@ const HeroLeft = ({content, socials}) => {
       </div>
       <div className="block">
         <h5 className="is-size-3">
-          <Socials socials={socials} />
+          <Socials margin={margin} socials={socials} />
         </h5>
       </div>
      

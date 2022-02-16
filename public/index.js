@@ -43,7 +43,7 @@ function scroll() {
         nav.style.backgroundColor = "white";
     } else if (t > t2 - 50) {
         l2.style.color = "blue";
-        nav.style.backgroundColor = "white";
+        nav.style.backgroundColor = "#EAEAEA";
     } else if (t > t1 - 50) {
         l1.style.color = "blue";
         nav.style.backgroundColor = "lightblue";

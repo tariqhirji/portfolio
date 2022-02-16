@@ -1,39 +1,47 @@
 import React from 'react';
+import ContactFooter from '../Components/ContactFooter';
 import ContactForm from '../Components/ContactForm';
-import Socials from '../Components/Socials';
-import contact from "../img/contact.svg";
 import '../Styles/Contact.css';
 
-const Contact = ({socials}) => {
+const Contact = ({data, socials}) => {
+  if (data) {
+    var title = data.title;
+    var subtitle = data.subtitle;
+    var img = data.img;
+  }
+
   return (
     <section className="section hero is-fullheight is-white" id='contact'>
       <div className="hero-body px-0">
         <div className="container">
+
           {/* Title Column */}
           <div className="columns">
               <div className="column is-12 my-3">
-                <h1 className="is-size-1 title">Let's build something awesome together!</h1>
+                <h1 className="is-size-1 title">{title}</h1>
               </div>
           </div>
+
           {/* Columns for form and graphic */}
           <div className="columns is-vcentered">
+
+              {/* Form */}
               <div className="column is-6">
-                <h4 className="is-size-4 mb-5"> Let's take a great idea and make it a reality. <br/> Send me a message and I'll get back to you shortly.</h4>
+                <h4 className="is-size-4 mb-5">{subtitle}</h4>
                 <ContactForm />
               </div>
+
+              {/* Graphic */}
               <div className="column is-6 is-flex is-justify-content-center ">
-                <img src={contact} className='image' alt="Contact me" />
+                <img src={img} className='image' alt="Contact me" />
               </div>
+          
           </div>
         </div>
       </div>
 
-      {/* Hero Footer of socials */}
-      <div className="hero-foot has-text-centered is-fullwidth is-justify-content-center">
-        <div className="container is-fullwidth has-text-centered is-size-3">
-          <Socials socials={socials}/>
-        </div>
-      </div>
+      {/* Contact Footer of socials */}
+      <ContactFooter socials={socials} />
     </section>
     );
 };

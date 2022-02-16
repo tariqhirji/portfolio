@@ -7,7 +7,7 @@
                 "dynamic": ["Tariq Hirji", "a developer", "a sports fanatic", "a designer", "an innovator"]
             },
             "description": "Welcome to my home on the internet! I am a guy who loves technology and works to make virtual worlds fun, engaging and easy to use spaces.",
-            "base": "Based in Ontario, Canada"
+            "base": "Based in Toronto, Canada"
         }
     },
     "projects" : [
@@ -72,6 +72,128 @@
         "title": "Skills",
         "subtitle": "Over the years, I have used more technological tools than I care to count. Some I've liked, some I've loved and some I've loathed. With the world of technology constantly expanding, my passion for this world will help me continuously expand with it.",
         "forward": "It therefore makes sense to have a priority of tools that updates as I do. I like to this of this section as my FIFA ultimate team card or my MyPlayer ratings.",
+        "bars": {
+            "frontend": {
+                "title": "Frontend",
+                "skills": [
+                    {
+                        "type": "HTML",
+                        "level": 88
+                    },
+                    {
+                        "type": "Bootstrap",
+                        "level": 83
+                    },
+                    {
+                        "type": "Javascript",
+                        "level": 74
+                    },
+                    {
+                        "type": "Reactjs",
+                        "level": 70
+                    },
+                    {
+                        "type": "Sass",
+                        "level": 66
+                    },
+                    {
+                        "type": "Bulma",
+                        "level": 60
+                    }
+                ],
+                "colors": {
+                    "bar": "#3498db",
+                    "title": {
+                        "text": "#fff",
+                        "background": "#2980b9"
+                    }
+                }
+            },
+            "backend": {
+                "title": "Backend",
+                "skills": [
+                    {
+                        "type": "Java",
+                        "level": 77
+                    },
+                    {
+                        "type": "Nodejs",
+                        "level": 74
+                    },
+                    {
+                        "type": "Python",
+                        "level": 70
+                    },
+                    {
+                        "type": "NoSQL",
+                        "level": 67
+                    },
+                    {
+                        "type": "Postman",
+                        "level": 63
+                    },
+                    {
+                        "type": "PHP",
+                        "level": 58
+                    }
+                ],
+                "colors": {
+                    "bar": "#3498db",
+                    "title": {
+                        "text": "#fff",
+                        "background": "#2980b9"
+                    }
+                }
+            },
+            "data_science": {
+                "title": "Data Science",
+                "skills": [
+                    {
+                        "type": "Jupyter",
+                        "level": 76
+                    },
+                    {
+                        "type": "Tensorflow",
+                        "level": 71
+                    },
+                    {
+                        "type": "Tableau",
+                        "level": 68
+                    }
+                ],
+                "colors": {
+                    "bar": "#3498db",
+                    "title": {
+                        "text": "#fff",
+                        "background": "#2980b9"
+                    }
+                }
+            },
+            "design_devops": {
+                "title": "Design & Devops",
+                "skills": [
+                    {
+                        "type": "Github",
+                        "level": 83
+                    },
+                    {
+                        "type": "Figma",
+                        "level": 79
+                    },
+                    {
+                        "type": "Jira",
+                        "level": 74
+                    }
+                ],
+                "colors": {
+                    "bar": "#3498db",
+                    "title": {
+                        "text": "#fff",
+                        "background": "#2980b9"
+                    }
+                }
+            }
+        },
         "goal": "Some new technologies I think are cool and will learn in 2022 are: React Native, Next.js and the .NET core" 
     },
     "about": {
@@ -103,6 +225,11 @@
                 "className": "fas fa-bolt iconic"
             }
         ]
+    },
+    "contact": {
+        "title": "Let's build something awesome together!",
+        "subtitle": "Let's take a great idea and make it a reality. Send me a message and I'll get back to you shortly.",
+        "img": "./images/contact.svg"
     },
     "socials": [
         {

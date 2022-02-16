@@ -52,6 +52,14 @@ html {
   font-size: 100px;
 }
 
+#skills {
+  background-color: $lightgrey;
+  .box {
+    background-color: white;
+    // border: 1px solid black;
+  }
+}
+
 // #projects .card {
 //   border: black 1px solid;
 // }

@@ -26,6 +26,14 @@ html {
   font-size: 100px;
 }
 
+#skills {
+  background-color: #EAEAEA;
+}
+
+#skills .box {
+  background-color: white;
+}
+
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,

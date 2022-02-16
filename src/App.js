@@ -21,7 +21,7 @@ const App = () => {
       <Projects data={portfolioData.projects}/>
       <Skills data={portfolioData.skills}/>
       <About data={portfolioData.about} />
-      <Contact socials={portfolioData.socials}/>
+      <Contact data={portfolioData.contact} socials={portfolioData.socials}/>
     </div>
   )
 }
