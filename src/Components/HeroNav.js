@@ -20,6 +20,7 @@ const HeroNav = () => {
                                 aria-expanded="false"
                                 data-target="nav-links"
                                 id="burger"
+                                style={{"height": "64px", "width": "64px"}}
                             >
                                 <span aria-hidden="true"></span>
                                 <span aria-hidden="true"></span>

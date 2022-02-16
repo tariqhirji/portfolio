@@ -67,3 +67,6 @@ html {
 
 @import "../../node_modules/bulma/bulma.sass";
 
+.bulma-hamburger-mixin {
+  @include hamburger(64px);
+}

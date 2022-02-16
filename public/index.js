@@ -4,6 +4,7 @@ function scroll() {
     // Get scroll length and navbar variables
     var t = window.scrollY;
     var nav = document.getElementById("navbar");
+    var navLinks = document.getElementById("nav-links");
 
     // variables to hold links of navbar.
     var brand = document.getElementById("navbar-brand");
@@ -37,19 +38,24 @@ function scroll() {
     // Less 50px to account for transition animation time of 1s 
     if (t > t4 - 50) {
         l4.style.color = "blue";
-        nav.style.backgroundColor = "white"
+        nav.style.backgroundColor = "white";
+        navLinks.style.backgroundColor = "white";
     } else if (t > t3 - 50) {
         l3.style.color = "blue";
         nav.style.backgroundColor = "white";
+        navLinks.style.backgroundColor = "white";
     } else if (t > t2 - 50) {
         l2.style.color = "blue";
         nav.style.backgroundColor = "#EAEAEA";
+        navLinks.style.backgroundColor = "#EAEAEA";
     } else if (t > t1 - 50) {
         l1.style.color = "blue";
         nav.style.backgroundColor = "lightblue";
+        navLinks.style.backgroundColor = "lightblue";
     } else {
         brand.style.color = "blue";
         hamburger.style.color = "black";
         nav.style.backgroundColor = "white";
+        navLinks.style.backgroundColor = "white";
     }
 }
