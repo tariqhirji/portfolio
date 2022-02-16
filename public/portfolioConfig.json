@@ -80,6 +80,12 @@
             "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac porta mauris. Fusce ac molestie elit, tincidunt iaculis elit. Phasellus ultricies nec ipsum vel condimentum. Mauris varius tincidunt turpis, vel tincidunt enim hendrerit a. Fusce nec dui nisi. Suspendisse bibendum nibh odio, ac gravida nunc commodo in. Nam lobortis luctus nunc, at imperdiet libero imperdiet vel. Praesent dignissim id turpis sit amet mollis. Etiam at tempus dolor. Praesent et ipsum pulvinar, fermentum dolor in, viverra metus. Duis sit amet pretium nunc. Maecenas sed justo magna.",
             "p2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac porta mauris. Fusce ac molestie elit, tincidunt iaculis elit. Phasellus ultricies nec ipsum vel condimentum. Mauris varius tincidunt turpis, vel tincidunt enim hendrerit a. Fusce nec dui nisi. Suspendisse bibendum nibh odio, ac gravida nunc commodo in. Nam lobortis luctus nunc, at imperdiet libero imperdiet vel. Praesent dignissim id turpis sit amet mollis. Etiam at tempus dolor. Praesent et ipsum pulvinar, fermentum dolor in, viverra metus. Duis sit amet pretium nunc. Maecenas sed justo magna."
         },
+        "weather": {
+            "query": "Toronto, Ontario"
+        },
+        "sport": {
+            "query": "Manchester United"
+        },
         "icons": [
             {
                 "trait": "Innovative",

@@ -7,7 +7,7 @@ const ProjectCard = ({project}) => {
         var subtitle=project.subtitle;
 
         var badges = project.badges.map(function (badge){
-          return <Badge name={badge.name}/>
+          return <Badge name={badge.name} key={badge.name}/>
         })
 
         var description = project.description;

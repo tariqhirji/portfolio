@@ -26,23 +26,23 @@ const ContactForm = () => {
     <form className='ContactForm' onSubmit={handleSubmit}>
         
         {/* Name field */}
-        <div class="field">
-            <label class="label">Name</label>
-            <div class="control has-icons-left">
-                <input class="input" type="text"  placeholder='Your Name' onChange={e => (setName(e.target.value))} value={name} name='name' required/>
-                <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
+        <div className="field">
+            <label className="label">Name</label>
+            <div className="control has-icons-left">
+                <input className="input" type="text"  placeholder='Your Name' onChange={e => (setName(e.target.value))} value={name} name='name' required/>
+                <span className="icon is-small is-left">
+                <i className="fas fa-user"></i>
                 </span>
             </div>
         </div>
 
         {/* Email Field */}
-        <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-left">
-                <input class="input" type="email" placeholder="Your Email" onChange={e => setEmail(e.target.value)} value={email} name='email' required/>
-                <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
+        <div className="field">
+            <label className="label">Email</label>
+            <div className="control has-icons-left">
+                <input className="input" type="email" placeholder="Your Email" onChange={e => setEmail(e.target.value)} value={email} name='email' required/>
+                <span className="icon is-small is-left">
+                <i className="fas fa-envelope"></i>
                 </span>
             </div>
         </div>
@@ -50,11 +50,11 @@ const ContactForm = () => {
         {/* Message Field */}
         <div className="field">
             <label className="label">Message</label>
-            <textarea class="textarea" placeholder="Your Message" onChange={e => setMessage(e.target.value)} value={message} name='message' required></textarea>
+            <textarea className="textarea" placeholder="Your Message" onChange={e => setMessage(e.target.value)} value={message} name='message' required></textarea>
         </div>
 
         {/* Submit Button */}
-        <button class="button is-primary is-fullwidth my-5" type='submit'>Send</button>
+        <button className="button is-primary is-fullwidth my-5" type='submit'>Send</button>
     </form>
     );
 };

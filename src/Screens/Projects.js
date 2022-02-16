@@ -4,7 +4,7 @@ import ProjectCard from '../Components/ProjectCard';
 const Projects = ({data}) => {
   if (data) {
     var projects = data.map(function (project){
-      return <ProjectCard project={project}/>
+      return <ProjectCard project={project} key={project.title}/>
     })
   }
   return (

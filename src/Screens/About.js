@@ -1,14 +1,22 @@
 import React from 'react';
 import AboutContent from '../Components/AboutContent';
 import IconCard from '../Components/IconCard';
+import SportDynamic from '../Components/SportDynamic';
+import WeatherDynamic from '../Components/WeatherDynamic';
 
 const About = ({data}) => {
   if (data) {
     var title = data.title;
     var content = data.content;
+    
+    var weather = data.weather;
+    var sport = data.sport;
+    
     var icons = data.icons.map(function (icon) {
-      return <IconCard icon={icon}/>
+      return <IconCard icon={icon} key={icon.trait}/>
     })
+
+    
   }
 
   return (
@@ -23,16 +31,8 @@ const About = ({data}) => {
                 <AboutContent content={content} />
               </div>
               <div className="column is-4">
-                <div className="block">
-                  <div className="box">
-                    <h5 className="is-size-5">The weather where I am currently:</h5>
-                  </div>
-                </div>
-                <div className="block">
-                  <div className="box">
-                    <h5 className="is-size-5">My favourite team's next game:</h5>
-                  </div>
-                </div>
+                <WeatherDynamic weather={weather}/>
+                <SportDynamic sport={sport}/>
               </div>
             </div>
           </div>
