@@ -20,7 +20,7 @@ const Skills = ({data}) => {
           <h3 className="is-size-3">{subtitle}</h3>
           <h3 className="is-size-3 mb-3">{forward}</h3>
 
-          <div className="columns">
+          <div className="columns is-vcentered">
             <div className="column is-4">
               <div className="box">
                 <SkillBars data={frontend} />

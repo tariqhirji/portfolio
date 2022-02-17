@@ -138,10 +138,10 @@
                     }
                 ],
                 "colors": {
-                    "bar": "#3498db",
+                    "bar": "#32a86f",
                     "title": {
                         "text": "#fff",
-                        "background": "#2980b9"
+                        "background": "#185437"
                     }
                 }
             },
@@ -162,10 +162,10 @@
                     }
                 ],
                 "colors": {
-                    "bar": "#3498db",
+                    "bar": "#f22e2e",
                     "title": {
                         "text": "#fff",
-                        "background": "#2980b9"
+                        "background": "#870808"
                     }
                 }
             },
@@ -186,10 +186,10 @@
                     }
                 ],
                 "colors": {
-                    "bar": "#3498db",
+                    "bar": "#e8f22e",
                     "title": {
                         "text": "#fff",
-                        "background": "#2980b9"
+                        "background": "#818708"
                     }
                 }
             }
@@ -203,7 +203,8 @@
             "p2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac porta mauris. Fusce ac molestie elit, tincidunt iaculis elit. Phasellus ultricies nec ipsum vel condimentum. Mauris varius tincidunt turpis, vel tincidunt enim hendrerit a. Fusce nec dui nisi. Suspendisse bibendum nibh odio, ac gravida nunc commodo in. Nam lobortis luctus nunc, at imperdiet libero imperdiet vel. Praesent dignissim id turpis sit amet mollis. Etiam at tempus dolor. Praesent et ipsum pulvinar, fermentum dolor in, viverra metus. Duis sit amet pretium nunc. Maecenas sed justo magna."
         },
         "weather": {
-            "query": "Toronto, Ontario"
+            "latitude": 43.651070,
+            "longitude": -79.347015
         },
         "sport": {
             "query": "Manchester United"

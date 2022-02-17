@@ -1,9 +1,9 @@
-import axios from 'axios';
+// import axios from 'axios';
 
-const forecast = async (query, callback) => {
-    const url = `http://api.weatherstack.com/current?access_key=${process.env.REACT_APP_WEATHER_KEY}&query=${query}`
-    const response = await axios.get(url)
-    console.log(response)
-}
+// async function forecast(query) {
+    // const url = `${process.env.REACT_APP_WEATHER_URL}/onecall?q=${query}&appid=${process.env.REACT_APP_WEATHER_ID}&units=metric` 
+    // const response = await axios.get(url)
+    // console.log(response.data)
+// }
 
-export default forecast;
+// export default forecast;
