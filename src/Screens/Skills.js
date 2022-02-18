@@ -21,24 +21,28 @@ const Skills = ({data}) => {
           <h3 className="is-size-3 mb-3">{forward}</h3>
 
           <div className="columns is-vcentered">
-            <div className="column is-4">
+            <div className="column is-6">
               <div className="box">
                 <SkillBars data={frontend} />
               </div>
             </div>
-            <div className="column is-4">
+            <div className="column is-6">
               <div className="box">
                 <SkillBars data={backend} />
               </div>
             </div>
-            <div className="column is-4">
-              <div className="box">
-                <SkillBars data={data_science} />
-              </div>
+            </div>
+            <div className="columns">
+            <div className="column is-6">
               <div className="box">
                 <SkillBars data={design_devops} />
               </div>
             </div>
+            <div className="column is-6">
+              <div className="box">
+                <SkillBars data={data_science} />
+              </div>
+            </div> 
           </div>
           
           <h3 className="is-size-3">{goal}</h3>

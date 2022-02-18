@@ -1,19 +1,21 @@
-import React, {useState} from 'react';
-import axios from 'axios';
-// import forecast from '../utils/forecast';
+import React, {useEffect, useState} from 'react';
+// import fetch from 'node-fetch';
 
-const WeatherDynamic = ({weather}) => {
-    const [temp, setTemp] = useState(0);
-    const [desc, setDesc] = useState("");
-    const [icon, setIcon] = useState("");
+const WeatherDynamic = ({ weather }) => {
+    // const [temp, setTemp] = useState(0);
+    // const [desc, setDesc] = useState("");
+    // const [icon, setIcon] = useState("");
 
-    if (weather) {
-        const lat = weather.latitude;
-        const long = weather.longitude;
-        const url = `${process.env.REACT_APP_WEATHER_URL}/onecall?lat=${lat}&lon=${long}&appid=${process.env.REACT_APP_WEATHER_ID}&units=metric&exclude=daily,hourly,minutely,alerts` 
-        axios.get(url)
-            .then(response => console.log(response.data.current))
-            .catch(e => console.log(e))
+    const latitude = 43.651070;
+    const longitude = -79.347015;
+    const url = `${process.env.REACT_APP_WEATHER_URL}/onecall?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_WEATHER_ID}&units=metric&exclude=daily,hourly,minutely,alerts`
+
+
+    async function fetchData(url) {
+        const response = await fetch(url);
+        const body = await response.json();
+
+        console.log(body)
     }
 
     return (
