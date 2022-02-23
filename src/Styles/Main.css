@@ -34,6 +34,11 @@ html {
   background-color: white;
 }
 
+.WeatherDynamic img {
+  height: 50px;
+  width: 50px;
+}
+
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,

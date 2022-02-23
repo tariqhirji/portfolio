@@ -8,8 +8,7 @@ const About = ({data}) => {
   if (data) {
     var title = data.title;
     var content = data.content;
-    
-    var weather = data.weather;
+  
     var sport = data.sport;
     
     var icons = data.icons.map(function (icon) {
@@ -31,7 +30,7 @@ const About = ({data}) => {
                 <AboutContent content={content} />
               </div>
               <div className="column is-4">
-                <WeatherDynamic weather={weather}/>
+                <WeatherDynamic />
                 <SportDynamic sport={sport}/>
               </div>
             </div>

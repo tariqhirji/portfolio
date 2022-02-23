@@ -26,6 +26,19 @@ html {
   font-size: 100px;
 }
 
+#skills {
+  background-color: #EAEAEA;
+}
+
+#skills .box {
+  background-color: white;
+}
+
+.WeatherDynamic img {
+  height: 100px;
+  width: 100px;
+}
+
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
@@ -12953,6 +12966,63 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
+}
+
+.bulma-hamburger-mixin {
+  cursor: pointer;
+  display: block;
+  height: 64px;
+  position: relative;
+  width: 64px;
+}
+
+.bulma-hamburger-mixin span {
+  background-color: currentColor;
+  display: block;
+  height: 1px;
+  left: calc(50% - 8px);
+  position: absolute;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition-duration: 86ms;
+          transition-duration: 86ms;
+  -webkit-transition-property: background-color, opacity, -webkit-transform;
+  transition-property: background-color, opacity, -webkit-transform;
+  transition-property: background-color, opacity, transform;
+  transition-property: background-color, opacity, transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  width: 16px;
+}
+
+.bulma-hamburger-mixin span:nth-child(1) {
+  top: calc(50% - 6px);
+}
+
+.bulma-hamburger-mixin span:nth-child(2) {
+  top: calc(50% - 1px);
+}
+
+.bulma-hamburger-mixin span:nth-child(3) {
+  top: calc(50% + 4px);
+}
+
+.bulma-hamburger-mixin:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.bulma-hamburger-mixin.is-active span:nth-child(1) {
+  -webkit-transform: translateY(5px) rotate(45deg);
+          transform: translateY(5px) rotate(45deg);
+}
+
+.bulma-hamburger-mixin.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.bulma-hamburger-mixin.is-active span:nth-child(3) {
+  -webkit-transform: translateY(-5px) rotate(-45deg);
+          transform: translateY(-5px) rotate(-45deg);
 }
 
 #hero {

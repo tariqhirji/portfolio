@@ -1,32 +1,37 @@
 import React, {useEffect, useState} from 'react';
-// import fetch from 'node-fetch';
+import axios from 'axios';
 
-const WeatherDynamic = ({ weather }) => {
-    // const [temp, setTemp] = useState(0);
-    // const [desc, setDesc] = useState("");
-    // const [icon, setIcon] = useState("");
+const WeatherDynamic = () => {
+    const [temp, setTemp] = useState(0);
+    const [desc, setDesc] = useState("");
+    const [icon, setIcon] = useState(null);
 
-    const latitude = 43.651070;
-    const longitude = -79.347015;
-    const url = `${process.env.REACT_APP_WEATHER_URL}/onecall?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_WEATHER_ID}&units=metric&exclude=daily,hourly,minutely,alerts`
-
-
-    async function fetchData(url) {
-        const response = await fetch(url);
-        const body = await response.json();
-
-        console.log(body)
-    }
+    useEffect(() => {
+        axios.get(process.env.REACT_APP_WEATHER)
+            .then((response) => {
+                const {current} = response.data
+                // console.log(current)
+                setTemp(current.temp)
+                setDesc(current.weather[0].description)
+                setIcon(current.weather[0].icon)
+            })
+            .catch(error => {
+                console.log(error)
+            })    
+    },[])
 
     return (
         <div className='WeatherDynamic mb-4'>
             <div className="block">
-                <div className="box">
-                    <h5 className="is-size-5">The weather where I am currently:</h5>
+                <div className="box has-text-centered">
+                    <h5 className="is-size-5 mb-3">The weather where I am currently:</h5>
+                    {!icon ? "Loading..." : <img src={`https://openweathermap.org/img/w/${icon}.png`} alt="weather"/>}
+                    <h3 className="is-size-3"><strong>{!icon ? "Loading..." : `${temp}\u00b0 C`}</strong></h3>
+                    <h3 className="is-size-3"><em>{desc === "" ? "Loading..." : `${desc}`}</em></h3>
                 </div>
             </div>
         </div>
     )
 }
 
-export default WeatherDynamic
+export default WeatherDynamic;

@@ -60,9 +60,10 @@ html {
   }
 }
 
-// #projects .card {
-//   border: black 1px solid;
-// }
+.WeatherDynamic img {
+  height: 50px;
+  width: 50px;
+}
 
 
 @import "../../node_modules/bulma/bulma.sass";
