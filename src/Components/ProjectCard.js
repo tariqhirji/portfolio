@@ -24,11 +24,11 @@ const ProjectCard = ({project}) => {
                     <div className="card-content">
                         <div className="content">
                             <div className="block mb-4">
-                                <h2 className="is-size-1 title">{title}</h2>
+                                <h2 className="is-size-2 title">{title}</h2>
                             </div>
 
                             <div className="block mb-4">
-                                <h2 className="is-size-2 subtitle has-text-grey">{subtitle}</h2>
+                                <h2 className="is-size-3 subtitle has-text-grey">{subtitle}</h2>
                                 {badges}
                             </div>
 
