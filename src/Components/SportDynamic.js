@@ -25,11 +25,11 @@ const SportDynamic = () => {
     }
   }  
 
+  // Load next match and set state
   useEffect(() => {
     axios.get(FIXTURE_URL, config)
       .then((response) => {
         const {matches} = response.data
-        console.log(matches[0])
         setHomeID(matches[0].homeTeam.id)
         setHomeName(matches[0].homeTeam.name)
         setAwayID(matches[0].awayTeam.id)
@@ -40,6 +40,19 @@ const SportDynamic = () => {
       .catch(e => console.log(e))
   }, [])
 
+  // Once state is set, retrieve crests
+  // useEffect(() => {
+  //   if (homeID !== null && homeImg === null) {
+  //     // console.log('calling')
+  //     axios.get(`https://api.football-data.org/v2/teams/${homeID}`, config)
+  //       .then(response => setHomeImg(response.data.crestUrl))
+  //   }
+  //   if (awayID !== null && awayImg === null) {
+  //     axios.get(`https://api.football-data.org/v2/teams/${awayID}`, config)
+  //       .then(response => setAwayImg(response.data.crestUrl))
+  //   }
+  // }, [homeID, awayID, awayImg, homeImg])
+
     return (
         <div className='WeatherDynamic mb-4'>
             <div className="block">
@@ -48,6 +61,11 @@ const SportDynamic = () => {
                     <div className="columns">
                       <div className="column is-5">
                       {
+                        homeImg === null
+                        ? "..."
+                        : <img src={homeImg} alt="Home team" />
+                      }  
+                      {
                         homeID === null
                         ? "..."
                         : <h6 className='is-size-6 is-uppercase has-text-black'>{homeName}</h6>
@@ -55,6 +73,11 @@ const SportDynamic = () => {
                       </div>
                       <div className="column is-2">vs.</div>
                       <div className="column is-5">
+                      {
+                        awayImg === null
+                        ? "..."
+                        : <img src={awayImg} alt="Away team" />
+                      }  
                       {
                         awayID === null
                         ? "..."
