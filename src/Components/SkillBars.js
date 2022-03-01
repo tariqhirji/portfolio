@@ -7,7 +7,7 @@ const SkillBars = ({data}) => {
         var skills = data.skills;
         var colors = data.colors;
 
-        var bar = <SkillBar skills={skills} colors={colors} />;
+        var bar = <SkillBar skills={skills} colors={colors} animationDelay={1000}/>;
     }
 
     return (

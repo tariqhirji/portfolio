@@ -26,7 +26,7 @@ const WeatherDynamic = () => {
                 <div className="box has-text-centered">
                     <h5 className="is-size-5 mb-3">The weather where I am currently:</h5>
                     {!icon ? "Loading..." : <img src={`https://openweathermap.org/img/w/${icon}.png`} alt="weather"/>}
-                    <h3 className="is-size-3"><strong>{!icon ? "Loading..." : `${temp}\u00b0 C`}</strong></h3>
+                    <h3 className="is-size-3"><strong>{!icon ? "Loading..." : `${temp}\u00b0C`}</strong></h3>
                     <h3 className="is-size-3"><em>{desc === "" ? "Loading..." : `${desc}`}</em></h3>
                 </div>
             </div>
