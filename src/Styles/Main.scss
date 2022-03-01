@@ -65,6 +65,11 @@ html {
   width: 50px;
 }
 
+.section-title {
+  font-family: "Share Tech Mono", monospace;
+  text-transform: uppercase;
+  color: $dark;
+}
 
 @import "../../node_modules/bulma/bulma.sass";
 

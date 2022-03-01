@@ -39,6 +39,12 @@ html {
   width: 50px;
 }
 
+.section-title {
+  font-family: "Share Tech Mono", monospace;
+  text-transform: uppercase;
+  color: #2B2B2B;
+}
+
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,

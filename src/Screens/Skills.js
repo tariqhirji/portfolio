@@ -16,7 +16,7 @@ const Skills = ({data}) => {
   return (
     <section className='section' id='skills'>
         <div className="container">
-          <h1 className='is-size-1'>{title}</h1>
+          <h1 className='is-size-1 section-title'>{title}</h1>
           <h3 className="is-size-3">{subtitle}</h3>
           <h3 className="is-size-3 mb-3">{forward}</h3>
 

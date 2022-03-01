@@ -22,7 +22,7 @@ const About = ({data}) => {
     <section className='section' id='about'>
         <div className="container">
           <div className="block">
-            <h1 className='is-size-1'>{title}</h1>
+            <h1 className='is-size-1 section-title'>{title}</h1>
           </div>
           <div className="block">
             <div className="columns">

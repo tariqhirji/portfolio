@@ -39,7 +39,7 @@ const ProjectCard = ({project}) => {
                             </div>
 
                             <div className="block">
-                                <a href={url} className="button is-primary">
+                                <a href={url} className="button is-primary" target='_blank' rel='noreferrer'>
                                     {buttonText}
                                 </a>
                             </div>
