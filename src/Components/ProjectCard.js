@@ -11,6 +11,7 @@ const ProjectCard = ({project}) => {
         })
 
         var description = project.description;
+        var status = project.status
         var url = project.url;
         var buttonText = project.buttonText;
 
@@ -19,36 +20,37 @@ const ProjectCard = ({project}) => {
 
     return (
         <div className="card my-6">
-            <div className="columns is-vcentered is-gapless">
-                <div className="column is-6">
+            <div className="columns is-vcentered is-gapless is-multiline ">
+
+                {/* Content Col */}
+                <div className="column is-12-tablet is-6-desktop">
                     <div className="card-content">
                         <div className="content">
-                            <div className="block mb-4">
+                            <div className="block">
                                 <h2 className="is-size-2 title">{title}</h2>
                             </div>
 
-                            <div className="block mb-4">
+                            <div className="block">
                                 <h2 className="is-size-3 subtitle has-text-grey">{subtitle}</h2>
                                 {badges}
-                            </div>
-
-                            <div className="block">
-                                <h5 className="is-size-5">
+                                <h5>
                                     {description}
                                 </h5>
-                            </div>
 
-                            <div className="block">
-                                <a href={url} className="button is-primary" target='_blank' rel='noreferrer'>
-                                    {buttonText}
-                                </a>
+                                {
+                                    status === 'inactive'
+                                    ? <button disabled className="button is-primary is-light">{buttonText}<i class="fas fa-skull-crossbones ml-3"></i></button>
+                                    : <a href={url} className="button is-primary" target="_blank" rel='noreferrer'>{buttonText}<i className="fas fa-code ml-3"></i></a>
+                                }
+
                             </div>
 
                         </div>
                     </div>
                 </div>
 
-                <div className="column is-6 py-0">
+                {/* Img Col */}
+                <div className="column is-12-tablet is-6-desktop py-0">
                     <img src={img} alt="Degree Planner" className='image' />
                 </div>
             </div>

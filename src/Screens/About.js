@@ -21,25 +21,24 @@ const About = ({data}) => {
   return (
     <section className='section' id='about'>
         <div className="container">
-          <div className="block">
+
             <h1 className='is-size-1 section-title'>{title}</h1>
-          </div>
-          <div className="block">
+
             <div className="columns">
-              <div className="column is-8">
+              <div className="column is-6">
                 <AboutContent content={content} />
               </div>
-              <div className="column is-4">
+              <div className="column is-6">
                 <WeatherDynamic />
                 <SportDynamic sport={sport}/>
               </div>
             </div>
-          </div>
-          <div className="block">
+
+
             <div className="columns is-vcentered">
                 {icons}
             </div>
-          </div>
+
            
 
 

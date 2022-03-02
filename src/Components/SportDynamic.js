@@ -41,24 +41,25 @@ const SportDynamic = () => {
   }, [])
 
   // Once state is set, retrieve crests
-  // useEffect(() => {
-  //   if (homeID !== null && homeImg === null) {
-  //     // console.log('calling')
-  //     axios.get(`https://api.football-data.org/v2/teams/${homeID}`, config)
-  //       .then(response => setHomeImg(response.data.crestUrl))
-  //   }
-  //   if (awayID !== null && awayImg === null) {
-  //     axios.get(`https://api.football-data.org/v2/teams/${awayID}`, config)
-  //       .then(response => setAwayImg(response.data.crestUrl))
-  //   }
-  // }, [homeID, awayID, awayImg, homeImg])
+  useEffect(() => {
+    if (homeID !== null && homeImg === null) {
+      console.log('calling home')
+      axios.get(`https://api.football-data.org/v2/teams/${homeID}`, config)
+        .then(response => setHomeImg(response.data.crestUrl))
+    }
+    if (awayID !== null && awayImg === null) {
+      console.log('calling away')
+      axios.get(`https://api.football-data.org/v2/teams/${awayID}`, config)
+        .then(response => setAwayImg(response.data.crestUrl))
+    }
+  }, [homeID, awayID])
 
     return (
         <div className='WeatherDynamic mb-4'>
             <div className="block">
                 <div className="box has-text-centered">
                     <h5 className="is-size-5 mb-6">My favourite team's next game:</h5>
-                    <div className="columns">
+                    <div className="columns is-gapless">
                       <div className="column is-5">
                       {
                         homeImg === null

@@ -34,11 +34,14 @@
                     "name": "Apache echarts"
                 },
                 {
+                    "name": "Hackathon"
+                },
+                {
                     "name": "UBC API"
                 }
             ],
-            "status": "live",
-            "description": "An application build by some friends and I during HackWestern7 which allows students to visually plan out their degrees. Users interact with dynamic charts that outline all necessary courses and their prerequisites for each degree path. A public UBC API was used to populate degree and course data.",
+            "status": "active",
+            "description": "A web application that allows students to visually plan out their degrees and courses. Users interact with dynamic charts that outline necessary courses and their prerequisites for each degree path.",
             "buttonText": "View Devpost",
             "url": "https://devpost.com/software/degree-planner-m4hdal",
             "img": "./images/project1.jpg"
@@ -63,9 +66,9 @@
                     "name": "Animate.css"
                 }
             ],
-            "status": "live",
+            "status": "inactive",
             "description": "A website to keep track of my past, present and future projects",
-            "buttonText": "View src",
+            "buttonText": "Shutdown in 2019",
             "url": "https://github.com/tariqhirji/portfolio",
             "img": "./images/project2.jpg"
         }
