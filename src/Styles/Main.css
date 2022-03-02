@@ -45,6 +45,11 @@ html {
   color: #2B2B2B;
 }
 
+#about img {
+  width: 100px;
+  height: 100px;
+}
+
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,

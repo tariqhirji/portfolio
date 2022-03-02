@@ -47,27 +47,27 @@
             "img": "./images/project1.jpg"
         },
         {
-            "title": "Personal Portfolio",
-            "subtitle": "Website",
+            "title": "Raspberry Pong",
+            "subtitle": "Robotics",
             "badges": [
                 {
-                    "name": "Reactjs"
+                    "name": "Raspberry Pi"
                 },
                 {
-                    "name": "Bulma"
+                    "name": "OpenCV"
                 },
                 {
-                    "name": "Sass"
+                    "name": "C++"
                 },
                 {
-                    "name": "Nodejs"
+                    "name": "Motors"
                 },
                 {
-                    "name": "Animate.css"
+                    "name": "Breadboards"
                 }
             ],
             "status": "inactive",
-            "description": "A website to keep track of my past, present and future projects",
+            "description": "A robotic arm that detects a red cup on a table and correctly aligns itself to throw a ping pong ball into the cup with 100% accuracy",
             "buttonText": "Shutdown in 2019",
             "url": "https://github.com/tariqhirji/portfolio",
             "img": "./images/project2.jpg"

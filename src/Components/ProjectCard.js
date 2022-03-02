@@ -39,7 +39,7 @@ const ProjectCard = ({project}) => {
 
                                 {
                                     status === 'inactive'
-                                    ? <button disabled className="button is-primary is-light">{buttonText}<i class="fas fa-skull-crossbones ml-3"></i></button>
+                                    ? <button disabled className="button is-primary is-light">{buttonText}<i className="fas fa-skull-crossbones ml-3"></i></button>
                                     : <a href={url} className="button is-primary" target="_blank" rel='noreferrer'>{buttonText}<i className="fas fa-code ml-3"></i></a>
                                 }
 

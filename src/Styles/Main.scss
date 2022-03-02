@@ -71,6 +71,11 @@ html {
   color: $dark;
 }
 
+#about img { 
+  width: 100px;
+  height: 100px;
+}
+
 @import "../../node_modules/bulma/bulma.sass";
 
 .bulma-hamburger-mixin {
