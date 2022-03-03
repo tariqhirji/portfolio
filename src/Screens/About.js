@@ -25,7 +25,7 @@ const About = ({data}) => {
             <h1 className='is-size-1 section-title'>{title}</h1>
 
             <div className="columns">
-              <div className="column is-6 section-subtitle">
+              <div className="column is-6">
                 <AboutContent content={content} />
               </div>
               <div className="column is-6">

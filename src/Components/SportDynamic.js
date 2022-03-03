@@ -42,15 +42,26 @@ const SportDynamic = () => {
 
   // Once state is set, retrieve crests
   useEffect(() => {
-    if (homeID !== null && homeImg === null) {
+    if (homeID !== null) {
+      if (homeID === MANUID) {
+        setHomeImg("./images/mufc.png")
+        console.log("local home load")
+      } else {
       console.log('calling home')
       axios.get(`https://api.football-data.org/v2/teams/${homeID}`, config)
         .then(response => setHomeImg(response.data.crestUrl))
+      }
     }
-    if (awayID !== null && awayImg === null) {
+    if (awayID !== null) {
+      if (awayID === MANUID) {
+        setAwayImg("./images/mufc.png")
+        console.log("local load, no call needed")
+      }
+      else {
       console.log('calling away')
       axios.get(`https://api.football-data.org/v2/teams/${awayID}`, config)
         .then(response => setAwayImg(response.data.crestUrl))
+      }
     }
   }, [homeID, awayID])
 
@@ -59,20 +70,21 @@ const SportDynamic = () => {
             <div className="block">
                 <div className="box has-text-centered">
                     <h5 className="is-size-5 mb-6">My favourite team's next game:</h5>
-                    <div className="columns is-gapless">
+                    <div className="columns is-gapless is-vcentered">
                       <div className="column is-5">
-                      {
-                        homeImg === null
-                        ? "..."
-                        : <img src={homeImg} alt="Home team" />
-                      }  
-                      {
-                        homeID === null
-                        ? "..."
-                        : <h6 className='is-size-6 is-uppercase has-text-black'>{homeName}</h6>
-                      }
+                        {
+                          homeImg === null
+                          ? "..."
+                          : <img src={homeImg} alt="Home team" />
+                        }  
+                        {
+                          homeID === null
+                          ? "..."
+                          : <h6 className='is-size-6 is-uppercase has-text-black'>{homeName}</h6>
+                        }
+                        <h6 className='is-size-6 is-uppercase'>(home)</h6>
                       </div>
-                      <div className="column is-2">vs.</div>
+                      <div className="column is-2 is-uppercase"><b>vs.</b></div>
                       <div className="column is-5">
                       {
                         awayImg === null
@@ -84,6 +96,7 @@ const SportDynamic = () => {
                         ? "..."
                         : <h6 className='is-size-6 is-uppercase has-text-black'>{awayName}</h6>
                       }
+                      <h6 className='is-size-6 is-uppercase'>(away)</h6>
                       </div>
                     </div>
 
