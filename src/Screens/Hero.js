@@ -3,7 +3,6 @@ import HeroFooter from '../Components/HeroFooter';
 import HeroLeft from '../Components/HeroLeft';
 import HeroNav from '../Components/HeroNav';
 import HeroRight from '../Components/HeroRight';
-import '../Styles/Hero.css'
 
 const Hero = ({data, socials}) => {
     if (data) {

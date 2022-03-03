@@ -71,10 +71,37 @@ html {
   color: $dark;
 }
 
+.section-subtitle {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+
 #about img { 
   width: 100px;
   height: 100px;
 }
+
+#contact .contact-subtitle{
+  font-family: 'Fira Mono', monospace;
+}
+
+#contact {
+  .title {
+      font-family: 'Source Serif Pro', serif;
+      font-weight: 700;
+  }
+}
+#hero {
+  font-family: "Share Tech Mono", monospace;
+}
+  
+#hero-footer {
+  font-size: 50px;
+  .icon :hover {
+    color: $primary;
+  }
+} 
+
 
 @import "../../node_modules/bulma/bulma.sass";
 

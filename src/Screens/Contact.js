@@ -1,7 +1,6 @@
 import React from 'react';
 import ContactFooter from '../Components/ContactFooter';
 import ContactForm from '../Components/ContactForm';
-import '../Styles/Contact.css';
 
 const Contact = ({data, socials}) => {
   if (data) {
@@ -27,7 +26,7 @@ const Contact = ({data, socials}) => {
 
               {/* Form */}
               <div className="column is-6">
-                <h4 className="is-size-4 mb-5">{subtitle}</h4>
+                <h4 className="is-size-5 mb-5 contact-subtitle">{subtitle}</h4>
                 <ContactForm />
               </div>
 

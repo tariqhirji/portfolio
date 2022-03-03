@@ -33,17 +33,19 @@ const ProjectCard = ({project}) => {
                             <div className="block">
                                 <h2 className="is-size-3 subtitle has-text-grey">{subtitle}</h2>
                                 {badges}
+                            </div>
+
+                            <div className="block">
                                 <h5>
                                     {description}
                                 </h5>
-
+                            </div>
                                 {
                                     status === 'inactive'
                                     ? <button disabled className="button is-primary is-light">{buttonText}<i className="fas fa-skull-crossbones ml-3"></i></button>
                                     : <a href={url} className="button is-primary" target="_blank" rel='noreferrer'>{buttonText}<i className="fas fa-code ml-3"></i></a>
                                 }
 
-                            </div>
 
                         </div>
                     </div>

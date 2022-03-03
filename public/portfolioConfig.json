@@ -10,8 +10,12 @@
             "base": "Based in Toronto, Canada"
         }
     },
-    "projects" : [
-        {
+    "projects": {
+        "title": "projects",
+        "subtitle": "This website is intended to act as a log of some of my fondest initiatives in the past, present and future. It has borne many iterations and will no doubt continue to do so over time, with the last sprint concluding on ",
+        "lastUpdate": "2022-03-05",
+        "project_list": [
+            {
             "title": "Degree Planner",
             "subtitle": "Web Application",
             "badges": [
@@ -72,7 +76,7 @@
             "url": "https://github.com/tariqhirji/portfolio",
             "img": "./images/project2.jpg"
         }
-    ],
+    ]},
     "skills": {
         "title": "Skills",
         "subtitle": "Over the years, I have used more technological tools than I care to count. Some I've liked, some I've loved and some I've loathed. With the world of technology constantly expanding, my passion for this world will help me continuously expand with it.",
@@ -230,7 +234,7 @@
     },
     "contact": {
         "title": "Let's build something awesome together!",
-        "subtitle": "Let's take a great idea and make it a reality. Send me a message and I'll get back to you shortly.",
+        "subtitle": "Send me a message and I'll get back to you shortly.",
         "img": "./images/contact.svg"
     },
     "socials": [
