@@ -10,6 +10,8 @@ const Skills = ({data}) => {
     var {frontend, backend, data_science, design_devops} = data.bars;
     
     var goal = data.goal;
+
+    var technologies = data.technologies;
   }
 
 
@@ -45,7 +47,9 @@ const Skills = ({data}) => {
             </div> 
           </div>
           
-          <h3 className="is-size-3 section-subtitle">{goal}</h3>
+          <h3 className="is-size-3 section-subtitle">
+            {goal}        
+          </h3>
 
         </div>
     </section> 

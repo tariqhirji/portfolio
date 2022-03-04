@@ -6,13 +6,13 @@
                 "static2": "I am ", 
                 "dynamic": ["Tariq Hirji", "a developer", "a sports fanatic", "a designer", "an innovator"]
             },
-            "description": "Welcome to my home on the internet! I am a guy who loves robust technology and works to make virtual worlds fun, engaging and easy to use spaces.",
+            "description": "Welcome to my home on the internet! I am a guy who loves robust technology and works to make virtual worlds entertaining, engaging and easy to use spaces.",
             "base": "Based in Toronto, Canada"
         }
     },
     "projects": {
         "title": "projects",
-        "subtitle": "This website is intended to act as a log of some of my fondest initiatives in the past, present and future. It has borne many iterations and will no doubt continue to do so over time, with the last sprint concluding on ",
+        "subtitle": "This website is intended to act as a log of some of my fondest initiatives in the past, present and future. It has borne many iterations of functionality improvements, and will no doubt continue to do so over time, with the last sprint concluding on ",
         "lastUpdate": "2022-03-05",
         "project_list": [
             {
@@ -39,9 +39,6 @@
                 },
                 {
                     "name": "Hackathon"
-                },
-                {
-                    "name": "UBC API"
                 }
             ],
             "status": "active",
@@ -71,7 +68,7 @@
                 }
             ],
             "status": "inactive",
-            "description": "A robotic arm that detects a red cup on a table and correctly aligns itself to throw a ping pong ball into the cup with 100% accuracy",
+            "description": "A robotic arm that detects a red cup on a table and correctly aligns itself to throw a ping pong ball into the cup with 100% accuracy.",
             "buttonText": "Shutdown in 2019",
             "url": "https://github.com/tariqhirji/portfolio",
             "img": "./images/project2.jpg"
@@ -79,8 +76,8 @@
     ]},
     "skills": {
         "title": "Skills",
-        "subtitle": "Over the years, I have used more technological tools than I care to count. Some I've liked, some I've loved and some I've loathed. With the world of technology constantly expanding, my passion for this world will help me continuously expand with it.",
-        "forward": "It therefore makes sense to have a priority of tools that updates as I do. I like to this of this section as my FIFA ultimate team card or my MyPlayer ratings.",
+        "subtitle": "With the world of technology expanding at an incredible speed and on what seems to have nearly infinite possibilities, my passion for this world is always leading me to new tools and technologies. Some I like, some I learned to love and some I absolutely loathe.",
+        "forward": "I therefore decided that it makes sense to also log a priority of tools that updates as I do. Almost like an ultimate team card, or my MyPlayer statline for the world of software development.",
         "bars": {
             "frontend": {
                 "title": "Frontend",
@@ -203,7 +200,21 @@
                 }
             }
         },
-        "goal": "Some new technologies I think are cool and will learn in 2022 are: React Native, Next.js and the .NET core" 
+        "goal": "Some new technologies I think are cool and will learn in 2022 are: ",
+        "technologies": [
+            {
+                "name": "React Native",
+                "url": "https://reactnative.dev"
+            },
+            {
+                "name": "Next.js",
+                "url": "https://nextjs.org/"
+            },
+            {
+                "name": "React Native",
+                "url": "https://reactnative.dev"
+            }
+        ]
     },
     "about": {
         "title": "About Me",

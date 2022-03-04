@@ -47,7 +47,7 @@ html {
 
 .section-subtitle {
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #about img {
@@ -56,7 +56,7 @@ html {
 }
 
 #contact .contact-subtitle {
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 #contact .title {
@@ -74,6 +74,10 @@ html {
 
 #hero-footer .icon :hover {
   color: #6C63FF;
+}
+
+#projects .ProjectCard, .notActive {
+  font-family: 'Fira Mono', monospace;
 }
 
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */

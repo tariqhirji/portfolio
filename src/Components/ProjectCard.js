@@ -19,32 +19,29 @@ const ProjectCard = ({project}) => {
       }
 
     return (
-        <div className="card my-6">
+        <div className="card my-6 ProjectCard">
             <div className="columns is-vcentered is-gapless is-multiline ">
 
                 {/* Content Col */}
                 <div className="column is-12-tablet is-6-desktop">
                     <div className="card-content">
                         <div className="content">
-                            <div className="block">
-                                <h2 className="is-size-2 title">{title}</h2>
-                            </div>
+
+                            <h2 className="is-size-2 title is-spaced">{title}</h2>
+      
 
                             <div className="block">
                                 <h2 className="is-size-3 subtitle has-text-grey">{subtitle}</h2>
                                 {badges}
                             </div>
 
-                            <div className="block">
-                                <h5>
-                                    {description}
-                                </h5>
-                            </div>
-                                {
-                                    status === 'inactive'
-                                    ? <button disabled className="button is-primary is-light">{buttonText}<i className="fas fa-skull-crossbones ml-3"></i></button>
-                                    : <a href={url} className="button is-primary" target="_blank" rel='noreferrer'>{buttonText}<i className="fas fa-code ml-3"></i></a>
-                                }
+                            <h5 className='is-size-6 mb-4'>{description}</h5>
+                            {/* Conditional Button if project is inactive */}
+                            {
+                                status === 'inactive'
+                                ? <button disabled className="button is-primary is-light notActive">{buttonText}<i className="fas fa-skull-crossbones ml-3"></i></button>
+                                : <a href={url} className="button is-primary" target="_blank" rel='noreferrer'>{buttonText}<i className="fas fa-code ml-3"></i></a>
+                            }
 
 
                         </div>

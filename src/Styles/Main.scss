@@ -73,7 +73,7 @@ html {
 
 .section-subtitle {
   font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 #about img { 
@@ -82,7 +82,7 @@ html {
 }
 
 #contact .contact-subtitle{
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 #contact {
@@ -101,6 +101,10 @@ html {
     color: $primary;
   }
 } 
+
+#projects .ProjectCard, .notActive {
+  font-family: 'Fira Mono', monospace;
+}
 
 
 @import "../../node_modules/bulma/bulma.sass";
