@@ -12,7 +12,7 @@ const SkillBars = ({data}) => {
 
     return (
         <div className='SkillBars'>
-            <h3 className="is-size-3 has-text-centered mb-3 is-uppercase">{title}</h3>
+            <h3 className="is-size-2 title has-text-centered mb-4 firamono">{title}</h3>
             {bar}
         </div>
     )

@@ -80,6 +80,19 @@ html {
   font-family: 'Fira Mono', monospace;
 }
 
+.firamono {
+  font-family: 'Fira Mono', monospace;
+}
+
+.sharetechmono {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.firacondensed {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,

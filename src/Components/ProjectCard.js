@@ -23,19 +23,19 @@ const ProjectCard = ({project}) => {
             <div className="columns is-vcentered is-gapless is-multiline ">
 
                 {/* Content Col */}
-                <div className="column is-12-tablet is-6-desktop">
+                <div className="column is-12-touch is-12-desktop is-6-widescreen">
                     <div className="card-content">
-                        <div className="content">
+
 
                             <h2 className="is-size-2 title is-spaced">{title}</h2>
       
 
-                            <div className="block">
+                            <div className="mb-3">
                                 <h2 className="is-size-3 subtitle has-text-grey">{subtitle}</h2>
                                 {badges}
                             </div>
 
-                            <h5 className='is-size-6 mb-4'>{description}</h5>
+                            <h5 className='is-size-5 mb-4 firacondensed'>{description}</h5>
                             {/* Conditional Button if project is inactive */}
                             {
                                 status === 'inactive'
@@ -44,13 +44,14 @@ const ProjectCard = ({project}) => {
                             }
 
 
-                        </div>
                     </div>
                 </div>
 
                 {/* Img Col */}
-                <div className="column is-12-tablet is-6-desktop py-0">
-                    <img src={img} alt="Degree Planner" className='image' />
+                <div className="column is-12-touch is-12-desktop is-6-widescreen py-0">
+                    <figure className="image">
+                        <img src={img} alt="Degree Planner"/>
+                    </figure>
                 </div>
             </div>
         </div>

@@ -49,8 +49,8 @@ const ContactForm = () => {
 
         {/* Message Field */}
         <div className="field">
-            <label className="label">Message</label>
-            <textarea className="textarea" placeholder="Your Message" onChange={e => setMessage(e.target.value)} value={message} name='message' required></textarea>
+            <label className="label firamono">Message</label>
+            <textarea className="textarea firacondensed" placeholder="Your Message" onChange={e => setMessage(e.target.value)} value={message} name='message' required></textarea>
         </div>
 
         {/* Submit Button */}

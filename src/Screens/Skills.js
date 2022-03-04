@@ -11,7 +11,6 @@ const Skills = ({data}) => {
     
     var goal = data.goal;
 
-    var technologies = data.technologies;
   }
 
 
@@ -22,7 +21,7 @@ const Skills = ({data}) => {
           <h3 className="is-size-3 section-subtitle">{subtitle}</h3>
           <h3 className="is-size-3 section-subtitle mb-3">{forward}</h3>
 
-          <div className="columns is-vcentered">
+          <div className="columns is-vcentered my-3">
             <div className="column is-6">
               <div className="box">
                 <SkillBars data={frontend} />
@@ -48,7 +47,10 @@ const Skills = ({data}) => {
           </div>
           
           <h3 className="is-size-3 section-subtitle">
-            {goal}        
+            {goal}
+            <a href='https://reactnative.dev/' target="_blank" rel='noreferrer'>React Native</a>,
+            <a href='https://nextjs.org/' target="_blank" rel='noreferrer' className='ml-2'>Next.js</a> and 
+            <a href='https://unity.com/' target="_blank" rel='noreferrer' className='ml-2'>Unity</a>.
           </h3>
 
         </div>

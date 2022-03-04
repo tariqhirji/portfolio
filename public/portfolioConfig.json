@@ -35,14 +35,14 @@
                     "name": "Express"
                 },
                 {
-                    "name": "Apache echarts"
+                    "name": "Apache Echarts"
                 },
                 {
                     "name": "Hackathon"
                 }
             ],
             "status": "active",
-            "description": "A web application that allows students to visually plan out their degrees and courses. Users interact with dynamic charts that outline necessary courses and their prerequisites for each degree path.",
+            "description": "A web application that allows students to visually plan out their education. Users interact with dynamic charts that outline necessary courses and their prerequisites for each degree path.",
             "buttonText": "View Devpost",
             "url": "https://devpost.com/software/degree-planner-m4hdal",
             "img": "./images/project1.jpg"
@@ -68,7 +68,7 @@
                 }
             ],
             "status": "inactive",
-            "description": "A robotic arm that detects a red cup on a table and correctly aligns itself to throw a ping pong ball into the cup with 100% accuracy.",
+            "description": "Co-engineered a robotic arm that interacts with various motors and sensors in order to detect a red cup on a table. It then adjusts all of its angles of trajectory to throw a ping pong ball into the cup with 100% accuracy.",
             "buttonText": "Shutdown in 2019",
             "url": "https://github.com/tariqhirji/portfolio",
             "img": "./images/project2.jpg"
@@ -200,21 +200,7 @@
                 }
             }
         },
-        "goal": "Some new technologies I think are cool and will learn in 2022 are: ",
-        "technologies": [
-            {
-                "name": "React Native",
-                "url": "https://reactnative.dev"
-            },
-            {
-                "name": "Next.js",
-                "url": "https://nextjs.org/"
-            },
-            {
-                "name": "React Native",
-                "url": "https://reactnative.dev"
-            }
-        ]
+        "goal": "Some new technologies I think are cool and will learn in 2022 are: "
     },
     "about": {
         "title": "About Me",
