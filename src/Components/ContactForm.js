@@ -27,7 +27,7 @@ const ContactForm = () => {
         
         {/* Name field */}
         <div className="field">
-            <label className="label">Name</label>
+            <label className="label firamono">Name</label>
             <div className="control has-icons-left">
                 <input className="input" type="text"  placeholder='Your Name' onChange={e => (setName(e.target.value))} value={name} name='name' required/>
                 <span className="icon is-small is-left">
@@ -38,7 +38,7 @@ const ContactForm = () => {
 
         {/* Email Field */}
         <div className="field">
-            <label className="label">Email</label>
+            <label className="label firamono">Email</label>
             <div className="control has-icons-left">
                 <input className="input" type="email" placeholder="Your Email" onChange={e => setEmail(e.target.value)} value={email} name='email' required/>
                 <span className="icon is-small is-left">
@@ -50,7 +50,7 @@ const ContactForm = () => {
         {/* Message Field */}
         <div className="field">
             <label className="label firamono">Message</label>
-            <textarea className="textarea firacondensed" placeholder="Your Message" onChange={e => setMessage(e.target.value)} value={message} name='message' required></textarea>
+            <textarea className="textarea" placeholder="Your Message" onChange={e => setMessage(e.target.value)} value={message} name='message' required></textarea>
         </div>
 
         {/* Submit Button */}

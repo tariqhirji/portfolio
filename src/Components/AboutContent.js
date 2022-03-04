@@ -7,12 +7,12 @@ const AboutContent = ({content}) => {
     }
 
     return (
-        <div>
+        <div className='is-size-4 firacondensed'>
             <div className="block">
-              <p className='is-size-5'>{paragraph1}</p>
+              <p >{paragraph1}</p>
             </div>
             <div className="block">
-              <p className='is-size-5'>{paragraph2}</p>
+              <p >{paragraph2}</p>
             </div>
         </div>
     )

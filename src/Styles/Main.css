@@ -34,6 +34,13 @@ html {
   background-color: white;
 }
 
+#about .box {
+  background-color: white;
+  border: 1px solid black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .WeatherDynamic img {
   height: 50px;
   width: 50px;

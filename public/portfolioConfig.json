@@ -12,7 +12,7 @@
     },
     "projects": {
         "title": "projects",
-        "subtitle": "This website is intended to act as a log of some of my fondest initiatives in the past, present and future. It has borne many iterations of functionality improvements, and will no doubt continue to do so over time, with the last sprint concluding on ",
+        "subtitle": "This website is intended to act as a log of some of my fondest initiatives in the past, present and future. It has borne many iterations of functionality improvements, and will no doubt continue to do so over time, with the last major sprint concluding on ",
         "lastUpdate": "2022-03-05",
         "project_list": [
             {
@@ -42,7 +42,7 @@
                 }
             ],
             "status": "active",
-            "description": "A web application that allows students to visually plan out their education. Users interact with dynamic charts that outline necessary courses and their prerequisites for each degree path.",
+            "description": "An application that allows students to visually plan out their education. Users interact with dynamic charts that outline necessary courses and their prerequisites for each degree path.",
             "buttonText": "View Devpost",
             "url": "https://devpost.com/software/degree-planner-m4hdal",
             "img": "./images/project1.jpg"
@@ -64,11 +64,14 @@
                     "name": "Motors"
                 },
                 {
+                    "name": "Sensors"
+                },
+                {
                     "name": "Breadboards"
                 }
             ],
             "status": "inactive",
-            "description": "Co-engineered a robotic arm that interacts with various motors and sensors in order to detect a red cup on a table. It then adjusts all of its angles of trajectory to throw a ping pong ball into the cup with 100% accuracy.",
+            "description": "Co-engineered a robotic arm that interacts with various motors and sensors in order to detect a red cup on a table. The arm then adjusts all of its angles of trajectory to throw a ping pong ball into the cup with 100% accuracy.",
             "buttonText": "Shutdown in 2019",
             "url": "https://github.com/tariqhirji/portfolio",
             "img": "./images/project2.jpg"
@@ -77,7 +80,7 @@
     "skills": {
         "title": "Skills",
         "subtitle": "With the world of technology expanding at an incredible speed and on what seems to have nearly infinite possibilities, my passion for this world is always leading me to new tools and technologies. Some I like, some I learned to love and some I absolutely loathe.",
-        "forward": "I therefore decided that it makes sense to also log a priority of tools that updates as I do. Almost like an ultimate team card, or my MyPlayer statline for the world of software development.",
+        "forward": "I therefore decided that it makes sense to also log a priority of tools that updates as I do. Almost like an ultimate team card, or MyPlayer statline for the world of software development.",
         "bars": {
             "frontend": {
                 "title": "Frontend",

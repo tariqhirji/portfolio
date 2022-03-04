@@ -21,10 +21,10 @@ const WeatherDynamic = () => {
     },[])
 
     return (
-        <div className='WeatherDynamic mb-4'>
+        <div className='WeatherDynamic mb-4 firacondensed'>
             <div className="block">
                 <div className="box has-text-centered">
-                    <h5 className="is-size-5 mb-3">The weather where I am currently:</h5>
+                    <h5 className="is-size-5 mb-3 firamono"><b>The weather where I am currently:</b></h5>
                     {!icon ? "Loading..." : <img src={`https://openweathermap.org/img/w/${icon}.png`} alt="weather"/>}
                     <h3 className="is-size-3"><strong>{!icon ? "Loading..." : `${temp}\u00b0C`}</strong></h3>
                     <h3 className="is-size-3"><em>{desc === "" ? "Loading..." : `${desc}`}</em></h3>

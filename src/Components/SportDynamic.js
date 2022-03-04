@@ -66,12 +66,12 @@ const SportDynamic = () => {
   }, [homeID, awayID])
 
     return (
-        <div className='WeatherDynamic mb-4'>
+        <div className='WeatherDynamic mb-4 firacondensed has-text-black'>
             <div className="block">
                 <div className="box has-text-centered">
-                    <h5 className="is-size-5 mb-6">My favourite team's next game:</h5>
+                    <h5 className="is-size-5 mb-6 firamono"><b>My favourite team's next game:</b></h5>
                     <div className="columns is-gapless is-vcentered">
-                      <div className="column is-5">
+                      <div className="column is-5 is-size-3">
                         {
                           homeImg === null
                           ? "..."
@@ -84,8 +84,8 @@ const SportDynamic = () => {
                         }
                         <h6 className='is-size-6 is-uppercase'>(home)</h6>
                       </div>
-                      <div className="column is-2 is-uppercase"><b>vs.</b></div>
-                      <div className="column is-5">
+                      <div className="column is-2 is-uppercase my-3 is-size-5"><b>vs.</b></div>
+                      <div className="column is-5 is-size-3">
                       {
                         awayImg === null
                         ? "..."
@@ -99,9 +99,10 @@ const SportDynamic = () => {
                       <h6 className='is-size-6 is-uppercase'>(away)</h6>
                       </div>
                     </div>
+                    
 
-                    <h3 className="is-size-5"><b>{date === null ? "Loading..." : `${date.slice(0, 10)}`}</b></h3>
-                    <h3 className="is-size-5"><em>{competition === null ? "Loading..." : `${competition}`}</em></h3>
+                    <h3 className="is-size-3"><b>{date === null ? "Loading..." : `${date.slice(0, 10)}`}</b></h3>
+                    <h3 className="is-size-3"><em>{competition === null ? "Loading..." : `${competition}`}</em></h3>
 
                 </div>
             </div>

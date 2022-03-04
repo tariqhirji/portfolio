@@ -24,11 +24,11 @@ const About = ({data}) => {
 
             <h1 className='is-size-1 section-title'>{title}</h1>
 
-            <div className="columns">
-              <div className="column is-6">
+            <div className="columns is-multiline">
+              <div className="column  is-12-touch is-6-desktop">
                 <AboutContent content={content} />
               </div>
-              <div className="column is-6">
+              <div className="column is-12-touch is-6-desktop">
                 <WeatherDynamic />
                 <SportDynamic sport={sport}/>
               </div>

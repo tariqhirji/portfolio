@@ -19,7 +19,7 @@ const ProjectCard = ({project}) => {
       }
 
     return (
-        <div className="card my-6 ProjectCard">
+        <div className="card my-6 ProjectCard animate__animated animate__slideInRight">
             <div className="columns is-vcentered is-gapless is-multiline ">
 
                 {/* Content Col */}
