@@ -66,12 +66,12 @@ const SportDynamic = () => {
   }, [homeID, awayID])
 
     return (
-        <div className='WeatherDynamic mb-4 firacondensed has-text-black'>
+        <div className='WeatherDynamic mb-4 firacondensed has-text-dark'>
             <div className="block">
                 <div className="box has-text-centered">
-                    <h5 className="is-size-5 mb-6 firamono"><b>My favourite team's next game:</b></h5>
+                    <h5 className="is-size-5 mb-6 firamono has-text-dark"><b>My favourite team's next game:</b></h5>
                     <div className="columns is-gapless is-vcentered">
-                      <div className="column is-5 is-size-3">
+                      <div className="column is-5 is-size-3 has-text-dark">
                         {
                           homeImg === null
                           ? "..."
@@ -80,12 +80,12 @@ const SportDynamic = () => {
                         {
                           homeID === null
                           ? "..."
-                          : <h6 className='is-size-6 is-uppercase has-text-black'>{homeName}</h6>
+                          : <h6 className='is-size-6 is-uppercase'>{homeName}</h6>
                         }
                         <h6 className='is-size-6 is-uppercase'>(home)</h6>
                       </div>
                       <div className="column is-2 is-uppercase my-3 is-size-5"><b>vs.</b></div>
-                      <div className="column is-5 is-size-3">
+                      <div className="column is-5 is-size-3 has-text-dark">
                       {
                         awayImg === null
                         ? "..."
@@ -94,15 +94,15 @@ const SportDynamic = () => {
                       {
                         awayID === null
                         ? "..."
-                        : <h6 className='is-size-6 is-uppercase has-text-black'>{awayName}</h6>
+                        : <h6 className='is-size-6 is-uppercase'>{awayName}</h6>
                       }
                       <h6 className='is-size-6 is-uppercase'>(away)</h6>
                       </div>
                     </div>
                     
 
-                    <h3 className="is-size-3"><b>{date === null ? "Loading..." : `${date.slice(0, 10)}`}</b></h3>
-                    <h3 className="is-size-3"><em>{competition === null ? "Loading..." : `${competition}`}</em></h3>
+                    <h3 className="is-size-3 has-text-dark"><b>{date === null ? "Loading..." : `${date.slice(0, 10)}`}</b></h3>
+                    <h3 className="is-size-3 has-text-dark"><em>{competition === null ? "Loading..." : `${competition}`}</em></h3>
 
                 </div>
             </div>

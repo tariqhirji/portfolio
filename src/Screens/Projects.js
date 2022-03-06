@@ -13,8 +13,8 @@ const Projects = ({data}) => {
   return (
     <section className='section' id='projects'>
         <div className="container">
-          <h1 className='is-size-1 section-title'>{title}</h1>
-          <h3 className="is-size-3 section-subtitle">{subtitle}<em>{lastUpdate}</em>.</h3>
+          <h1 className='is-size-1 section-title '>{title}</h1>
+          <h3 className="is-size-3 section-subtitle has-text-dark">{subtitle}<em>{lastUpdate}</em>.</h3>
           {projects}
         </div>
     </section> 

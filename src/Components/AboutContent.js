@@ -7,7 +7,7 @@ const AboutContent = ({content}) => {
     }
 
     return (
-        <div className='is-size-4 firacondensed'>
+        <div className='is-size-4 firacondensed has-text-dark'>
             <div className="block">
               <p >{paragraph1}</p>
             </div>

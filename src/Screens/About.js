@@ -1,4 +1,4 @@
-import React from 'react';
+  import React from 'react';
 import AboutContent from '../Components/AboutContent';
 import IconCard from '../Components/IconCard';
 import SportDynamic from '../Components/SportDynamic';
@@ -25,7 +25,7 @@ const About = ({data}) => {
             <h1 className='is-size-1 section-title'>{title}</h1>
 
             <div className="columns is-multiline">
-              <div className="column  is-12-touch is-6-desktop">
+              <div className="column  is-12-touch is-6-desktop has-text-dark">
                 <AboutContent content={content} />
               </div>
               <div className="column is-12-touch is-6-desktop">
