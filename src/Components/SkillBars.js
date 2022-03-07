@@ -11,7 +11,7 @@ const SkillBars = ({data}) => {
     }
 
     return (
-        <div className='SkillBars'>
+        <div className='SkillBars has-text-dark'>
             <h3 className="is-size-2 title has-text-centered mb-4 firamono has-text-dark">{title}</h3>
             {bar}
         </div>
