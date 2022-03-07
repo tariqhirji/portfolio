@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import aos from 'aos';
+import 'aos/dist/aos.css'; 
 import Badge from './Badge';
 
 const ProjectCard = ({project}) => {
@@ -18,8 +20,12 @@ const ProjectCard = ({project}) => {
         var img = project.img;
       }
 
+      useEffect(() => {
+        aos.init({duration: 1000});
+      }, [])
+
     return (
-        <div className="card my-6 ProjectCard animate__animated animate__slideInRight">
+        <div className="card my-6 ProjectCard" data-aos="fade-left">
             <div className="columns is-vcentered is-gapless is-multiline ">
 
                 {/* Content Col */}

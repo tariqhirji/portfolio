@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import SkillBar from 'react-skillbars';
 
 const SkillBars = ({data}) => {

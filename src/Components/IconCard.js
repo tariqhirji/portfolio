@@ -1,4 +1,6 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import aos from 'aos';
+import 'aos/dist/aos.css'; 
 
 const IconCard = ({icon}) => {
     if (icon) {
@@ -6,11 +8,16 @@ const IconCard = ({icon}) => {
         var description = icon.description
         var className = icon.className;
     }
+
+    useEffect(() => {
+        aos.init({duration: 1000});
+      }, [])
+
     return ( 
         <div className="column is-4 has-text-centered">
-            <div className="box py-5 IconCard has-text-black">
+            <div className="box py-5 IconCard has-text-dark" data-aos="zoom-out">
                 <i className={className}></i>
-                <h3 className="mt-4 mb-2 is-size-2 title firamono">{trait}</h3>
+                <h3 className="mt-4 mb-2 is-size-2 title firamono has-text-dark">{trait}</h3>
                 <h5 className="is-size-5 firacondensed">{description}</h5>
             </div>
         </div>

@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import aos from 'aos';
+import 'aos/dist/aos.css'; 
 import SkillBars from '../Components/SkillBars'
 
 const Skills = ({data}) => {
@@ -13,6 +15,10 @@ const Skills = ({data}) => {
 
   }
 
+  useEffect(() => {
+    aos.init({duration: 2000});
+  }, [])
+
 
   return (
     <section className='section' id='skills'>
@@ -23,24 +29,24 @@ const Skills = ({data}) => {
 
           <div className="columns is-vcentered my-3">
             <div className="column is-6">
-              <div className="box">
+              <div className="box" data-aos="zoom-in-down">
                 <SkillBars data={frontend} />
               </div>
             </div>
             <div className="column is-6">
-              <div className="box">
+              <div className="box" data-aos="zoom-in-down">
                 <SkillBars data={backend} />
               </div>
             </div>
             </div>
             <div className="columns">
             <div className="column is-6">
-              <div className="box">
+              <div className="box" data-aos="zoom-in-down">
                 <SkillBars data={design_devops} />
               </div>
             </div>
             <div className="column is-6">
-              <div className="box">
+              <div className="box" data-aos="zoom-in-down">
                 <SkillBars data={data_science} />
               </div>
             </div> 

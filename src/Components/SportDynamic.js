@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from 'react';
+import aos from 'aos';
+import 'aos/dist/aos.css'; 
 import axios from 'axios';
 
 const SportDynamic = () => {
@@ -27,6 +29,7 @@ const SportDynamic = () => {
 
   // Load next match and set state
   useEffect(() => {
+    aos.init({duration: 1000});
     axios.get(FIXTURE_URL, config)
       .then((response) => {
         const {matches} = response.data
@@ -68,7 +71,7 @@ const SportDynamic = () => {
     return (
         <div className='WeatherDynamic mb-4 firacondensed has-text-dark'>
             <div className="block">
-                <div className="box has-text-centered">
+                <div className="box has-text-centered" data-aos="zoom-out-down">
                     <h5 className="is-size-5 mb-6 firamono has-text-dark"><b>My favourite team's next game:</b></h5>
                     <div className="columns is-gapless is-vcentered">
                       <div className="column is-5 is-size-3 has-text-dark">
