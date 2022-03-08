@@ -54,9 +54,9 @@ const Skills = ({data}) => {
           
           <h3 className="is-size-3 section-subtitle has-text-dark">
             {goal}
-            <a href='https://reactnative.dev/' target="_blank" rel='noreferrer'>React Native</a>,
-            <a href='https://nextjs.org/' target="_blank" rel='noreferrer' className='ml-2'>Next.js</a> and 
-            <a href='https://unity.com/' target="_blank" rel='noreferrer' className='ml-2'>Unity</a>.
+            <a href='https://reactnative.dev/' target="_blank" rel='noreferrer' className='is-primary'>React Native</a>,
+            <a href='https://nextjs.org/' target="_blank" rel='noreferrer' className='ml-2 is-primary'>Next.js</a> and 
+            <a href='https://unity.com/' target="_blank" rel='noreferrer' className='ml-2 is-primary'>Unity</a>.
           </h3>
 
         </div>

@@ -37,23 +37,23 @@ function scroll() {
     // Conditional that checks which section of the page the user is currently on
     // Less 50px to account for transition animation time of 1s 
     if (t > t4 - 50) {
-        l4.style.color = "blue";
+        l4.style.color = "#6C63FF";
         nav.style.backgroundColor = "white";
         navLinks.style.backgroundColor = "white";
     } else if (t > t3 - 50) {
-        l3.style.color = "blue";
+        l3.style.color = "#6C63FF";
         nav.style.backgroundColor = "white";
         navLinks.style.backgroundColor = "white";
     } else if (t > t2 - 50) {
-        l2.style.color = "blue";
+        l2.style.color = "#6C63FF";
         nav.style.backgroundColor = "#EAEAEA";
         navLinks.style.backgroundColor = "#EAEAEA";
     } else if (t > t1 - 50) {
-        l1.style.color = "blue";
+        l1.style.color = "#6C63FF";
         nav.style.backgroundColor = "lightblue";
         navLinks.style.backgroundColor = "lightblue";
     } else {
-        brand.style.color = "blue";
+        brand.style.color = "#6C63FF";
         hamburger.style.color = "black";
         nav.style.backgroundColor = "white";
         navLinks.style.backgroundColor = "white";
