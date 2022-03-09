@@ -38,7 +38,7 @@ const About = ({data}) => {
             </div>
 
             {/* Icons */}
-            <div className="columns is-vcentered">
+            <div className="columns is-vcentered is-multiline">
                 {icons}
             </div>
 
