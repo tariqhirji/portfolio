@@ -39,34 +39,23 @@ const SportDynamic = () => {
         setAwayName(matches[0].awayTeam.name)
         setCompetition(matches[0].competition.name)
         setDate(matches[0].utcDate)
+
+        // MUFC Home: Get away crest by ID and set
+        if (matches[0].homeTeam.id === MANUID) {
+          setHomeImg("./images/mufc.png")
+          axios.get(`https://api.football-data.org/v2/teams/${matches[0].awayTeam.id}`, config)
+            .then(response => setAwayImg(response.data.crestUrl))
+        }
+
+        // MUFC Away: Get home crest by ID and set
+        if (matches[0].awayTeam.id === MANUID) {
+          setAwayImg("./images/mufc.png")
+          axios.get(`https://api.football-data.org/v2/teams/${matches[0].awayTeam.id}`, config)
+            .then(response => setHomeImg(response.data.crestUrl))
+        }
       })
       .catch(e => console.log(e))
   }, [])
-
-  // Once state is set, retrieve crests
-  useEffect(() => {
-    if (homeID !== null) {
-      if (homeID === MANUID) {
-        setHomeImg("./images/mufc.png")
-        console.log("local home load")
-      } else {
-      console.log('calling home')
-      axios.get(`https://api.football-data.org/v2/teams/${homeID}`, config)
-        .then(response => setHomeImg(response.data.crestUrl))
-      }
-    }
-    if (awayID !== null) {
-      if (awayID === MANUID) {
-        setAwayImg("./images/mufc.png")
-        console.log("local load, no call needed")
-      }
-      else {
-      console.log('calling away')
-      axios.get(`https://api.football-data.org/v2/teams/${awayID}`, config)
-        .then(response => setAwayImg(response.data.crestUrl))
-      }
-    }
-  }, [homeID, awayID])
 
     return (
         <div className='WeatherDynamic mb-4 firacondensed has-text-dark'>
