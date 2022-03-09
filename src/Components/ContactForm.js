@@ -27,9 +27,9 @@ const ContactForm = () => {
         
         {/* Name field */}
         <div className="field">
-            <label className="label firamono">Name</label>
+            <label className="label firacondensed has-text-dark">Name</label>
             <div className="control has-icons-left">
-                <input className="input" type="text"  placeholder='Your Name' onChange={e => (setName(e.target.value))} value={name} name='name' required/>
+                <input className="input firamono" type="text"  placeholder='Your Name' onChange={e => (setName(e.target.value))} value={name} name='name' required/>
                 <span className="icon is-small is-left">
                 <i className="fas fa-user"></i>
                 </span>
@@ -38,9 +38,9 @@ const ContactForm = () => {
 
         {/* Email Field */}
         <div className="field">
-            <label className="label firamono">Email</label>
-            <div className="control has-icons-left">
-                <input className="input" type="email" placeholder="Your Email" onChange={e => setEmail(e.target.value)} value={email} name='email' required/>
+            <label className="label firacondensed has-text-dark">Email</label>
+            <div className="control has-icons-left ">
+                <input className="input firamono" type="email" placeholder="Your Email" onChange={e => setEmail(e.target.value)} value={email} name='email' required/>
                 <span className="icon is-small is-left">
                 <i className="fas fa-envelope"></i>
                 </span>
@@ -49,12 +49,12 @@ const ContactForm = () => {
 
         {/* Message Field */}
         <div className="field">
-            <label className="label firamono">Message</label>
-            <textarea className="textarea" placeholder="Your Message" onChange={e => setMessage(e.target.value)} value={message} name='message' required></textarea>
+            <label className="label firacondensed has-text-dark">Message</label>
+            <textarea className="textarea firamono" placeholder="Your Message" onChange={e => setMessage(e.target.value)} value={message} name='message' required></textarea>
         </div>
 
         {/* Submit Button */}
-        <button className="button is-primary is-fullwidth my-5" type='submit'>Send</button>
+        <button className="button is-primary is-fullwidth my-5 firamono" type='submit'>Send</button>
     </form>
     );
 };

@@ -29,24 +29,24 @@ const Skills = ({data}) => {
 
           <div className="columns is-vcentered my-3">
             <div className="column is-6">
-              <div className="box" data-aos="zoom-in-down">
+              <div className="box" data-aos="zoom-in-down" data-aos-anchor-placement="center-bottom">
                 <SkillBars data={frontend} />
               </div>
             </div>
             <div className="column is-6">
-              <div className="box" data-aos="zoom-in-down">
+              <div className="box" data-aos="zoom-in-down"  data-aos-anchor-placement="center-bottom">
                 <SkillBars data={backend} />
               </div>
             </div>
             </div>
             <div className="columns">
             <div className="column is-6">
-              <div className="box" data-aos="zoom-in-down">
+              <div className="box" data-aos="zoom-in-down"  data-aos-anchor-placement="center-bottom">
                 <SkillBars data={design_devops} />
               </div>
             </div>
             <div className="column is-6">
-              <div className="box" data-aos="zoom-in-down">
+              <div className="box" data-aos="zoom-in-down"  data-aos-anchor-placement="center-bottom">
                 <SkillBars data={data_science} />
               </div>
             </div> 

@@ -10,7 +10,7 @@ const HeroNav = () => {
                 <header className="navbar is-fixed-top" id='navbar'>
                     <div className="container">
                         <div className="navbar-brand" id='navbar-brand'>
-                            <a className="navbar-item is-size-3" href="#top">Tariq Hirji</a>
+                            <a className="navbar-item is-size-3" href="#">Tariq Hirji</a>
                             <button
                                 onClick={() => {
                                     setisActive(!isActive);

@@ -17,7 +17,7 @@ const Contact = ({data, socials}) => {
           {/* Title Column */}
           <div className="columns">
               <div className="column is-12 my-3">
-                <h1 className="is-size-1 title">{title}</h1>
+                <h1 className="is-size-1 title has-text-dark">{title}</h1>
               </div>
           </div>
 
@@ -26,7 +26,7 @@ const Contact = ({data, socials}) => {
 
               {/* Form */}
               <div className="column is-6">
-                <h4 className="is-size-4 mb-5 contact-subtitle">{subtitle}</h4>
+                <h4 className="is-size-4 mb-5 contact-subtitle has-text-dark firacondensed">{subtitle}</h4>
                 <ContactForm />
               </div>
 
