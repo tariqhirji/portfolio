@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import aos from 'aos';
+import 'aos/dist/aos.css'; 
 import ContactFooter from '../Components/ContactFooter';
 import ContactForm from '../Components/ContactForm';
 
@@ -8,6 +10,10 @@ const Contact = ({data, socials}) => {
     var subtitle = data.subtitle;
     var img = data.img;
   }
+
+  useEffect(() => {
+    aos.init({duration: 1000});
+  }, [])
 
   return (
     <section className="section hero is-fullheight is-white" id='contact'>
@@ -25,13 +31,13 @@ const Contact = ({data, socials}) => {
           <div className="columns is-vcentered">
 
               {/* Form */}
-              <div className="column is-6">
+              <div className="column is-6" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
                 <h4 className="is-size-4 mb-5 contact-subtitle has-text-dark firacondensed">{subtitle}</h4>
                 <ContactForm />
               </div>
 
               {/* Graphic */}
-              <div className="column is-6 is-flex is-justify-content-center ">
+              <div className="column is-6 is-flex is-justify-content-center" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
                 <img src={img} className='image' alt="Contact me" />
               </div>
           
@@ -40,7 +46,7 @@ const Contact = ({data, socials}) => {
       </div>
 
       {/* Contact Footer of socials */}
-      <ContactFooter socials={socials} />
+      <ContactFooter socials={socials}/>
     </section>
     );
 };

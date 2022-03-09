@@ -24,6 +24,10 @@ html {
   scroll-behavior:smooth;
 }
 
+#projects, #contact {
+  overflow-x: hidden;
+}
+
 #projects, #skills, #about, #contact {
   min-height: 100vh;
 }

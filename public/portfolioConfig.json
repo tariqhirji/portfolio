@@ -16,66 +16,95 @@
         "lastUpdate": "2022-03-05",
         "project_list": [
             {
-            "title": "Degree Planner",
-            "subtitle": "Web Application",
-            "badges": [
-                {
-                    "name": "Reactjs"
-                },
-                {
-                    "name": "Bootstrap"
-                },
-                {
-                    "name": "MongoDB"
-                },
-                {
-                    "name": "Nodejs"
-                },
-                {
-                    "name": "Express"
-                },
-                {
-                    "name": "Apache Echarts"
-                },
-                {
-                    "name": "Hackathon"
-                }
-            ],
-            "status": "active",
-            "description": "An application that allows students to visually plan out their education. Users interact with dynamic charts that outline necessary courses and their prerequisites for each degree path.",
-            "buttonText": "View Devpost",
-            "url": "https://devpost.com/software/degree-planner-m4hdal",
-            "img": "./images/project1.jpg"
-        },
-        {
-            "title": "Raspberry Pong",
-            "subtitle": "Robotics",
-            "badges": [
-                {
-                    "name": "Raspberry Pi"
-                },
-                {
-                    "name": "OpenCV"
-                },
-                {
-                    "name": "C++"
-                },
-                {
-                    "name": "Motors"
-                },
-                {
-                    "name": "Sensors"
-                },
-                {
-                    "name": "Breadboards"
-                }
-            ],
-            "status": "inactive",
-            "description": "Co-engineered a robotic arm that interacts with various motors and sensors in order to detect a red cup on a table. The arm then adjusts all of its angles of trajectory to throw a ping pong ball into the cup with 100% accuracy.",
-            "buttonText": "Shutdown in 2019",
-            "url": "https://github.com/tariqhirji/portfolio",
-            "img": "./images/project2.jpg"
-        }
+                "title": "Political Deepfake",
+                "subtitle": "Artificial Intelligence",
+                "badges": [
+                    {
+                        "name": "Python"
+                    },
+                    {
+                        "name": "Tensorflow"
+                    },
+                    {
+                        "name": "DeepFaceLab"
+                    },
+                    {
+                        "name": "Wav2Lip"
+                    },
+                    {
+                        "name": "Thesis"
+                    },
+                    {
+                        "name": "GPU"
+                    }
+                ],
+                "description": "A deepfake of Justin Trudeau to explore the process and effects of disinformation on the web.",
+                "status": "inactive",
+                "buttonText": "Code Private",
+                "buttonIcon": "fas fa-user-secret",
+                "img": "./images/project2.jpg"
+            },
+            {
+                "title": "Degree Planner",
+                "subtitle": "Web Application",
+                "badges": [
+                    {
+                        "name": "Reactjs"
+                    },
+                    {
+                        "name": "Bootstrap"
+                    },
+                    {
+                        "name": "MongoDB"
+                    },
+                    {
+                        "name": "Nodejs"
+                    },
+                    {
+                        "name": "Express"
+                    },
+                    {
+                        "name": "Apache Echarts"
+                    },
+                    {
+                        "name": "Hackathon"
+                    }
+                ],
+                "description": "An application that allows students to visually plan out their education. Users interact with dynamic charts that outline necessary courses and their prerequisites for each degree path.",
+                "status": "active",
+                "buttonText": "View Devpost",
+                "url": "https://devpost.com/software/degree-planner-m4hdal",
+                "img": "./images/project1.jpg"
+            },
+            {
+                "title": "Raspberry Pong",
+                "subtitle": "Robotics",
+                "badges": [
+                    {
+                        "name": "Raspberry Pi"
+                    },
+                    {
+                        "name": "OpenCV"
+                    },
+                    {
+                        "name": "C++"
+                    },
+                    {
+                        "name": "Motors"
+                    },
+                    {
+                        "name": "Sensors"
+                    },
+                    {
+                        "name": "Breadboards"
+                    }
+                ],
+                "description": "Co-engineered a robotic arm that interacts with various motors and sensors in order to detect a red cup on a table. The arm then adjusts all of its angles of trajectory to throw a ping pong ball into the cup with 100% accuracy.",
+                "status": "inactive",
+                "buttonText": "Shutdown in 2019",
+                "buttonIcon": "fas fa-skull-crossbones",
+                "img": "./images/project2.jpg"
+            }
     ]},
     "skills": {
         "title": "Skills",

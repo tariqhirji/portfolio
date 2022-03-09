@@ -14,7 +14,12 @@ const ProjectCard = ({project}) => {
 
         var description = project.description;
         var status = project.status
-        var url = project.url;
+
+        if (status === 'active') {
+            var url = project.url;
+        } else {
+            var buttonIcon = project.buttonIcon
+        }
         var buttonText = project.buttonText;
 
         var img = project.img;
@@ -45,7 +50,7 @@ const ProjectCard = ({project}) => {
                             {/* Conditional Button if project is inactive */}
                             {
                                 status === 'inactive'
-                                ? <button disabled className="button is-primary is-light notActive">{buttonText}<i className="fas fa-skull-crossbones ml-3"></i></button>
+                                ? <button disabled className="button is-primary is-light notActive">{buttonText}<i className={`ml-3 ${buttonIcon}`}></i></button>
                                 : <a href={url} className="button is-primary" target="_blank" rel='noreferrer'>{buttonText}<i className="fas fa-code ml-3"></i></a>
                             }
 
