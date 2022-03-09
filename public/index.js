@@ -27,12 +27,12 @@ function scroll() {
     var t4 = s4.offsetTop;
 
     //hold colours of original links to change back to after leaving section
-    l1.style.color = "black";
-    l2.style.color = "black";
-    l3.style.color = "black";
-    l4.style.color = "black";
-    brand.style.color = "black";
-    hamburger.style.color = "black";
+    l1.style.color = "#2B2B2B";
+    l2.style.color = "#2B2B2B";
+    l3.style.color = "#2B2B2B";
+    l4.style.color = "#2B2B2B";
+    brand.style.color = "#2B2B2B";
+    hamburger.style.color = "#2B2B2B";
 
     // Conditional that checks which section of the page the user is currently on
     // Less 50px to account for transition animation time of 1s 
@@ -54,7 +54,7 @@ function scroll() {
         navLinks.style.backgroundColor = "lightblue";
     } else {
         brand.style.color = "#6C63FF";
-        hamburger.style.color = "black";
+        hamburger.style.color = "#2B2B2B";
         nav.style.backgroundColor = "white";
         navLinks.style.backgroundColor = "white";
     }

@@ -27,25 +27,23 @@ const Skills = ({data}) => {
           <h3 className="is-size-3 section-subtitle has-text-dark">{subtitle}</h3>
           <h3 className="is-size-3 section-subtitle mb-3 has-text-dark">{forward}</h3>
 
-          <div className="columns is-vcentered my-3">
-            <div className="column is-6">
+          <div className="columns is-vcentered my-3 is-multiline">
+            <div className="column is-12-touch is-6-desktop">
               <div className="box" data-aos="zoom-in-down" data-aos-anchor-placement="center-bottom">
                 <SkillBars data={frontend} />
               </div>
             </div>
-            <div className="column is-6">
+            <div className="column is-12-touch is-6-desktop">
               <div className="box" data-aos="zoom-in-down"  data-aos-anchor-placement="center-bottom">
                 <SkillBars data={backend} />
               </div>
             </div>
-            </div>
-            <div className="columns">
-            <div className="column is-6">
+            <div className="column is-12-touch is-6-desktop">
               <div className="box" data-aos="zoom-in-down"  data-aos-anchor-placement="center-bottom">
                 <SkillBars data={design_devops} />
               </div>
             </div>
-            <div className="column is-6">
+            <div className="column is-12-touch is-6-desktop">
               <div className="box" data-aos="zoom-in-down"  data-aos-anchor-placement="center-bottom">
                 <SkillBars data={data_science} />
               </div>

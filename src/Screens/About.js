@@ -25,17 +25,19 @@ const About = ({data}) => {
             <h1 className='is-size-1 section-title'>{title}</h1>
 
             <div className="columns is-multiline">
-              <div className="column  is-12-touch is-6-desktop has-text-dark">
+              {/* Content Col */}
+              <div className="column  is-12-touch is-12-desktop is-6-widescreen has-text-dark">
                 <AboutContent content={content} />
                 <button className="button is-primary my-4 firamono">View Resume</button>
               </div>
-              <div className="column is-12-touch is-6-desktop">
+              {/* Dynamics Col */}
+              <div className="column is-12-touch is-12-desktop is-6-widescreen">
                 <WeatherDynamic />
                 <SportDynamic sport={sport}/>
               </div>
             </div>
 
-
+            {/* Icons */}
             <div className="columns is-vcentered">
                 {icons}
             </div>
