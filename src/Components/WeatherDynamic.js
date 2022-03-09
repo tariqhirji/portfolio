@@ -26,7 +26,7 @@ const WeatherDynamic = () => {
     return (
         <div className='WeatherDynamic mb-4 firacondensed has-text-dark'>
             <div className="block">
-                <div className="box has-text-centered" data-aos="zoom-in-left" data-aos-anchor-placement="center-bottom">
+                <div className="box has-text-centered" data-aos="zoom-in-left" data-aos-anchor-placement="bottom-bottom">
                     <h5 className="is-size-5 mb-3 firamono has-text-dark"><b>The weather where I am currently:</b></h5>
                     {!icon ? "Loading..." : <img src={`https://openweathermap.org/img/w/${icon}.png`} alt="weather"/>}
                     <h3 className="is-size-3"><strong>{!icon ? "Loading..." : `${temp}\u00b0C`}</strong></h3>

@@ -27,7 +27,7 @@ const About = ({data}) => {
             <div className="columns is-multiline">
               <div className="column  is-12-touch is-6-desktop has-text-dark">
                 <AboutContent content={content} />
-                <button className="button is-primary my-4">View Resume</button>
+                <button className="button is-primary my-4 firamono">View Resume</button>
               </div>
               <div className="column is-12-touch is-6-desktop">
                 <WeatherDynamic />

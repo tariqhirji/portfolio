@@ -15,7 +15,7 @@ const IconCard = ({icon}) => {
 
     return ( 
         <div className="column is-4 has-text-centered">
-            <div className="box py-5 IconCard has-text-dark" data-aos="zoom-in" data-aos-anchor-placement="center-bottom">
+            <div className="box py-5 IconCard has-text-dark" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom">
                 <i className={className}></i>
                 <h3 className="mt-4 mb-2 is-size-2 title firamono has-text-dark">{trait}</h3>
                 <h5 className="is-size-5 firacondensed">{description}</h5>
