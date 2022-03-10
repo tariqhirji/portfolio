@@ -22,7 +22,8 @@ const ProjectCard = ({project}) => {
         }
         var buttonText = project.buttonText;
 
-        var img = project.img;
+        var mediaType = project.mediaType
+        var mediaUrl = project.mediaUrl;
       }
 
       useEffect(() => {
@@ -31,7 +32,7 @@ const ProjectCard = ({project}) => {
 
     return (
         <div className="card my-6 ProjectCard" data-aos="fade-left">
-            <div className="columns is-vcentered is-gapless is-multiline ">
+            <div className="columns is-vcentered is-gapless is-multiline">
 
                 {/* Content Col */}
                 <div className="column is-12-touch is-12-desktop is-6-widescreen">
@@ -60,9 +61,13 @@ const ProjectCard = ({project}) => {
 
                 {/* Img Col */}
                 <div className="column is-12-touch is-12-desktop is-6-widescreen py-0">
-                    <figure className="image">
-                        <img src={img} alt="Degree Planner"/>
-                    </figure>
+                    <article className='media' >
+                    {
+                        mediaType === 'image'
+                        ? <img src={mediaUrl} alt={title} />
+                        : (<iframe src={mediaUrl} width="100%" height='410'  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
+                    }
+                    </article>
                 </div>
             </div>
         </div>

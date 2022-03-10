@@ -42,7 +42,8 @@
                 "status": "inactive",
                 "buttonText": "Code Private",
                 "buttonIcon": "fas fa-user-secret",
-                "img": "./images/project2.jpg"
+                "mediaType": "video",
+                "mediaUrl": "https://www.youtube.com/embed/G7tFsmshbwU"
             },
             {
                 "title": "Degree Planner",
@@ -74,7 +75,8 @@
                 "status": "active",
                 "buttonText": "View Devpost",
                 "url": "https://devpost.com/software/degree-planner-m4hdal",
-                "img": "./images/project1.jpg"
+                "mediaType": "image",
+                "mediaUrl": "./images/DegreePlanner.jpg"
             },
             {
                 "title": "Raspberry Pong",
@@ -103,7 +105,8 @@
                 "status": "inactive",
                 "buttonText": "Shutdown in 2019",
                 "buttonIcon": "fas fa-skull-crossbones",
-                "img": "./images/project2.jpg"
+                "mediaType": "video",
+                "mediaUrl": "https://www.youtube.com/embed/G7tFsmshbwU"
             }
     ]},
     "skills": {
@@ -152,27 +155,27 @@
                 "skills": [
                     {
                         "type": "Java",
-                        "level": 77
+                        "level": 79
                     },
                     {
                         "type": "Nodejs",
-                        "level": 74
+                        "level": 77
                     },
                     {
                         "type": "Python",
-                        "level": 70
+                        "level": 75
                     },
                     {
                         "type": "NoSQL",
-                        "level": 67
+                        "level": 72
+                    },
+                    {
+                        "type": "C++",
+                        "level": 70
                     },
                     {
                         "type": "Postman",
-                        "level": 63
-                    },
-                    {
-                        "type": "PHP",
-                        "level": 58
+                        "level": 68
                     }
                 ],
                 "colors": {
@@ -188,15 +191,15 @@
                 "skills": [
                     {
                         "type": "Jupyter",
-                        "level": 76
+                        "level": 77
                     },
                     {
                         "type": "Tensorflow",
-                        "level": 71
+                        "level": 74
                     },
                     {
                         "type": "Tableau",
-                        "level": 68
+                        "level": 71
                     }
                 ],
                 "colors": {
@@ -270,7 +273,7 @@
         {
             "id": "twitter",
             "className": "fab fa-twitter twitter",
-            "url": "https://twitter.com/Tariq_Hirji",
+            "url": "https://twitter.com/TechWithTariq",
             "color": "#00ACEE"
         },
         {
