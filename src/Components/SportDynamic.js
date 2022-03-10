@@ -74,7 +74,7 @@ const SportDynamic = () => {
                           ? "..."
                           : <h6 className='is-size-6 is-uppercase'>{homeName}</h6>
                         }
-                        <h6 className='is-size-6 is-uppercase'>(home)</h6>
+                        <h6 className='is-size-6 is-uppercase has-text-grey'>(home)</h6>
                       </div>
                       <div className="column is-2 is-uppercase my-3 is-size-5"><b>vs.</b></div>
                       <div className="column is-5 is-size-3 has-text-dark">
@@ -88,7 +88,7 @@ const SportDynamic = () => {
                         ? "..."
                         : <h6 className='is-size-6 is-uppercase'>{awayName}</h6>
                       }
-                      <h6 className='is-size-6 is-uppercase'>(away)</h6>
+                      <h6 className='is-size-6 is-uppercase has-text-grey'>(away)</h6>
                       </div>
                     </div>
                     
