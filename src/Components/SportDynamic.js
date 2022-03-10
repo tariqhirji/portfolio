@@ -19,8 +19,6 @@ const SportDynamic = () => {
   const [competition, setCompetition] = useState(null)
   const [date, setDate] = useState(null)
 
-  const CREST_URL = `https://api.football-data.org/v2/teams/`
-
   const config = {
     headers: {
       'X-Auth-Token': `${process.env.REACT_APP_SPORT}`
