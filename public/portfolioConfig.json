@@ -12,7 +12,7 @@
     },
     "projects": {
         "title": "projects",
-        "subtitle": "This website is intended to act as a log of some of my fondest initiatives in the past, present and future. It has borne many iterations of functionality improvements, and will no doubt continue to do so over time, with the last major sprint concluding on ",
+        "subtitle": "This website is intended to act as a log of some of my fondest initiatives in the past, present and future. It has borne many iterations of functionality improvements, and will no doubt continue to do so over time, with the last major sprint published on ",
         "lastUpdate": "2022-03-05",
         "project_list": [
             {
@@ -108,8 +108,8 @@
     ]},
     "skills": {
         "title": "Skills",
-        "subtitle": "With the world of technology expanding at an incredible speed and on what seems to have nearly infinite possibilities, my passion for this world is always leading me to new tools and technologies. Some I like, some I learned to love and some I absolutely loathe.",
-        "forward": "I therefore decided that it makes sense to also log a priority of tools that updates as I do. Almost like an ultimate team card, or MyPlayer statline for the world of software development.",
+        "subtitle": "With the world of technology expanding at an incredible speed and with nearly infinite possibilities, my passion for this world is always leading me to new tools and technologies. Some I like, some I learned to love and some I absolutely loathe.",
+        "forward": "I decided that it makes sense to also log a priority of tools that updates as I do. Almost like an ultimate team card, or MyPlayer statline for the world of software development.",
         "bars": {
             "frontend": {
                 "title": "Frontend",
@@ -238,7 +238,7 @@
         "title": "About Me",
         "content": {
             "p1": "Technology has been a passion and interest of mine for as long as I can remember. Looking back, I can recall many milestones of advancements throughout the decades. Some of my most treasured eras were times filled with CD-ROMs, Nintendo Gamecube and Mapquest directions. However, it is undeniable that the current era of technology is much more convenient and superior, and will only continue to do so in each coming year, month and even day. I am in constant awe of its developments and work towards contributing my own ideas and innovations into its boundless space.",
-            "p2": "I was in my undergrad when I recognized the capabilities of the tools I continue to learn. While earning my Honours Specialization in Computer Science at the University of Western Ontario, I was exposed to best software practices and implemented them in numerous projects. My first major project with friends (Raspberry Pong) remains my favourite to this day. I have yet to forget the professor's awestruck reaction after seeing the hardware and software we built successfully execute 15/15 throws over 5 different cup placements."
+            "p2": "I was in my undergrad when I recognized the capabilities of the tools I continue to learn. While earning my Honours Specialization in Computer Science at the University of Western Ontario, I was exposed to best software practices and implemented them in numerous projects. My first major team project (Raspberry Pong) remains my favourite to this day. I have yet to forget the professor's awestruck reaction after seeing the hardware and software we built successfully execute 15/15 throws over 5 different cup placements."
         },
         "sport": {
             "query": "Manchester United"
