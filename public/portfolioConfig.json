@@ -43,7 +43,7 @@
                 "buttonText": "Code Private",
                 "buttonIcon": "fas fa-user-secret",
                 "mediaType": "video",
-                "mediaUrl": "https://www.youtube.com/embed/G7tFsmshbwU"
+                "mediaUrl": "https://www.youtube.com/embed/hQckNhsrU1s"
             },
             {
                 "title": "Degree Planner",
@@ -123,23 +123,23 @@
                     },
                     {
                         "type": "Bootstrap",
-                        "level": 83
+                        "level": 84
                     },
                     {
                         "type": "Javascript",
-                        "level": 74
+                        "level": 79
                     },
                     {
                         "type": "Reactjs",
-                        "level": 70
+                        "level": 76
                     },
                     {
                         "type": "Sass",
-                        "level": 66
+                        "level": 72
                     },
                     {
                         "type": "Bulma",
-                        "level": 60
+                        "level": 70
                     }
                 ],
                 "colors": {
@@ -191,7 +191,7 @@
                 "skills": [
                     {
                         "type": "Jupyter",
-                        "level": 77
+                        "level": 80
                     },
                     {
                         "type": "Tensorflow",
