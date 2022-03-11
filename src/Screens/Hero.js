@@ -2,11 +2,11 @@ import React from 'react';
 import HeroFooter from '../Components/HeroFooter';
 import HeroLeft from '../Components/HeroLeft';
 import HeroNav from '../Components/HeroNav';
-import HeroRight from '../Components/HeroRight';
 
 const Hero = ({data, socials}) => {
     if (data) {
         var content = data.content;
+        var image = data.image;
     }
 
     return (
@@ -22,7 +22,7 @@ const Hero = ({data, socials}) => {
                             <HeroLeft content={content} socials={socials}/>
                         </div>
                         <div className="column is-12-touch is-5-desktop is-flex is-justify-content-center">
-                            <HeroRight />
+                            <img src={image} alt="hero" />
                         </div>
                     </div>
                 </div>

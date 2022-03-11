@@ -8,6 +8,7 @@ function scroll() {
 
     // variables to hold links of navbar.
     var brand = document.getElementById("navbar-brand");
+    var title = document.getElementById("navbar-title");
     var l1 = document.getElementById("projects-link");
     var l2 = document.getElementById("skills-link");
     var l3 = document.getElementById("about-link");
@@ -32,6 +33,7 @@ function scroll() {
     l3.style.color = "#2B2B2B";
     l4.style.color = "#2B2B2B";
     brand.style.color = "#2B2B2B";
+    title.style.color = "#2B2B2B";
     hamburger.style.color = "#2B2B2B";
 
     // Conditional that checks which section of the page the user is currently on
@@ -53,8 +55,8 @@ function scroll() {
         nav.style.backgroundColor = "lightblue";
         navLinks.style.backgroundColor = "lightblue";
     } else {
-        brand.style.color = "#6C63FF";
         hamburger.style.color = "#2B2B2B";
+        title.style.color = "#6C63FF"
         nav.style.backgroundColor = "white";
         navLinks.style.backgroundColor = "white";
     }

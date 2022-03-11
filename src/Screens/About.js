@@ -4,6 +4,8 @@ import IconCard from '../Components/IconCard';
 import SportDynamic from '../Components/SportDynamic';
 import WeatherDynamic from '../Components/WeatherDynamic';
 
+import pdf from '../Tariq_Web_Resume_March_2022.pdf';
+
 const About = ({data}) => {
   if (data) {
     var title = data.title;
@@ -28,7 +30,7 @@ const About = ({data}) => {
               {/* Content Col */}
               <div className="column  is-12-touch is-12-desktop is-6-widescreen has-text-dark">
                 <AboutContent content={content} />
-                <button className="button is-primary my-4 firamono">View Resume</button>
+                <a className="button is-primary my-4 firamono" href={pdf} target ="_blank">View Resume</a>
               </div>
               {/* Dynamics Col */}
               <div className="column is-12-touch is-12-desktop is-6-widescreen">
@@ -41,11 +43,6 @@ const About = ({data}) => {
             <div className="columns is-vcentered is-multiline">
                 {icons}
             </div>
-
-           
-
-
-
         </div>
     </section> 
     );

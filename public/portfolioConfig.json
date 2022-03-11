@@ -6,9 +6,10 @@
                 "static2": "I am ", 
                 "dynamic": ["Tariq Hirji", "a developer", "a sports fanatic", "a designer", "an innovator"]
             },
-            "description": "Welcome to my home on the internet! I am a guy who loves robust technology and works to make virtual worlds entertaining, engaging and easy to use spaces.",
+            "description": "Welcome to my home on the internet! I am a guy who loves robust technology. My current interests are focused on React, Artificial Intelligence and Data Analytics regarding sports.",
             "base": "Based in Toronto, Canada"
-        }
+        },
+        "image": "./images/hero.svg"
     },
     "projects": {
         "title": "projects",
@@ -30,9 +31,6 @@
                     },
                     {
                         "name": "Wav2Lip"
-                    },
-                    {
-                        "name": "Thesis"
                     },
                     {
                         "name": "GPU"
@@ -66,9 +64,6 @@
                     },
                     {
                         "name": "Apache Echarts"
-                    },
-                    {
-                        "name": "Hackathon"
                     }
                 ],
                 "description": "An application that allows students to visually plan out their education. Users interact with dynamic charts that outline necessary courses and their prerequisites for each degree path.",
@@ -98,10 +93,10 @@
                         "name": "Sensors"
                     },
                     {
-                        "name": "Breadboards"
+                        "name": "Mechanical"
                     }
                 ],
-                "description": "Co-engineered a robotic arm that interacts with various motors and sensors in order to detect a red cup on a table. The arm then adjusts all of its angles of trajectory to throw a ping pong ball into the cup with 100% accuracy.",
+                "description": "Co-engineered a robotic launcher that interacts with motors and sensors in order to detect a red cup on a table. The arm then adjusts all of its angles of trajectory to throw a ping pong ball into the cup with 100% accuracy.",
                 "status": "inactive",
                 "buttonText": "Shutdown in 2019",
                 "buttonIcon": "fas fa-skull-crossbones",
@@ -111,8 +106,8 @@
     ]},
     "skills": {
         "title": "Skills",
-        "subtitle": "With the world of technology expanding at an incredible speed and with nearly infinite possibilities, my passion for this world is always leading me to new tools and technologies. Some I like, some I learned to love and some I absolutely loathe.",
-        "forward": "I decided that it makes sense to also log a priority of tools that updates as I do. Almost like an ultimate team card, or MyPlayer statline for the world of software development.",
+        "subtitle": "With the world of technology expanding at an incredible speed with nearly infinite possibilities, my passion for this world constantly leads me to new tools and technologies. Some I like, some I learned to love and some I absolutely loathe.",
+        "forward": "As my skill set continues to grow, I will update this section with any adjustments. I like to think of this as my ultimate team card or MyPlayer statline for the world of software development.",
         "bars": {
             "frontend": {
                 "title": "Frontend",
@@ -240,8 +235,8 @@
     "about": {
         "title": "About Me",
         "content": {
-            "p1": "Technology has been a passion and interest of mine for as long as I can remember. Looking back, I can recall many milestones of advancements throughout the decades. Some of my most treasured eras were times filled with CD-ROMs, Nintendo Gamecube and Mapquest directions. However, it is undeniable that the current era of technology is much more convenient and superior, and will only continue to do so in each coming year, month and even day. I am in constant awe of its developments and work towards contributing my own ideas and innovations into its boundless space.",
-            "p2": "I was in my undergrad when I recognized the capabilities of the tools I continue to learn. While earning my Honours Specialization in Computer Science at the University of Western Ontario, I was exposed to best software practices and implemented them in numerous projects. My first major team project (Raspberry Pong) remains my favourite to this day. I have yet to forget the professor's awestruck reaction after seeing the hardware and software we built successfully execute 15/15 throws over 5 different cup placements."
+            "p1": "Technology has been a passion and interest of mine for as long as I can remember. Looking back, I can recall many advancements throughout the decades. Some of my most treasured eras were times filled with CD-ROMs, Nintendo Gamecube and Mapquest directions. However, it is undeniable that the current era of technology is much more convenient and superior, and will only continue to  be so in each coming year, month and even day. I am in constant awe of its developments and work to contribute my own ideas and innovations into its boundless space. Some areas I aim to explore more into are graphic design, data science and prototyping.",
+            "p2": "I was in my undergrad when I recognized the capabilities of the tools which I continue to learn. While earning my Honours in Computer Science at the University of Western Ontario, I was exposed to best software practices and had the opportunity to implement them in numerous projects. My first major team project (Raspberry Pong) remains my favourite to this day. I have yet to forget the professor's awestruck reaction after seeing the hardware and software we built successfully execute 15/15 throws over 5 different cup placements."
         },
         "sport": {
             "query": "Manchester United"
@@ -249,12 +244,12 @@
         "icons": [
             {
                 "trait": "Innovative",
-                "description": "I like to try new ways of improving what is in place.",
+                "description": "I like to try new ways of expanding on ideas in order to enhance them.",
                 "className": "fas fa-lightbulb iconic"
             },
             {
                 "trait": "Team Player",
-                "description": "I enjoy working alongside others and want to help them succeed with me.",
+                "description": "I enjoy working alongside others and want to help them succeed alongside me.",
                 "className": "fas fa-users iconic"
             },
             {

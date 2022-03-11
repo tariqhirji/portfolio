@@ -6,6 +6,7 @@ import Hero from './Screens/Hero';
 import Projects from './Screens/Projects';
 import Skills from './Screens/Skills';
 
+
 const App = () => {
   const [portfolioData, setPortfolioData] = useState({});
 
@@ -16,7 +17,7 @@ const App = () => {
   }, [])
 
   return (
-    <div className="App"> 
+    <div className="App" > 
       <Hero data={portfolioData.hero} socials={portfolioData.socials}/>
       <Projects data={portfolioData.projects}/>
       <Skills data={portfolioData.skills}/>

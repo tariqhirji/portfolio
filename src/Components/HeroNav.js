@@ -1,16 +1,15 @@
 import React, {useState} from 'react';
 
-
 const HeroNav = () => {
     const [isActive, setisActive] = useState(false);
 
     return (
         <div>
             <div className="hero-head">
-                <header className="navbar is-fixed-top" id='navbar'>
+                <header className="navbar is-fixed-top" id='navbar' >
                     <div className="container">
                         <div className="navbar-brand" id='navbar-brand'>
-                            <a className="navbar-item is-size-3" href="#">Tariq Hirji</a>
+                            <a className="navbar-item is-size-3" href="#" id='navbar-title'>Tariq Hirji</a>
                             <button
                                 onClick={() => {
                                     setisActive(!isActive);
