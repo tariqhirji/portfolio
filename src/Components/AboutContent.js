@@ -9,10 +9,10 @@ const AboutContent = ({content}) => {
     return (
         <div className='is-size-4 firacondensed has-text-dark'>
             <div className="block">
-              <p >{paragraph1}</p>
+              <p className='is-size-4 is-size-5-widescreen is-size-4-fullhd'>{paragraph1}</p>
             </div>
             <div className="block">
-              <p >{paragraph2}</p>
+              <p className='is-size-4 is-size-5-widescreen is-size-4-fullhd'>{paragraph2}</p>
             </div>
         </div>
     )

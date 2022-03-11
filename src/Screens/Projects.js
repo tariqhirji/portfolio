@@ -14,7 +14,7 @@ const Projects = ({data}) => {
     <section className='section' id='projects'>
         <div className="container">
           <h1 className='is-size-1 section-title '>{title}</h1>
-          <h3 className="is-size-3 section-subtitle has-text-dark">{subtitle}<em>{lastUpdate}</em>.</h3>
+          <h3 className="is-size-4-mobile is-size-3-tablet section-subtitle has-text-dark">{subtitle}<em>{lastUpdate}</em>.</h3>
           {projects}
         </div>
     </section> 

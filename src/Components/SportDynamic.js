@@ -59,9 +59,9 @@ const SportDynamic = () => {
         <div className='WeatherDynamic mb-4 firacondensed has-text-dark'>
             <div className="block">
                 <div className="box has-text-centered" data-aos="zoom-in-left" data-aos-anchor-placement="bottom-bottom">
-                    <h5 className="is-size-5 mb-6 firamono has-text-dark"><b>My favourite team's next game:</b></h5>
+                    <h5 className="is-size-5-mobile is-size-3-tablet is-size-5-widescreen  mb-6 firamono has-text-dark"><b>My favourite team's next game:</b></h5>
                     <div className="columns is-gapless is-vcentered">
-                      <div className="column is-5 is-size-3 has-text-dark">
+                      <div className="column is-5 has-text-dark">
                         {
                           homeImg === null
                           ? "..."
@@ -75,7 +75,7 @@ const SportDynamic = () => {
                         <h6 className='is-size-6 is-uppercase has-text-grey'>(home)</h6>
                       </div>
                       <div className="column is-2 is-uppercase my-3 is-size-5"><b>vs.</b></div>
-                      <div className="column is-5 is-size-3 has-text-dark">
+                      <div className="column is-5 has-text-dark">
                       {
                         awayImg === null
                         ? "..."
@@ -91,8 +91,8 @@ const SportDynamic = () => {
                     </div>
                     
 
-                    <h3 className="is-size-3 has-text-dark"><b>{date === null ? "Loading..." : `${date.slice(0, 10)}`}</b></h3>
-                    <h3 className="is-size-3 has-text-dark"><em>{competition === null ? "Loading..." : `${competition}`}</em></h3>
+                    <h3 className="is-size-3-mobile is-size-2-tablet is-size-3-widescreen has-text-dark"><b>{date === null ? "Loading..." : `${date.slice(0, 10)}`}</b></h3>
+                    <h3 className="is-size-3-mobile is-size-2-tablet is-size-3-widescreen has-text-dark"><em>{competition === null ? "Loading..." : `${competition}`}</em></h3>
 
                 </div>
             </div>

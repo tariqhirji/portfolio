@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-#projects, #contact {
+#projects, #contact, #about {
   overflow-x: hidden;
 }
 

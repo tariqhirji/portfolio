@@ -47,7 +47,7 @@ const ProjectCard = ({project}) => {
                                 {badges}
                             </div>
 
-                            <h5 className='is-size-5 mb-4 firacondensed has-text-dark'>{description}</h5>
+                            <h5 className='is-size-4 is-size-5-widescreen mb-4 firacondensed has-text-dark'>{description}</h5>
                             {/* Conditional Button if project is inactive */}
                             {
                                 status === 'inactive'

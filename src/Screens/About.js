@@ -28,12 +28,12 @@ const About = ({data}) => {
 
             <div className="columns is-multiline">
               {/* Content Col */}
-              <div className="column  is-12-touch is-12-desktop is-6-widescreen has-text-dark">
+              <div className="column is-12 is-6-widescreen has-text-dark">
                 <AboutContent content={content} />
                 <a className="button is-primary my-4 firamono" href={pdf} target ="_blank">View Resume</a>
               </div>
               {/* Dynamics Col */}
-              <div className="column is-12-touch is-12-desktop is-6-widescreen">
+              <div className="column is-12 is-6-widescreen">
                 <WeatherDynamic />
                 <SportDynamic sport={sport}/>
               </div>

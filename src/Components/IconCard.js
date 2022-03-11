@@ -14,11 +14,11 @@ const IconCard = ({icon}) => {
       }, [])
 
     return ( 
-        <div className="column is-12-touch is-4-widescreen has-text-centered">
+        <div className="column is-12 is-4-widescreen has-text-centered">
             <div className="box py-5 IconCard has-text-dark" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom">
                 <i className={className}></i>
                 <h3 className="mt-4 mb-2 is-size-2 title firamono has-text-dark">{trait}</h3>
-                <h5 className="is-size-5 firacondensed">{description}</h5>
+                <h5 className="is-size-4 is-size-5-widescreen firacondensed">{description}</h5>
             </div>
         </div>
     )

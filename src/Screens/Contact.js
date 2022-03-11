@@ -28,16 +28,16 @@ const Contact = ({data, socials}) => {
           </div>
 
           {/* Columns for form and graphic */}
-          <div className="columns is-vcentered">
+          <div className="columns is-vcentered is-multiline">
 
               {/* Form */}
-              <div className="column is-6" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+              <div className="column is-12-touch is-6-desktop" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
                 <h4 className="is-size-4 mb-5 contact-subtitle has-text-dark firacondensed">{subtitle}</h4>
                 <ContactForm />
               </div>
 
               {/* Graphic */}
-              <div className="column is-6 is-flex is-justify-content-center" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+              <div className="column is-12-touch is-6-desktop is-flex is-justify-content-center" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
                 <img src={img} className='image' alt="Contact me" />
               </div>
           

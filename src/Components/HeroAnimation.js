@@ -17,7 +17,7 @@ const HeroAnimation = ({animation}) => {
 
     return (
         <div className='HeroAnimation'>
-            <h1 className="is-size-2-mobile is-size-1-tablet title is-large has-text-dark">
+            <h1 className="is-size-3-mobile is-size-1-tablet title is-large has-text-dark">
                 {static1} <br className='is-hidden-mobile'/>
                 {static2} <br className='is-hidden-tablet'/> <span className='dynamic-text'>{text}<Cursor /></span>
             </h1>

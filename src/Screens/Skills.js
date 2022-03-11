@@ -24,8 +24,8 @@ const Skills = ({data}) => {
     <section className='section' id='skills'>
         <div className="container">
           <h1 className='is-size-1 section-title'>{title}</h1>
-          <h3 className="is-size-3 section-subtitle has-text-dark">{subtitle}</h3>
-          <h3 className="is-size-3 section-subtitle mb-3 has-text-dark">{forward}</h3>
+          <h3 className="is-size-4-mobile is-size-3-tablet section-subtitle has-text-dark">{subtitle}</h3>
+          <h3 className="is-size-4-mobile is-size-3-tablet section-subtitle mb-3 has-text-dark">{forward}</h3>
 
           <div className="columns is-vcentered my-3 is-multiline">
             <div className="column is-12-touch is-6-desktop">
@@ -50,7 +50,7 @@ const Skills = ({data}) => {
             </div> 
           </div>
           
-          <h3 className="is-size-3 section-subtitle has-text-dark">
+          <h3 className="is-size-4-mobile is-size-3-tablet section-subtitle has-text-dark">
             {goal}
             <a href='https://reactnative.dev/' target="_blank" rel='noreferrer' className='is-primary'>React Native</a>,
             <a href='https://nextjs.org/' target="_blank" rel='noreferrer' className='ml-2 is-primary'>Next.js</a> and 
