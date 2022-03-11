@@ -14,7 +14,7 @@
     "projects": {
         "title": "projects",
         "subtitle": "This website is intended to act as a log of some of my fondest initiatives in the past, present and future. It has borne many iterations of functionality improvements, and will no doubt continue to do so over time, with the last major sprint published on ",
-        "lastUpdate": "2022-03-05",
+        "lastUpdate": "2022-03-12",
         "project_list": [
             {
                 "title": "Political Deepfake",
