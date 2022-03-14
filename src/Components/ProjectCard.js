@@ -39,10 +39,9 @@ const ProjectCard = ({project}) => {
                     <div className="card-content">
 
 
-                            <h2 className="is-size-2 title is-spaced">{title}</h2>
+                            <h2 className="is-size-2 title">{title}</h2>
       
-
-                            <div className="mb-3">
+                            <div className="mb-1">
                                 <h2 className="is-size-3 subtitle has-text-grey">{subtitle}</h2>
                                 {badges}
                             </div>
@@ -60,12 +59,12 @@ const ProjectCard = ({project}) => {
                 </div>
 
                 {/* Img Col */}
-                <div className="column is-12-touch is-12-desktop is-6-widescreen py-0">
-                    <article className='media' >
+                <div className="column is-12-touch is-12-desktop is-6-widescreen py-0" style={{height: "100%"}}>
+                    <article className='media'>
                     {
                         mediaType === 'image'
-                        ? <img src={mediaUrl} alt={title} style={{minHeight: "450"}}/>
-                        : (<iframe src={mediaUrl} width="100%" height='450'  title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>)
+                        ? <img src={mediaUrl} alt={title} style={{minHeight: "470px"}}/>
+                        : (<iframe src={mediaUrl} width="100%" height='470'  title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>)
                     }
                     </article>
                 </div>
