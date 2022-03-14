@@ -17,6 +17,7 @@
     "react-scripts": "5.0.0",
     "react-simple-typewriter": "^3.0.1",
     "react-skillbars": "^1.6.1",
+    "smoothscroll-polyfill": "^0.4.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

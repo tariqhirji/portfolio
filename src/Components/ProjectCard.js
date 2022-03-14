@@ -64,8 +64,8 @@ const ProjectCard = ({project}) => {
                     <article className='media' >
                     {
                         mediaType === 'image'
-                        ? <img src={mediaUrl} alt={title} />
-                        : (<iframe src={mediaUrl} width="100%" height='410'  title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>)
+                        ? <img src={mediaUrl} alt={title} style={{minHeight: "450"}}/>
+                        : (<iframe src={mediaUrl} width="100%" height='450'  title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>)
                     }
                     </article>
                 </div>

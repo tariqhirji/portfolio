@@ -6,7 +6,7 @@
                 "static2": "I am ", 
                 "dynamic": ["Tariq Hirji", "a developer", "a sports fanatic", "a designer", "an innovator"]
             },
-            "description": "Welcome to my home on the internet! I am a guy who loves robust technology. My current interests are focused on React, Artificial Intelligence and Data Analytics regarding sports.",
+            "description": "Welcome to my home on the internet! I am a guy who loves robust technology. My current interests are focused on React, Machine Learning and UX Design.",
             "base": "Based in Toronto, Canada"
         },
         "image": "./images/hero.svg"
