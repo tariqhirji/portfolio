@@ -48,7 +48,7 @@ const SportDynamic = () => {
         // MUFC Away: Get home crest by ID and set
         if (matches[0].awayTeam.id === MANUID) {
           setAwayImg("./images/mufc.png")
-          axios.get(`https://api.football-data.org/v2/teams/${matches[0].awayTeam.id}`, config)
+          axios.get(`https://api.football-data.org/v2/teams/${matches[0].homeTeam.id}`, config)
             .then(response => setHomeImg(response.data.crestUrl))
         }
       })
