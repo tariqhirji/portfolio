@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-between bg-[#6c63ff]"
+      className="flex items-center justify-between bg-[#6c63ff]"
     >
       <div className="container mx-auto flex items-center justify-between">
         <h1 className="font-semibold">

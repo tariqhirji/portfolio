@@ -1,7 +1,9 @@
 import React from "react";
 
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <section className="flex items-center justify-center">Projects</section>
+  );
 };
 
 export default Projects;
