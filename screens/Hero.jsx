@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Tariq from "@/public/tariq.svg";
+import NavbarText from "@/components/NavbarText";
 
 const Hero = () => {
   return (
@@ -7,11 +8,15 @@ const Hero = () => {
       id="hero"
       className="flex items-center justify-between bg-[#6c63ff]"
     >
-      <div className="container mx-auto flex items-center justify-between">
-        <h1 className="font-semibold">
-          Hello World, <br />I am Tariq Hirji
-        </h1>
-        <Image src={Tariq} alt="tariq" width={500} height={500} />
+      <div className="container mx-auto px-3 lg:flex lg:items-center lg:justify-between">
+        <NavbarText />
+        <Image
+          src={Tariq}
+          alt="tariq"
+          width={500}
+          height={500}
+          className="mx-4"
+        />
       </div>
     </section>
   );

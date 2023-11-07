@@ -2,7 +2,9 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <section className="flex items-center justify-center">Experience</section>
+    <section id="experience" className="flex items-center justify-center">
+      Experience
+    </section>
   );
 };
 

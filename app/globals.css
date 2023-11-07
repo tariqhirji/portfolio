@@ -4,12 +4,18 @@
 
 @layer base {
   h1 {
-    @apply text-6xl;
+    @apply text-5xl lg:text-6xl;
   }
   h2 {
-    @apply text-4xl;
+    @apply text-3xl lg:text-4xl;
   }
   section {
     @apply min-h-screen;
+  }
+}
+
+@layer components {
+  .socialIcon {
+    @apply rounded-full shadow-lg shadow-black p-5 cursor-pointer hover:scale-125 ease-in duration-300 bg-white;
   }
 }
