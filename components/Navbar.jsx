@@ -10,14 +10,13 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-gray-800 fixed w-full">
+    <Disclosure as="nav" className="bg-gray-800 fixed w-full" id="nav">
       {({ open }) => (
         <div>
           <div className="relative flex h-16 items-center justify-between mx-auto container px-3">
             {/* Mobile menu button*/}
             <div className="absolute right-0 flex items-center sm:hidden">
-              <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                <span className="absolute -inset-0.5" />
+              <Disclosure.Button className="relative inline-flex items-center mx-3 justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 <span className="sr-only">Open main menu</span>
                 {open ? (
                   <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -27,10 +26,10 @@ export default function Example() {
               </Disclosure.Button>
             </div>
 
-            <div className="flex flex-1 items-center justify-between">
+            <div className="flex flex-1 items-center justify-between h-full">
               {/* Nav Brand */}
               <div className="flex flex-shrink-0 items-center">
-                <p className="text-white">Tariq Hirji</p>
+                <p className="text-white text-3xl">Tariq Hirji</p>
               </div>
 
               {/* Nav Links */}
@@ -48,7 +47,7 @@ export default function Example() {
                       )}
                       aria-current={link.active ? "page" : undefined}
                     >
-                      {link.label}
+                      <p className="text-lg uppercase">{link.label}</p>
                     </Link>
                   ))}
                 </div>
@@ -71,7 +70,7 @@ export default function Example() {
                   )}
                   aria-current={link.active ? "page" : undefined}
                 >
-                  {link.label}
+                  <p className="uppercase">{link.label}</p>
                 </Disclosure.Button>
               ))}
             </div>
