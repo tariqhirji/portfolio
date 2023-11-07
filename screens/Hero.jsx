@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Tariq from "@/public/tariq.svg";
-import NavbarText from "@/components/NavbarText";
+import HeroText from "@/components/HeroText";
 
 const Hero = () => {
   return (
@@ -9,13 +9,13 @@ const Hero = () => {
       className="flex items-center justify-between bg-[#6c63ff]"
     >
       <div className="container mx-auto px-3 lg:flex lg:items-center lg:justify-between">
-        <NavbarText />
+        <HeroText />
         <Image
           src={Tariq}
           alt="tariq"
           width={500}
           height={500}
-          className="mx-4"
+          className="lg:mx-4"
         />
       </div>
     </section>

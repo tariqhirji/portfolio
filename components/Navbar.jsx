@@ -29,7 +29,7 @@ export default function Example() {
             <div className="flex flex-1 items-center justify-between h-full">
               {/* Nav Brand */}
               <div className="flex flex-shrink-0 items-center">
-                <Link href="/" className="text-white text-3xl">
+                <Link href="/#hero" className="text-white text-3xl">
                   Tariq Hirji
                 </Link>
               </div>
