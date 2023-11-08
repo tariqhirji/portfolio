@@ -8,9 +8,21 @@ const Socials = () => {
       {SOCIALS.map((social) => (
         <Link href={social.href} key={social.key} target="_blank">
           <div className="socialIcon">
-            {social.key === "email" && <AiOutlineMail size={25} />}
-            {social.key === "github" && <AiFillGithub size={25} />}
-            {social.key === "linkedin" && <AiFillLinkedin size={25} />}
+            {social.key === "email" && (
+              <div className="text-[#6C63FF]">
+                <AiOutlineMail size={25} />
+              </div>
+            )}
+            {social.key === "github" && (
+              <div className="text-[#333333]">
+                <AiFillGithub size={25} />
+              </div>
+            )}
+            {social.key === "linkedin" && (
+              <div className="text-[#0077B5]">
+                <AiFillLinkedin size={25} />
+              </div>
+            )}
           </div>
         </Link>
       ))}

@@ -12,10 +12,11 @@ const Typewritter = () => {
 
   return (
     <h1>
-      {TYPEWRITER.staticForeward} <span className="text-white">{text}</span>{" "}
+      {TYPEWRITER.staticForeward} <span className="text-white">{text}</span>
+      <Cursor cursorColor="white" />
       <br />
       {TYPEWRITER.staticAfterward}
-      <span className="text-white">{TYPEWRITER.name}</span>
+      <span className="text-black">{TYPEWRITER.name}</span>
     </h1>
   );
 };

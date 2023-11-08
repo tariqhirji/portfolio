@@ -13,7 +13,7 @@ export const NAV_LINKS = [
 
 export const TYPEWRITER = {
   staticForeward: "Hello ",
-  dynamicWords: ["World,", "Friends,", "Colleagues,", "Family,", "Drifters"],
+  dynamicWords: ["world,", "recruiters,", "friends,", "peers,", "drifters,"],
   staticAfterward: "I am ",
   name: "Tariq Hirji",
 };
