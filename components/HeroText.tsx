@@ -9,7 +9,7 @@ const HeroText = () => {
       <Typewriter />
       <h2>{HERO_CONTENT.subtitle}</h2>
       <div className="flex text-white items-center">
-        <MdLocationOn size={25} className="mb-1 animate-bounce" />
+        <MdLocationOn size={25} className="animate-bounce" />
         <h2 className="ml-3 w-full">{HERO_CONTENT.location}</h2>
       </div>
       <Socials />

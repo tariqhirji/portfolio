@@ -4,13 +4,13 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-[#6c63ff] fixed w-full" id="nav">
+    <Disclosure as="nav" className="bg-[#6C63FF] fixed w-full" id="nav">
       {({ open }) => (
         <div>
           <div className="relative flex h-16 items-center justify-between mx-auto container px-3">
@@ -29,7 +29,7 @@ export default function Example() {
             <div className="flex flex-1 items-center justify-between h-full">
               {/* Nav Brand */}
               <div className="flex flex-shrink-0 items-center">
-                <Link href="/#hero" className="text-white text-3xl">
+                <Link href="/#hero" className="text-black text-3xl">
                   Tariq Hirji
                 </Link>
               </div>
@@ -44,7 +44,7 @@ export default function Example() {
                       className={classNames(
                         link.active
                           ? "bg-gray-900 text-white"
-                          : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                          : "text-black hover:bg-gray-700 hover:text-white",
                         "rounded-md px-3 py-2 text-sm font-medium"
                       )}
                       aria-current={link.active ? "page" : undefined}

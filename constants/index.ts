@@ -33,3 +33,34 @@ export const SOCIALS = [
     href: "https://www.linkedin.com/in/tariq-hirji-272295189/",
   },
 ];
+
+export const SKILLS = {
+  title: "skills",
+  subtitle: "My 2K23 player statline for the world of software development.",
+  skillbars: {
+    frontend: {
+      title: "frontend",
+      skills: [
+        {
+          skill: "HTML",
+          level: 92,
+        },
+        {
+          skill: "CSS",
+          level: 88,
+        },
+        {
+          skill: "JavaScript",
+          level: 86,
+        },
+      ],
+      colors: {
+        bar: "#3498db",
+        title: {
+          text: "#fff",
+          background: "#2980b9",
+        },
+      },
+    },
+  },
+};
