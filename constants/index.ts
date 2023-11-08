@@ -37,30 +37,185 @@ export const SOCIALS = [
 export const SKILLS = {
   title: "skills",
   subtitle: "My 2K23 player statline for the world of software development.",
-  skillbars: {
-    frontend: {
-      title: "frontend",
-      skills: [
-        {
-          skill: "HTML",
-          level: 92,
-        },
-        {
-          skill: "CSS",
-          level: 88,
-        },
-        {
-          skill: "JavaScript",
-          level: 86,
-        },
-      ],
-      colors: {
-        bar: "#3498db",
-        title: {
-          text: "#fff",
-          background: "#2980b9",
-        },
-      },
+};
+
+export const FRONTEND = {
+  title: "frontend",
+  skills: [
+    {
+      type: "HTML",
+      level: 94,
+    },
+    {
+      type: "CSS",
+      level: 87,
+    },
+    {
+      type: "JavaScript",
+      level: 85,
+    },
+    {
+      type: "React.js",
+      level: 82,
+    },
+    {
+      type: "TypeScript",
+      level: 80,
+    },
+    {
+      type: "TailwindCSS",
+      level: 77,
+    },
+    {
+      type: "Angular",
+      level: 74,
+    },
+  ],
+  colors: {
+    bar: "#3498db",
+    title: {
+      text: "#fff",
+      background: "#2980b9",
     },
   },
+  barBackground: "#CCC",
+};
+
+export const BACKEND = {
+  title: "backend",
+  skills: [
+    {
+      type: "Node.js",
+      level: 86,
+    },
+    {
+      type: "REST",
+      level: 85,
+    },
+    {
+      type: "Java",
+      level: 80,
+    },
+    {
+      type: "Python",
+      level: 77,
+    },
+    {
+      type: "GraphQL",
+      level: 75,
+    },
+    {
+      type: "MongoDB",
+      level: 72,
+    },
+    {
+      type: "SQL",
+      level: 70,
+    },
+  ],
+  colors: {
+    bar: "#32a86f",
+    title: {
+      text: "#fff",
+      background: "#185437",
+    },
+  },
+  barBackground: "#CCC",
+};
+
+export const DESIGN_DEVOPS = {
+  title: "design & devops",
+  skills: [
+    {
+      type: "Github",
+      level: 87,
+    },
+    {
+      type: "Jira",
+      level: 85,
+    },
+    {
+      type: "Figma",
+      level: 83,
+    },
+    {
+      type: "Notion",
+      level: 80,
+    },
+    {
+      type: "Docker",
+      level: 73,
+    },
+  ],
+  colors: {
+    bar: "#A369CD",
+    title: {
+      text: "#fff",
+      background: "#8643B5",
+    },
+  },
+  barBackground: "#CCC",
+};
+
+export const DATA_SCIENCE = {
+  title: "data science",
+  skills: [
+    {
+      type: "Anaconda",
+      level: 87,
+    },
+    {
+      type: "Jupyter",
+      level: 85,
+    },
+    {
+      type: "Pandas",
+      level: 83,
+    },
+    {
+      type: "NumPy",
+      level: 80,
+    },
+    {
+      type: "Tensorflow",
+      level: 73,
+    },
+  ],
+  colors: {
+    bar: "#f22e2e",
+    title: {
+      text: "#fff",
+      background: "#870808",
+    },
+  },
+  barBackground: "#CCC",
+};
+export const TEST_FRAMEWORKS = {
+  title: "testing tools",
+  skills: [
+    {
+      type: "Postman",
+      level: 82,
+    },
+    {
+      type: "Jest",
+      level: 80,
+    },
+    {
+      type: "Selenium",
+      level: 74,
+    },
+    {
+      type: "Playwright",
+      level: 70,
+    },
+  ],
+  colors: {
+    bar: "#e8f22e",
+    title: {
+      text: "#fff",
+      background: "#818708",
+    },
+  },
+  barBackground: "#CCC",
 };

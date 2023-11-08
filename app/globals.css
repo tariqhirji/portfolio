@@ -21,4 +21,10 @@
   .socialIcon {
     @apply rounded-full shadow-lg shadow-black p-5 cursor-pointer hover:scale-125 ease-in duration-300 bg-white;
   }
+  .card {
+    @apply p-4;
+  }
+  .card_white {
+    @apply bg-white;
+  }
 }
