@@ -36,7 +36,7 @@ export const SOCIALS = [
 
 export const SKILLS = {
   title: "skills",
-  subtitle: "My 2K23 player statline for the world of software development.",
+  subtitle: "My 2023 player statline for the world of software development.",
 };
 
 export const FRONTEND = {
@@ -89,28 +89,24 @@ export const BACKEND = {
       level: 86,
     },
     {
-      type: "REST",
-      level: 85,
+      type: "REST API",
+      level: 83,
     },
     {
       type: "Java",
       level: 80,
     },
     {
+      type: "Express.js",
+      level: 78,
+    },
+    {
       type: "Python",
-      level: 77,
-    },
-    {
-      type: "GraphQL",
-      level: 75,
-    },
-    {
-      type: "MongoDB",
-      level: 72,
+      level: 76,
     },
     {
       type: "SQL",
-      level: 70,
+      level: 73,
     },
   ],
   colors: {
@@ -146,6 +142,10 @@ export const DESIGN_DEVOPS = {
       type: "Docker",
       level: 73,
     },
+    {
+      type: "Jenkins",
+      level: 68,
+    },
   ],
   colors: {
     bar: "#A369CD",
@@ -171,10 +171,6 @@ export const DATA_SCIENCE = {
     {
       type: "Pandas",
       level: 83,
-    },
-    {
-      type: "NumPy",
-      level: 80,
     },
     {
       type: "Tensorflow",
