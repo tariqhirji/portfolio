@@ -7,7 +7,20 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./screens/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
+  theme: {
+    colors: {
+      white: "#FFFFFF",
+      black: "#000000",
+      blue: "#6C63FF",
+      secondary: "#E5E8F0",
+      writing: "#2B2B2B",
+      dark1: "#121212",
+      transparent: "transparent",
+      gray: "#374151",
+      gray50: "#f9fafb",
+      gray300: "#d1d5db",
+    },
+  },
   plugins: [],
 };
 export default config;

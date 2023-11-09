@@ -5,7 +5,7 @@ import ContactImage from "@/public/contact.svg";
 
 const Contact = () => {
   return (
-    <section id="contact" className="pt-16 flex bg-[#E5E8F0]">
+    <section id="contact" className="pt-16 flex bg-secondary">
       <div className="container mx-auto flex flex-col gap-14 justify-between px-4">
         {/* Headings */}
         <div className="flex flex-col gap-14">

@@ -9,7 +9,7 @@ const Socials = () => {
         <Link href={social.href} key={social.key} target="_blank">
           <div className="socialIcon">
             {social.key === "email" && (
-              <div className="text-[#6C63FF]">
+              <div className="text-blue">
                 <AiOutlineMail size={25} />
               </div>
             )}

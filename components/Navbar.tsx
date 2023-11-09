@@ -10,13 +10,13 @@ function classNames(...classes: string[]) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-[#6C63FF] fixed w-full z-[10]" id="nav">
+    <Disclosure as="nav" className="bg-blue fixed w-full z-[10]" id="nav">
       {({ open }) => (
         <div>
           <div className="relative flex h-16 items-center justify-between mx-auto container px-4">
             {/* Mobile menu button*/}
             <div className="absolute right-0 flex items-center sm:hidden">
-              <Disclosure.Button className="relative inline-flex items-center mx-4 justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <Disclosure.Button className="relative inline-flex items-center mx-4 justify-center rounded-md p-2 hover:bg-gray hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 <span className="sr-only">Open main menu</span>
                 {open ? (
                   <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -28,10 +28,8 @@ export default function Example() {
 
             <div className="flex flex-1 items-center justify-between h-full">
               {/* Nav Brand */}
-              <div className="flex flex-shrink-0 items-center">
-                <Link href="/#hero" className="text-black text-3xl">
-                  Tariq Hirji
-                </Link>
+              <div className="flex flex-shrink-0 items-center rounded-md px-3 py-2 hover:bg-gray text-black text-3xl hover:text-white">
+                <Link href="/#hero">Tariq Hirji</Link>
               </div>
 
               {/* Nav Links */}
@@ -43,8 +41,8 @@ export default function Example() {
                       href={link.href}
                       className={classNames(
                         link.active
-                          ? "bg-gray-900 text-white"
-                          : "text-black hover:bg-gray-700 hover:text-white",
+                          ? "bg-gray text-white"
+                          : "text-black hover:bg-gray hover:text-white",
                         "rounded-md px-3 py-2 text-sm font-medium"
                       )}
                       aria-current={link.active ? "page" : undefined}
@@ -66,8 +64,8 @@ export default function Example() {
                   href={link.href}
                   className={classNames(
                     link.active
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      ? "bg-gray text-white"
+                      : "text-black hover:bg-gray hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={link.active ? "page" : undefined}

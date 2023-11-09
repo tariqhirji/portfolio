@@ -18,7 +18,7 @@ const FormInput: React.FC<FormInputProps> = ({
       <div className="mb-6">
         <label
           htmlFor="contactName"
-          className="block mb-2 text-sm text-gray-600 pl-2"
+          className="block mb-2 text-sm text-gray pl-2"
         >
           {label}
         </label>
@@ -28,7 +28,7 @@ const FormInput: React.FC<FormInputProps> = ({
             id="contactName"
             value={value}
             onChange={(e) => setValue(e.target.value)}
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="bg-gray50 border border-gray300 text-gray text-sm rounded-lg focus:border-2 focus:ring-blue focus:border-blue outline-none block w-full p-2.5"
             placeholder={placeholder}
             required
           />
@@ -39,7 +39,7 @@ const FormInput: React.FC<FormInputProps> = ({
             value={value}
             onChange={(e) => setValue(e.target.value)}
             required
-            className="block p-2.5 resize-none w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className=" resize-none bg-gray50 border border-gray300 text-gray text-sm rounded-lg focus:ring-blue focus:border-blue focus:border-2 outline-none block w-full p-2.5"
             placeholder={placeholder}
           ></textarea>
         )}

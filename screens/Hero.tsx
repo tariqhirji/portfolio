@@ -4,10 +4,7 @@ import HeroText from "@/components/HeroText";
 
 const Hero = () => {
   return (
-    <section
-      id="hero"
-      className="flex items-center justify-between bg-[#6c63ff]"
-    >
+    <section id="hero" className="flex items-center justify-between bg-blue">
       <div className="container mx-auto px-3 lg:flex lg:items-center lg:justify-between">
         <HeroText />
         <Image
