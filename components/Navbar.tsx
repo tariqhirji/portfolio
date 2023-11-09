@@ -13,10 +13,10 @@ export default function Example() {
     <Disclosure as="nav" className="bg-[#6C63FF] fixed w-full z-[10]" id="nav">
       {({ open }) => (
         <div>
-          <div className="relative flex h-16 items-center justify-between mx-auto container px-3">
+          <div className="relative flex h-16 items-center justify-between mx-auto container px-4">
             {/* Mobile menu button*/}
             <div className="absolute right-0 flex items-center sm:hidden">
-              <Disclosure.Button className="relative inline-flex items-center mx-3 justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <Disclosure.Button className="relative inline-flex items-center mx-4 justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 <span className="sr-only">Open main menu</span>
                 {open ? (
                   <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
