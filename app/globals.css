@@ -27,4 +27,10 @@
   .card_white {
     @apply bg-white;
   }
+  .btn {
+    @apply px-4 py-2 rounded-md;
+  }
+  .btn_blue {
+    @apply text-white bg-[#6C63FF] hover:bg-[#8b85ff];
+  }
 }

@@ -78,7 +78,7 @@ export const FRONTEND = {
       background: "#2980b9",
     },
   },
-  barBackground: "#CCC",
+  barBackground: "#DDD",
 };
 
 export const BACKEND = {
@@ -116,7 +116,7 @@ export const BACKEND = {
       background: "#185437",
     },
   },
-  barBackground: "#CCC",
+  barBackground: "#DDD",
 };
 
 export const DESIGN_DEVOPS = {
@@ -154,7 +154,7 @@ export const DESIGN_DEVOPS = {
       background: "#8643B5",
     },
   },
-  barBackground: "#CCC",
+  barBackground: "#DDD",
 };
 
 export const DATA_SCIENCE = {
@@ -184,7 +184,7 @@ export const DATA_SCIENCE = {
       background: "#870808",
     },
   },
-  barBackground: "#CCC",
+  barBackground: "#DDD",
 };
 export const TEST_FRAMEWORKS = {
   title: "testing tools",
@@ -213,5 +213,5 @@ export const TEST_FRAMEWORKS = {
       background: "#818708",
     },
   },
-  barBackground: "#CCC",
+  barBackground: "#DDD",
 };

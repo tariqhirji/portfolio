@@ -1,6 +1,7 @@
 import ContactForm from "@/components/ContactForm";
 import Socials from "@/components/Socials";
-import React from "react";
+import Image from "next/image";
+import ContactImage from "@/public/contact.svg";
 
 const Contact = () => {
   return (
@@ -18,9 +19,15 @@ const Contact = () => {
         </div>
 
         {/* Form + Picture */}
-        <div className="flex items-center h-full justify-between">
+        <div className="flex items-center h-full justify-between flex-col md:flex-row mb-4">
           <ContactForm />
-          <ContactForm />
+          <Image
+            src={ContactImage}
+            alt="tariq"
+            width={500}
+            height={500}
+            className="md:mx-6"
+          />
         </div>
 
         {/* Contact Page Footer */}
