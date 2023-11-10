@@ -45,4 +45,10 @@
   .btn_blue {
     @apply text-white bg-blue hover:bg-[#8b85ff];
   }
+  .projectCard {
+    @apply rounded-md flex p-0;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-md bg-white px-2 py-1 text-sm font-medium ring-1 ring-inset ring-gray;
+  }
 }

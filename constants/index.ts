@@ -225,12 +225,28 @@ export const DEEPFAKE = {
   title: "AI Deepfake",
   subtitle: "Artificial impersonation",
   badges: [
-    { badge: "Python" },
-    { badge: "Tensorflow" },
-    { badge: "DeepFaceLab" },
-    { badge: "Wav2Lip" },
-    { badge: "DNN" },
+    { title: "Python" },
+    { title: "Tensorflow" },
+    { title: "DeepFaceLab" },
+    { title: "Wav2Lip" },
+    { title: "DNN" },
   ],
   description:
     "A deepfake of Justin Trudeau to explore the process and effects of disinformation on the web.",
+};
+
+export const DEGREE_PLANNER = {
+  title: "Degree Planner",
+  subtitle: "Full-Stack Web App",
+  badges: [
+    { title: "React.js" },
+    { title: "REST API" },
+    { title: "Node.js" },
+    { title: "Express.js" },
+    { title: "Bootstrap" },
+    { title: "MongoDB" },
+    { title: "Apache ECharts" },
+  ],
+  description:
+    "An application that allows students to visually plan their education using a variety of interactive graph types.",
 };

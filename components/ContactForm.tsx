@@ -16,7 +16,7 @@ const ContactForm = () => {
 
   return (
     <div className="w-full md:max-w-[700px]">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="w-full">
         <FormInput
           type="text"
           label="Name"
@@ -38,7 +38,14 @@ const ContactForm = () => {
           value={message}
           setValue={setMessage}
         />
-        <Button variant="btn_blue" text="Submit" type="submit" />
+        <div className="w-full">
+          <Button
+            variant="btn_blue"
+            text="Submit"
+            type="submit"
+            fullWidth={true}
+          />
+        </div>
       </form>
     </div>
   );
