@@ -6,13 +6,11 @@ import ContactImage from "@/public/contact.svg";
 const Contact = () => {
   return (
     <section id="contact" className="pt-16 flex bg-secondary">
-      <div className="container mx-auto flex flex-col gap-14 justify-between px-4">
+      <div className="sectionContainer flex flex-col gap-14 justify-between">
         {/* Headings */}
-        <div className="flex flex-col gap-14">
-          <h1 className="pt-12 md:pt-16 w-full">
-            Think we would make a good team?
-          </h1>
-          <h2>
+        <div className="flex flex-col">
+          <h1 className="sectionHeading">Think we would make a good team?</h1>
+          <h2 className="sectionSubheading">
             Send me an email at tariqhirji@gmail.com or message me using the
             form below.
           </h2>
@@ -26,7 +24,7 @@ const Contact = () => {
             alt="tariq"
             width={500}
             height={500}
-            className="md:mx-6"
+            className="hidden md:flex"
           />
         </div>
 

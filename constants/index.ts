@@ -13,7 +13,7 @@ export const NAV_LINKS = [
 
 export const TYPEWRITER = {
   staticForeward: "Hello ",
-  dynamicWords: ["world,", "recruiters,", "friends,", "peers,", "drifters,"],
+  dynamicWords: ["world,", "strangers,", "spiders,", "techlings,", "drifters,"],
   staticAfterward: "I am ",
   name: "Tariq Hirji",
 };
@@ -21,7 +21,7 @@ export const TYPEWRITER = {
 export const HERO_CONTENT = {
   title: "hero_content",
   subtitle:
-    "I am a software developer mainly focused on frontend design and development.",
+    "Welcome to my home on the internet! I am a software developer with a passion for good user interfaces and experiences.",
   location: "Based in Toronto, Canada",
 };
 
@@ -214,4 +214,23 @@ export const TEST_FRAMEWORKS = {
     },
   },
   barBackground: "#DDD",
+};
+
+export const PROJECTS = {
+  title: "projects",
+  subtitle: "Some of my favourite things that I've built or helped build.",
+};
+
+export const DEEPFAKE = {
+  title: "AI Deepfake",
+  subtitle: "Artificial impersonation",
+  badges: [
+    { badge: "Python" },
+    { badge: "Tensorflow" },
+    { badge: "DeepFaceLab" },
+    { badge: "Wav2Lip" },
+    { badge: "DNN" },
+  ],
+  description:
+    "A deepfake of Justin Trudeau to explore the process and effects of disinformation on the web.",
 };

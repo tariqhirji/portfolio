@@ -18,6 +18,15 @@
 }
 
 @layer components {
+  .sectionContainer {
+    @apply container mx-auto px-4 w-full;
+  }
+  .sectionHeading {
+    @apply pt-8 w-full;
+  }
+  .sectionSubheading {
+    @apply py-8;
+  }
   .socialIcon {
     @apply rounded-full shadow-lg shadow-black p-5 cursor-pointer hover:scale-125 ease-in duration-300 bg-white;
   }
@@ -26,6 +35,9 @@
   }
   .card_white {
     @apply bg-white;
+  }
+  .card_secondary {
+    @apply bg-secondary;
   }
   .btn {
     @apply px-4 py-2 rounded-md;
