@@ -5,6 +5,7 @@ import DegreePlanner from "@/public/DegreePlanner.jpg";
 import Image from "next/image";
 
 interface ProjectCardProps {
+  isVertical: boolean;
   title: string;
   subtitle: string;
   badges: { title: string }[];
@@ -16,11 +17,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   subtitle,
   badges,
   description,
+  isVertical,
 }) => {
   return (
-    <div className="projectCard col-span-8 card card_secondary">
+    <div
+      className={`projectCard card card_secondary ${
+        !isVertical ? "col-span-8 flex" : "col-span-4 row-span-2 flex flex-col"
+      }`}
+    >
       {/* Card Content */}
-      <div className="flex flex-col gap-5 p-5 w-[60%]">
+      <div
+        className={`flex flex-col gap-5 p-5  ${
+          !isVertical ? "w-[60%]" : "w-full order-2"
+        }`}
+      >
         <h2>{title}</h2>
         <h2 className="text-gray">{subtitle}</h2>
         <div className="badges inline-flex gap-4 flex-wrap">
@@ -40,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {/* Card Media */}
-      <div className="w-[40%]">
+      <div className={`${!isVertical ? "w-[40%]" : "w-full h-full order-1"}`}>
         <Image
           src={DegreePlanner}
           alt="Degree Planner"

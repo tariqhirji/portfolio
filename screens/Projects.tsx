@@ -17,13 +17,21 @@ const Projects = () => {
             subtitle={DEEPFAKE.subtitle}
             badges={DEEPFAKE.badges}
             description={DEEPFAKE.description}
+            isVertical={false}
           />
-          <div className="col-span-4 row-span-2 card card_secondary">hello</div>
           <ProjectCard
             title={DEGREE_PLANNER.title}
             subtitle={DEGREE_PLANNER.subtitle}
             badges={DEGREE_PLANNER.badges}
             description={DEGREE_PLANNER.description}
+            isVertical={true}
+          />
+          <ProjectCard
+            title={DEGREE_PLANNER.title}
+            subtitle={DEGREE_PLANNER.subtitle}
+            badges={DEGREE_PLANNER.badges}
+            description={DEGREE_PLANNER.description}
+            isVertical={false}
           />
         </div>
       </div>
