@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Tariq from "@/public/tariq.svg";
 import HeroText from "@/components/HeroText";
+import { FaAnglesDown } from "react-icons/fa6";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -16,7 +18,13 @@ const Hero = () => {
             className="lg:mx-4"
           />
         </div>
-        <div className="items-end w-full text-center pb-4">scroll down</div>
+        <div className="items-end text-center pb-4">
+          <span className="inline-block text-white animate-bounce hover:text-gray">
+            <Link href="#experience">
+              <FaAnglesDown size={30} />
+            </Link>
+          </span>
+        </div>
       </div>
     </section>
   );

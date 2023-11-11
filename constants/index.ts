@@ -248,7 +248,7 @@ export const RASPBERRY_PONG = {
     { title: "Sensors" },
   ],
   description:
-    "A robotic arm that successfully identifies a red solo cup and lands a pong shot with 100% accuracy!",
+    "A robotic contraption that successfully identifies a red solo cup and lands a pong shot with 100% accuracy!",
   URL: "https://www.youtube.com/embed/G7tFsmshbwU",
   buttonText: "Shutdown",
 };
@@ -258,15 +258,20 @@ export const DEGREE_PLANNER = {
   subtitle: "Full-Stack Web App",
   badges: [
     { title: "React.js" },
-    { title: "REST API" },
+    { title: "Echarts" },
     { title: "Node.js" },
     { title: "Express.js" },
     { title: "Bootstrap" },
     { title: "MongoDB" },
-    { title: "Apache ECharts" },
   ],
   description:
     "An application that allows students to visually plan their education using a variety of interactive graph types.",
   URL: "@/public/DegreePlanner.jpg",
   buttonText: "View Devpost",
+};
+
+export const ABOUT = {
+  title: "About",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla in metus id posuere. Fusce et tellus velit. Etiam ullamcorper blandit pharetra. Praesent vitae euismod dolor. Aenean semper sapien at tortor sodales, sit amet blandit lorem lacinia. Quisque dapibus lacus libero, vel pellentesque sem molestie id. Nunc ut ipsum mauris. Donec placerat velit sit amet nisl elementum, et auctor risus commodo. Nam aliquam nisi orci, sed efficitur purus rutrum vel. Quisque fringilla egestas erat, egestas ultrices est tempus sit amet. Maecenas lacinia in leo egestas consectetur.",
 };

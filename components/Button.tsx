@@ -3,6 +3,7 @@ interface ButtonProps {
   type: "submit" | "button";
   text: string;
   fullWidth: boolean;
+  icon?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -10,6 +11,7 @@ const Button: React.FC<ButtonProps> = ({
   text,
   type,
   fullWidth,
+  icon,
 }) => {
   return (
     <button
@@ -19,7 +21,14 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
       disabled={isDisabled}
     >
-      {text}
+      <label
+        className={`whitespace-nowrap ${
+          isDisabled ? "cursor-not-allowed" : " cursor-pointer"
+        }`}
+      >
+        {" "}
+        {text}
+      </label>
     </button>
   );
 };
