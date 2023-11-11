@@ -45,6 +45,9 @@
   .btn_blue {
     @apply text-white bg-blue hover:bg-[#8b85ff];
   }
+  .btn_disabled {
+    @apply bg-gray300 text-gray cursor-not-allowed;
+  }
   .projectCard {
     @apply rounded-md p-0;
   }

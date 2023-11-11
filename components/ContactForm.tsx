@@ -40,7 +40,7 @@ const ContactForm = () => {
         />
         <div className="w-full">
           <Button
-            variant="btn_blue"
+            isDisabled={false}
             text="Submit"
             type="submit"
             fullWidth={true}

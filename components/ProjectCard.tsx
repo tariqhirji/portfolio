@@ -12,6 +12,8 @@ interface ProjectCardProps {
   description: string;
   mediaType: "video" | "image";
   mediaURL: string;
+  status: "active" | "inactive";
+  buttonText: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -22,6 +24,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   isVertical,
   mediaType,
   mediaURL,
+  status,
+  buttonText,
 }) => {
   return (
     <div
@@ -46,8 +50,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div>
           <Button
             type="button"
-            variant="btn_blue"
-            text="View More"
+            isDisabled={status === "inactive"}
+            text={buttonText}
             fullWidth={false}
           />
         </div>

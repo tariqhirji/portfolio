@@ -1,15 +1,23 @@
 interface ButtonProps {
-  variant: "btn_blue" | "btn_secondary";
+  isDisabled: boolean;
   type: "submit" | "button";
   text: string;
   fullWidth: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ variant, text, type, fullWidth }) => {
+const Button: React.FC<ButtonProps> = ({
+  isDisabled,
+  text,
+  type,
+  fullWidth,
+}) => {
   return (
     <button
-      className={`btn ${variant} ${fullWidth ? "w-full" : ""}`}
+      className={`btn ${fullWidth ? "w-full" : ""} ${
+        isDisabled ? "btn_disabled" : "btn_blue"
+      }`}
       type={type}
+      disabled={isDisabled}
     >
       {text}
     </button>

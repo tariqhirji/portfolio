@@ -25,6 +25,8 @@ const Projects = () => {
             isVertical={false}
             mediaType="video"
             mediaURL={DEEPFAKE.URL}
+            status="inactive"
+            buttonText={DEEPFAKE.buttonText}
           />
           <ProjectCard
             title={RASPBERRY_PONG.title}
@@ -34,6 +36,8 @@ const Projects = () => {
             isVertical={true}
             mediaType="video"
             mediaURL={RASPBERRY_PONG.URL}
+            status="inactive"
+            buttonText={RASPBERRY_PONG.buttonText}
           />
           <ProjectCard
             title={DEGREE_PLANNER.title}
@@ -43,6 +47,8 @@ const Projects = () => {
             isVertical={false}
             mediaType="image"
             mediaURL={DEGREE_PLANNER.URL}
+            status="active"
+            buttonText={DEGREE_PLANNER.buttonText}
           />
         </div>
       </div>
