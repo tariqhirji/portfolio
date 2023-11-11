@@ -10,6 +10,8 @@ interface ProjectCardProps {
   subtitle: string;
   badges: { title: string }[];
   description: string;
+  mediaType: "video" | "image";
+  mediaURL: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -18,6 +20,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   badges,
   description,
   isVertical,
+  mediaType,
+  mediaURL,
 }) => {
   return (
     <div
@@ -31,9 +35,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           !isVertical ? "w-[60%]" : "w-full order-2"
         }`}
       >
-        <h2>{title}</h2>
+        <h2 className="font-bold">{title}</h2>
         <h2 className="text-gray">{subtitle}</h2>
-        <div className="badges inline-flex gap-4 flex-wrap">
+        <div className="badges inline-flex gap-x-4 gap-y-2 flex-wrap">
           {badges.map((badge) => (
             <Badge text={badge.title} key={badge.title} />
           ))}
@@ -50,15 +54,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {/* Card Media */}
-      <div className={`${!isVertical ? "w-[40%]" : "w-full h-full order-1"}`}>
-        <Image
-          src={DegreePlanner}
-          alt="Degree Planner"
-          width={0}
-          height={0}
-          style={{ width: "100%", height: "100%" }} // optional
-        />
-      </div>
+      <article
+        className={`${!isVertical ? "w-[40%]" : "w-full h-[50%] order-1"}`}
+      >
+        {mediaType === "image" ? (
+          <Image
+            src={DegreePlanner}
+            alt="Degree Planner"
+            width={0}
+            height={0}
+            className={`${!isVertical ? "rounded-r-md" : "rounded-t-md"}`}
+            style={{ width: "100%", height: "100%" }} // optional
+          />
+        ) : (
+          <iframe
+            src={mediaURL}
+            width="100%"
+            height="100%"
+            title="YouTube video player"
+            className={`${!isVertical ? "rounded-r-md" : "rounded-t-md"}`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        )}
+      </article>
     </div>
   );
 };

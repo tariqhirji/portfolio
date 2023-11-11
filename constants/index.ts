@@ -233,6 +233,22 @@ export const DEEPFAKE = {
   ],
   description:
     "A deepfake of Justin Trudeau to explore the process and effects of disinformation on the web.",
+  URL: "https://www.youtube.com/embed/hQckNhsrU1s",
+};
+
+export const RASPBERRY_PONG = {
+  title: "Raspberry Pong",
+  subtitle: "Robotics",
+  badges: [
+    { title: "Raspberry Pi" },
+    { title: "C++" },
+    { title: "OpenCV" },
+    { title: "Motors" },
+    { title: "Sensors" },
+  ],
+  description:
+    "A robotic arm that successfully identifies a red solo cup and lands a pong shot with 100% accuracy!",
+  URL: "https://www.youtube.com/embed/G7tFsmshbwU",
 };
 
 export const DEGREE_PLANNER = {
@@ -249,4 +265,5 @@ export const DEGREE_PLANNER = {
   ],
   description:
     "An application that allows students to visually plan their education using a variety of interactive graph types.",
+  URL: "@/public/DegreePlanner.jpg",
 };

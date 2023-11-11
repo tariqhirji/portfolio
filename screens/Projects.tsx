@@ -1,4 +1,9 @@
-import { PROJECTS, DEEPFAKE, DEGREE_PLANNER } from "@/constants";
+import {
+  PROJECTS,
+  DEEPFAKE,
+  DEGREE_PLANNER,
+  RASPBERRY_PONG,
+} from "@/constants";
 import React from "react";
 import Tariq from "@/public/tariq.svg";
 import Image from "next/image";
@@ -18,13 +23,17 @@ const Projects = () => {
             badges={DEEPFAKE.badges}
             description={DEEPFAKE.description}
             isVertical={false}
+            mediaType="video"
+            mediaURL={DEEPFAKE.URL}
           />
           <ProjectCard
-            title={DEGREE_PLANNER.title}
-            subtitle={DEGREE_PLANNER.subtitle}
-            badges={DEGREE_PLANNER.badges}
-            description={DEGREE_PLANNER.description}
+            title={RASPBERRY_PONG.title}
+            subtitle={RASPBERRY_PONG.subtitle}
+            badges={RASPBERRY_PONG.badges}
+            description={RASPBERRY_PONG.description}
             isVertical={true}
+            mediaType="video"
+            mediaURL={RASPBERRY_PONG.URL}
           />
           <ProjectCard
             title={DEGREE_PLANNER.title}
@@ -32,6 +41,8 @@ const Projects = () => {
             badges={DEGREE_PLANNER.badges}
             description={DEGREE_PLANNER.description}
             isVertical={false}
+            mediaType="image"
+            mediaURL={DEGREE_PLANNER.URL}
           />
         </div>
       </div>
