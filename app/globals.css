@@ -22,7 +22,7 @@
     @apply container mx-auto px-4 w-full;
   }
   .sectionHeading {
-    @apply pt-8 w-full;
+    @apply pt-8 w-full uppercase;
   }
   .sectionSubheading {
     @apply py-8;

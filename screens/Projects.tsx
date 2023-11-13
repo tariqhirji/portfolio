@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <section id="projects" className="pt-16 flex justify-start">
       <div className="sectionContainer flex flex-col mb-4">
-        <h1 className="sectionHeading uppercase">{PROJECTS.title}</h1>
+        <h1 className="sectionHeading">{PROJECTS.title}</h1>
         <h2 className="sectionSubheading">{PROJECTS.subtitle}</h2>
 
         <div className="md:grid md:grid-cols-12 gap-6 h-full">

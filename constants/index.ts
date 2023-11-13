@@ -275,3 +275,21 @@ export const ABOUT = {
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla in metus id posuere. Fusce et tellus velit. Etiam ullamcorper blandit pharetra. Praesent vitae euismod dolor. Aenean semper sapien at tortor sodales, sit amet blandit lorem lacinia. Quisque dapibus lacus libero, vel pellentesque sem molestie id. Nunc ut ipsum mauris. Donec placerat velit sit amet nisl elementum, et auctor risus commodo. Nam aliquam nisi orci, sed efficitur purus rutrum vel. Quisque fringilla egestas erat, egestas ultrices est tempus sit amet. Maecenas lacinia in leo egestas consectetur.",
 };
+
+export const TEAM_PLAYER = {
+  title: "Team Player",
+  description:
+    "I enjoy working with others and want my teammates to excel alongside me",
+};
+
+export const INNOVATIVE = {
+  title: "Team Player",
+  description:
+    "I like to try new ways of expanding on ideas in order to enhance them",
+};
+
+export const COMMUNICATOR = {
+  title: "Communicator",
+  description:
+    "I gain insights when talking through issues with different perspectives",
+};
