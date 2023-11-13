@@ -11,7 +11,10 @@ import SkillBar from "react-skillbars";
 
 const Skillbars = () => {
   return (
-    <div id="skillsbars" className="md:grid grid-cols-2 gap-6 mt-6 mb-12">
+    <div
+      id="skillsbars"
+      className="flex flex-col md:grid grid-cols-2 gap-6 mt-6 mb-12"
+    >
       <div className="card card_white col-span-2">
         <h2 className="text-center uppercase mt-2 mb-5 font-bold">
           {FRONTEND.title}
@@ -23,7 +26,7 @@ const Skillbars = () => {
           animationDelay={500}
         />
       </div>
-      <div className="card card_white col-span-2 lg:col-span-1">
+      <div className="card card_white col-span-2 lg:col-span-1 order-2 lg:order-1">
         <h2 className="text-center uppercase mt-2 mb-5 font-bold">
           {DESIGN_DEVOPS.title}
         </h2>
@@ -34,7 +37,7 @@ const Skillbars = () => {
           animationDelay={500}
         />
       </div>
-      <div className="card card_white col-span-2 lg:col-span-1">
+      <div className="card card_white col-span-2 lg:col-span-1 order-1 lg:order-2">
         <h2 className="text-center uppercase mt-2 mb-5 font-bold">
           {BACKEND.title}
         </h2>
@@ -46,7 +49,7 @@ const Skillbars = () => {
         />
       </div>
 
-      <div className="card card_white col-span-2 lg:col-span-1">
+      <div className="card card_white col-span-2 lg:col-span-1 order-3">
         <h2 className="text-center uppercase mt-2 mb-5 font-bold">
           {DATA_SCIENCE.title}
         </h2>
@@ -57,7 +60,7 @@ const Skillbars = () => {
           animationDelay={500}
         />
       </div>
-      <div className="card card_white col-span-2 lg:col-span-1">
+      <div className="card card_white col-span-2 lg:col-span-1 order-4">
         <h2 className="text-center uppercase mt-2 mb-5 font-bold">
           {TEST_FRAMEWORKS.title}
         </h2>

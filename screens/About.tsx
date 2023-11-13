@@ -9,7 +9,7 @@ import TraitCard from "@/components/TraitCard";
 
 const About = () => {
   return (
-    <section id="about" className="pt-16 flex justify-start px-4 pb-8">
+    <section id="about" className="pt-16 flex justify-start pb-8">
       <div className="sectionContainer">
         <div className="flex flex-col lg:flex-row gap-6">
           {/* Left Side - About text and details */}
