@@ -11,12 +11,12 @@ const About = () => {
   return (
     <section id="about" className="pt-16 flex justify-start px-4 pb-8">
       <div className="sectionContainer">
-        <div className="flex flex-row gap-6">
+        <div className="flex flex-col lg:flex-row gap-6">
           {/* Left Side - About text and details */}
-          <div className="w-1/2 flex flex-col gap-6">
+          <div className="w-full lg:w-1/2 flex flex-col gap-6">
             <h1 className="sectionHeading">{ABOUT.title}</h1>
             <h3 className="mt-3">{ABOUT.description}</h3>
-            <div>
+            <div className="flex justify-center lg:inline-block">
               <Button
                 isDisabled={false}
                 text="View Resume"
@@ -24,30 +24,32 @@ const About = () => {
                 fullWidth={false}
               />
             </div>
-            <Socials />
+            <div className="flex w-full justify-center lg:inline-block">
+              <Socials />
+            </div>
           </div>
           {/* Right Side - Weather + Sport Dynamics */}
-          <div className="w-1/2 flex flex-col gap-6 pt-32">
+          <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:pt-32">
             <WeatherDynamic />
             <SportsDynamic />
           </div>
         </div>
 
         {/* row of Trait cards */}
-        <div className="flex py-6 gap-6">
-          <div className="w-1/3">
+        <div className="flex flex-col lg:flex-row py-6 gap-6">
+          <div className="w-full lg:w-1/3">
             <TraitCard
               title={TEAM_PLAYER.title}
               description={TEAM_PLAYER.description}
             />
           </div>
-          <div className="w-1/3">
+          <div className="w-full lg:w-1/3">
             <TraitCard
               title={INNOVATIVE.title}
               description={INNOVATIVE.description}
             />
           </div>
-          <div className="w-1/3">
+          <div className="w-full lg:w-1/3">
             <TraitCard
               title={COMMUNICATOR.title}
               description={COMMUNICATOR.description}

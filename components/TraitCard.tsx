@@ -10,7 +10,7 @@ const TraitCard: React.FC<TraitCardProps> = ({ title, description }) => {
   return (
     <div className="card card_secondary flex flex-col gap-4 items-center">
       <Image src={TEAMPLAYER} alt="Team Player" width={200} height={200} />
-      <h2>{title}</h2>
+      <h2 className="font-bold">{title}</h2>
       <p className="px-8 text-center">{description}</p>
     </div>
   );
