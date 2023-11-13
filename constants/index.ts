@@ -283,7 +283,7 @@ export const TEAM_PLAYER = {
 };
 
 export const INNOVATIVE = {
-  title: "Team Player",
+  title: "Innovative",
   description:
     "I like to try new ways of expanding on ideas in order to enhance them",
 };
@@ -292,4 +292,9 @@ export const COMMUNICATOR = {
   title: "Communicator",
   description:
     "I gain insights when talking through issues with different perspectives",
+};
+
+export const CONTACT = {
+  title: "Think we would make a good team?",
+  description: "Send me a message using the form below or email me at ",
 };
