@@ -16,7 +16,7 @@ const Projects = () => {
         <h1 className="sectionHeading">{PROJECTS.title}</h1>
         <h2 className="sectionSubheading">{PROJECTS.subtitle}</h2>
 
-        <div className="md:grid md:grid-cols-12 gap-6 h-full">
+        <div className="flex flex-col md:grid md:grid-cols-12 gap-6 h-full">
           <ProjectCard
             title={DEEPFAKE.title}
             subtitle={DEEPFAKE.subtitle}
