@@ -20,6 +20,10 @@ const config: Config = {
       gray50: "#f9fafb",
       gray300: "#d1d5db",
     },
+    fontFamily: {
+      shareTech: "'Share Tech Mono', monospace",
+      firaSans: "'Fira Sans', sans-serif",
+    },
   },
   plugins: [],
 };

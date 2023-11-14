@@ -11,7 +11,7 @@ const Typewritter = () => {
   });
 
   return (
-    <h1>
+    <h1 className="font-shareTech">
       {TYPEWRITER.staticForeward} <span className="text-white">{text}</span>
       <Cursor cursorColor="white" />
       <br />
