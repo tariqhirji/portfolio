@@ -44,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         }`}
       >
         <h2 className="font-bold">{title}</h2>
-        <h2 className="text-gray">{subtitle}</h2>
+        <h2 className="text-gray font-light">{subtitle}</h2>
         <div className="badges inline-flex gap-x-4 gap-y-2 flex-wrap">
           {badges.map((badge) => (
             <Badge text={badge.title} key={badge.title} />

@@ -21,7 +21,7 @@ export const TYPEWRITER = {
 export const HERO_CONTENT = {
   title: "hero_content",
   subtitle:
-    "Welcome to my home on the internet! I am a software developer with a passion for good user interfaces and experiences.",
+    "Welcome to my home on the internet! I am a software developer with a passion for creating cool user interfaces.",
   location: "Based in Toronto, Canada",
 };
 

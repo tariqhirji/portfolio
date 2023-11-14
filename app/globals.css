@@ -56,7 +56,7 @@
     @apply pt-8 w-full uppercase font-shareTech;
   }
   .sectionSubheading {
-    @apply py-8;
+    @apply py-8 font-light;
   }
   .socialIcon {
     @apply rounded-full shadow-lg shadow-black p-5 cursor-pointer hover:scale-125 ease-in duration-300 bg-white;
