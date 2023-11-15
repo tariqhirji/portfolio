@@ -268,6 +268,7 @@ export const DEGREE_PLANNER = {
     "An application that allows students to visually plan their education using a variety of interactive graph types.",
   URL: "@/public/DegreePlanner.jpg",
   buttonText: "View Devpost",
+  buttonUrl: "https://devpost.com/software/degree-planner-m4hdal",
 };
 
 export const ABOUT = {

@@ -36,7 +36,7 @@ const Contact = () => {
 
         {/* Contact Page Footer */}
         <div className="flex justify-center pb-2 md:pb-4">
-          <Socials />
+          <Socials variant="socialIcon_white" shadowColor="shadow-gray" />
         </div>
       </div>
     </section>

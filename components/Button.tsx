@@ -1,9 +1,11 @@
+import { FaUserSecret, FaCode, FaSkullCrossbones } from "react-icons/fa6";
+
 interface ButtonProps {
   isDisabled: boolean;
   type: "submit" | "button";
   text: string;
   fullWidth: boolean;
-  icon?: string;
+  icon?: "code" | "private" | "shutdown";
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -26,9 +28,13 @@ const Button: React.FC<ButtonProps> = ({
           isDisabled ? "cursor-not-allowed" : " cursor-pointer"
         }`}
       >
-        {" "}
         {text}
       </label>
+      <span className={icon ? "ml-2" : ""}>
+        {icon === "code" && <FaCode />}
+        {icon === "private" && <FaUserSecret />}
+        {icon === "shutdown" && <FaSkullCrossbones />}
+      </span>
     </button>
   );
 };

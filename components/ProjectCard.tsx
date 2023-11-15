@@ -1,8 +1,8 @@
-import { DEEPFAKE } from "@/constants";
 import Badge from "./Badge";
 import Button from "./Button";
 import DegreePlanner from "@/public/DegreePlanner.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectCardProps {
   isVertical: boolean;
@@ -14,6 +14,8 @@ interface ProjectCardProps {
   mediaURL: string;
   status: "active" | "inactive";
   buttonText: string;
+  buttonIcon: "code" | "private" | "shutdown";
+  buttonUrl?: string | undefined;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -26,6 +28,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   mediaURL,
   status,
   buttonText,
+  buttonIcon,
+  buttonUrl,
 }) => {
   return (
     <div
@@ -52,12 +56,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <p>{description}</p>
         <div>
-          <Button
-            type="button"
-            isDisabled={status === "inactive"}
-            text={buttonText}
-            fullWidth={false}
-          />
+          {buttonUrl !== undefined ? (
+            <Link href={buttonUrl} target="_blank">
+              <Button
+                type="button"
+                isDisabled={status === "inactive"}
+                text={buttonText}
+                fullWidth={false}
+                icon={buttonIcon}
+              />
+            </Link>
+          ) : (
+            <Button
+              type="button"
+              isDisabled={status === "inactive"}
+              text={buttonText}
+              fullWidth={false}
+              icon={buttonIcon}
+            />
+          )}
         </div>
       </div>
 

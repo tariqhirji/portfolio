@@ -21,7 +21,7 @@ const TraitCard: React.FC<TraitCardProps> = ({ title, description }) => {
         <Image src={COMMUNICATOR} alt={title} width={200} height={200} />
       )}
       <h2 className="font-bold">{title}</h2>
-      <p className="px-8 text-center">{description}</p>
+      <p className="px-8 text-center font-light text-lg">{description}</p>
     </div>
   );
 };

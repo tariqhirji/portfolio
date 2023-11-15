@@ -12,7 +12,7 @@ const HeroText = () => {
         <MdLocationOn size={25} className="animate-bounce" />
         <h2 className="ml-3 w-full">{HERO_CONTENT.location}</h2>
       </div>
-      <Socials />
+      <Socials variant="socialIcon_white" shadowColor="shadow-black" />
     </div>
   );
 };

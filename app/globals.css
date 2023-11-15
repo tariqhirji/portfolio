@@ -59,7 +59,16 @@
     @apply py-8 font-light;
   }
   .socialIcon {
-    @apply rounded-full shadow-lg shadow-black p-5 cursor-pointer hover:scale-125 ease-in duration-300 bg-white;
+    @apply rounded-full shadow-lg p-5 cursor-pointer hover:scale-125 ease-in duration-300;
+  }
+  .socialIcon_white {
+    @apply bg-white;
+  }
+  .socialIcon_secondary {
+    @apply bg-secondary;
+  }
+  .socialIcon_blue {
+    @apply bg-blue/30;
   }
   .card {
     @apply p-4 shadow-lg rounded-md;

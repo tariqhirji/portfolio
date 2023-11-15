@@ -27,6 +27,7 @@ const Projects = () => {
             mediaURL={DEEPFAKE.URL}
             status="inactive"
             buttonText={DEEPFAKE.buttonText}
+            buttonIcon="private"
           />
           <ProjectCard
             title={RASPBERRY_PONG.title}
@@ -38,6 +39,7 @@ const Projects = () => {
             mediaURL={RASPBERRY_PONG.URL}
             status="inactive"
             buttonText={RASPBERRY_PONG.buttonText}
+            buttonIcon="shutdown"
           />
           <ProjectCard
             title={DEGREE_PLANNER.title}
@@ -49,6 +51,8 @@ const Projects = () => {
             mediaURL={DEGREE_PLANNER.URL}
             status="active"
             buttonText={DEGREE_PLANNER.buttonText}
+            buttonUrl={DEGREE_PLANNER.buttonUrl}
+            buttonIcon="code"
           />
         </div>
       </div>
