@@ -3,9 +3,8 @@ import Socials from "@/components/Socials";
 import SportsDynamic from "@/components/SportsDynamic";
 import WeatherDynamic from "@/components/WeatherDynamic";
 import { ABOUT, COMMUNICATOR, INNOVATIVE, TEAM_PLAYER } from "@/constants";
-import Image from "next/image";
-import TEAMPLAYER from "@/public/team_Player.svg";
 import TraitCard from "@/components/TraitCard";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -18,12 +17,17 @@ const About = () => {
             <h3 className="mt-3">{ABOUT.description}</h3>
             <div className="flex gap-6 flex-col">
               <div className="flex justify-center lg:inline-block">
-                <Button
-                  isDisabled={false}
-                  text="View Resume"
-                  type="button"
-                  fullWidth={false}
-                />
+                <Link
+                  href="../Tariq_Resume_Nov2023-compressed.pdf"
+                  target="_blank"
+                >
+                  <Button
+                    isDisabled={false}
+                    text="View Resume"
+                    type="button"
+                    fullWidth={false}
+                  />
+                </Link>
               </div>
               <div className="flex w-full justify-center lg:inline-block">
                 <Socials variant="socialIcon_blue" shadowColor="shadow-gray" />
