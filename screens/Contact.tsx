@@ -7,11 +7,11 @@ import { CONTACT } from "@/constants";
 const Contact = () => {
   return (
     <section id="contact" className="pt-16 flex bg-secondary">
-      <div className="sectionContainer flex flex-col gap-0 md:gap-14 justify-start md:justify-between">
+      <div className="sectionContainer flex flex-col gap-0 2xl:gap-14 justify-start md:justify-between">
         {/* Headings */}
         <div className="flex flex-col">
           <h1 className="sectionHeading">{CONTACT.title}</h1>
-          <h2 className="sectionSubheading md:mt-10">
+          <h2 className="sectionSubheading 2xl:mt-10">
             {CONTACT.description}{" "}
             <a
               href="mailto:tariqhirji@gmail.com"
@@ -35,7 +35,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Page Footer */}
-        <div className="flex justify-center pb-2 md:pb-4">
+        <div className="justify-center pb-2 2xl:pb-4 hidden 2xl:flex">
           <Socials variant="socialIcon_white" shadowColor="shadow-gray" />
         </div>
       </div>
