@@ -16,7 +16,7 @@ const About = () => {
             <h1 className="sectionHeading">{ABOUT.title}</h1>
             <h3 className="mt-3">{ABOUT.description}</h3>
             <div className="flex gap-6 flex-col">
-              <div className="flex justify-center lg:inline-block">
+              <div className="flex justify-center lg:inline-block order-2">
                 <Link
                   href="../Tariq_Resume_Nov2023-compressed.pdf"
                   target="_blank"
@@ -25,12 +25,15 @@ const About = () => {
                     isDisabled={false}
                     text="View Resume"
                     type="button"
-                    fullWidth={false}
+                    fullWidth={true}
                   />
                 </Link>
               </div>
-              <div className="flex w-full justify-center lg:inline-block">
-                <Socials variant="socialIcon_blue" shadowColor="shadow-gray" />
+              <div className="flex w-full justify-center order-1">
+                <Socials
+                  variant="socialIcon_secondary"
+                  shadowColor="shadow-gray"
+                />
               </div>
             </div>
           </div>

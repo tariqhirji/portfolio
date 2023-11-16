@@ -67,9 +67,6 @@
   .socialIcon_secondary {
     @apply bg-secondary;
   }
-  .socialIcon_blue {
-    @apply bg-blue/30;
-  }
   .card {
     @apply p-4 shadow-lg rounded-md;
   }
