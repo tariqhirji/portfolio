@@ -3,14 +3,43 @@ import { NAV_LINKS } from "@/constants";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { useState, useEffect, useRef } from "react";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
+  const [navBgColor, setNavBgColor] = useState("blue");
+
+  const changeColor = () => {
+    if (window.scrollY > document.getElementById("contact")!.offsetTop - 100) {
+      setNavBgColor("secondary");
+    } else if (window.scrollY > document.getElementById("about")!.offsetTop) {
+      setNavBgColor("white");
+    } else if (
+      window.scrollY > document.getElementById("projects")!.offsetTop
+    ) {
+      setNavBgColor("white");
+    } else if (window.scrollY > document.getElementById("skills")!.offsetTop) {
+      setNavBgColor("secondary");
+    } else {
+      setNavBgColor("blue");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+  }, []);
+
   return (
-    <Disclosure as="nav" className="bg-blue fixed w-full z-[10]" id="nav">
+    <Disclosure
+      as="nav"
+      className={`fixed w-full z-[100] ${
+        navBgColor === "white" ? "bg-white" : `bg-${navBgColor}`
+      }`}
+      id="nav"
+    >
       {({ open }) => (
         <div>
           <div className="relative flex h-16 items-center justify-between mx-auto container px-4">
