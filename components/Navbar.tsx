@@ -10,21 +10,40 @@ function classNames(...classes: string[]) {
 }
 
 export default function Example() {
+  const [section, setSection] = useState("hero");
   const [navBgColor, setNavBgColor] = useState("blue");
 
   const changeColor = () => {
-    if (window.scrollY > document.getElementById("contact")!.offsetTop - 100) {
+    if (window.scrollY > document.getElementById("contact")!.offsetTop - 70) {
       setNavBgColor("secondary");
-    } else if (window.scrollY > document.getElementById("about")!.offsetTop) {
-      setNavBgColor("white");
+      setSection("contact");
     } else if (
-      window.scrollY > document.getElementById("projects")!.offsetTop
+      window.scrollY >
+      document.getElementById("about")!.offsetTop - 70
     ) {
       setNavBgColor("white");
-    } else if (window.scrollY > document.getElementById("skills")!.offsetTop) {
+      setSection("about");
+    } else if (
+      window.scrollY >
+      document.getElementById("projects")!.offsetTop - 70
+    ) {
+      setNavBgColor("white");
+      setSection("projects");
+    } else if (
+      window.scrollY >
+      document.getElementById("skills")!.offsetTop - 70
+    ) {
       setNavBgColor("secondary");
+      setSection("skills");
+    } else if (
+      window.scrollY >
+      document.getElementById("experience")!.offsetTop - 70
+    ) {
+      setNavBgColor("transparent");
+      setSection("experience");
     } else {
       setNavBgColor("blue");
+      setSection("hero");
     }
   };
 
@@ -57,8 +76,18 @@ export default function Example() {
 
             <div className="flex flex-1 items-center justify-between h-full">
               {/* Nav Brand */}
-              <div className="flex flex-shrink-0 items-center rounded-md px-3 py-2 hover:bg-gray text-black text-3xl hover:text-white">
-                <Link href="/#hero">Tariq Hirji</Link>
+              <div className="flex flex-shrink-0 items-center text-3xl">
+                <Link
+                  href="/#hero"
+                  className={classNames(
+                    section === "hero"
+                      ? "bg-gray text-white"
+                      : "text-black hover:bg-gray hover:text-white",
+                    "rounded-md px-3 py-2"
+                  )}
+                >
+                  Tariq Hirji
+                </Link>
               </div>
 
               {/* Nav Links */}
@@ -69,12 +98,12 @@ export default function Example() {
                       key={link.key}
                       href={link.href}
                       className={classNames(
-                        link.active
+                        section === link.key
                           ? "bg-gray text-white"
                           : "text-black hover:bg-gray hover:text-white",
                         "rounded-md px-3 py-2 text-sm font-medium"
                       )}
-                      aria-current={link.active ? "page" : undefined}
+                      aria-current={section === link.key ? "page" : undefined}
                     >
                       <p className="text-lg uppercase">{link.label}</p>
                     </Link>
@@ -92,12 +121,12 @@ export default function Example() {
                   as="a"
                   href={link.href}
                   className={classNames(
-                    link.active
+                    section === link.key
                       ? "bg-gray text-white"
                       : "text-black hover:bg-gray hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
-                  aria-current={link.active ? "page" : undefined}
+                  aria-current={section === link.key ? "page" : undefined}
                 >
                   <p className="uppercase">{link.label}</p>
                 </Disclosure.Button>
