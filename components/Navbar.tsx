@@ -1,4 +1,5 @@
 "use client";
+import useColorTheme from "@/app/hooks/useColorTheme";
 import { NAV_LINKS } from "@/constants";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -12,6 +13,7 @@ function classNames(...classes: string[]) {
 export default function Example() {
   const [section, setSection] = useState("hero");
   const [navBgColor, setNavBgColor] = useState("blue");
+  const [colorTheme, setColorTheme] = useColorTheme();
 
   const changeColor = () => {
     if (window.scrollY > document.getElementById("contact")!.offsetTop - 70) {
@@ -54,7 +56,7 @@ export default function Example() {
   return (
     <Disclosure
       as="nav"
-      className={`fixed w-full z-[100] ${
+      className={`fixed w-full z-[100] dark:bg-dark1 ${
         navBgColor === "white" ? "bg-white" : `bg-${navBgColor}`
       }`}
       id="nav"
@@ -109,6 +111,14 @@ export default function Example() {
                     </Link>
                   ))}
                 </div>
+                <button
+                  className="dark:text-white text-black bg-sky-500 dark:bg-green-500"
+                  onClick={() =>
+                    setColorTheme(colorTheme === "light" ? "dark" : "light")
+                  }
+                >
+                  TOGGLE THEME
+                </button>
               </div>
             </div>
           </div>
