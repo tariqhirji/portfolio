@@ -53,10 +53,10 @@
     @apply container mx-auto px-6 lg:px-8 2xl:px-4 w-full;
   }
   .sectionHeading {
-    @apply pt-8 w-full uppercase font-shareTech;
+    @apply pt-8 w-full uppercase font-shareTech text-black dark:text-secondary;
   }
   .sectionSubheading {
-    @apply py-8 font-light;
+    @apply py-8 font-light text-black dark:text-secondary;
   }
   .socialIcon {
     @apply rounded-full shadow-lg p-5 cursor-pointer hover:scale-125 ease-in duration-300;
@@ -71,7 +71,7 @@
     @apply p-4 shadow-lg rounded-md;
   }
   .card_white {
-    @apply bg-white;
+    @apply bg-white dark:bg-slate;
   }
   .card_secondary {
     @apply bg-secondary;
