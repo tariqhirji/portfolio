@@ -10,7 +10,7 @@ interface TraitCardProps {
 
 const TraitCard: React.FC<TraitCardProps> = ({ title, description }) => {
   return (
-    <div className="card card_secondary flex flex-col gap-4 items-center">
+    <div className="card card_secondary flex flex-col gap-4 items-center dark:text-secondary">
       {title === "Team Player" && (
         <Image src={TEAMPLAYER} alt={title} width={200} height={200} />
       )}

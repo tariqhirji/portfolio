@@ -74,21 +74,21 @@
     @apply bg-white dark:bg-slate;
   }
   .card_secondary {
-    @apply bg-secondary;
+    @apply bg-secondary dark:bg-slate;
   }
   .btn {
     @apply px-4 py-2 rounded-md flex items-center justify-center;
   }
   .btn_blue {
-    @apply text-white bg-blue hover:bg-[#8b85ff];
+    @apply text-white bg-blue hover:bg-[#8b85ff] dark:bg-secondary dark:text-blue;
   }
   .btn_disabled {
-    @apply bg-gray300 text-gray cursor-not-allowed;
+    @apply bg-gray300 text-gray cursor-not-allowed dark:bg-[#2b2b2b] dark:text-slate;
   }
   .projectCard {
     @apply rounded-md p-0;
   }
   .badge {
-    @apply inline-flex items-center rounded-md bg-white px-2 py-1 text-sm font-medium ring-1 ring-inset ring-gray;
+    @apply inline-flex items-center rounded-md bg-white dark:bg-dark1 text-black dark:text-secondary px-2 py-1 text-sm font-medium ring-1 ring-inset ring-gray;
   }
 }

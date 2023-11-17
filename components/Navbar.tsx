@@ -83,8 +83,8 @@ export default function Example() {
                   href="/#hero"
                   className={classNames(
                     section === "hero"
-                      ? "bg-gray text-white"
-                      : "text-black hover:bg-gray hover:text-white",
+                      ? "bg-gray text-secondary dark:text-blue"
+                      : "text-black dark:text-secondary hover:bg-gray hover:text-secondary dark:hover:text-blue",
                     "rounded-md px-3 py-2"
                   )}
                 >
@@ -101,8 +101,8 @@ export default function Example() {
                       href={link.href}
                       className={classNames(
                         section === link.key
-                          ? "bg-gray text-white"
-                          : "text-black hover:bg-gray hover:text-white",
+                          ? "bg-gray text-secondary dark:text-blue"
+                          : "text-black dark:text-secondary hover:bg-gray hover:text-secondary dark:hover:text-blue",
                         "rounded-md px-3 py-2 text-sm font-medium"
                       )}
                       aria-current={section === link.key ? "page" : undefined}

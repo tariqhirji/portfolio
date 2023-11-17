@@ -8,13 +8,13 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <section id="about" className="pt-16 flex justify-start pb-8">
+    <section id="about" className="pt-16 flex justify-start pb-8 dark:bg-dark1">
       <div className="sectionContainer">
         <div className="flex flex-col lg:flex-row gap-6">
           {/* Left Side - About text and details */}
           <div className="w-full lg:w-1/2 flex flex-col gap-6">
             <h1 className="sectionHeading">{ABOUT.title}</h1>
-            <h3 className="mt-3">{ABOUT.description}</h3>
+            <h3 className="mt-3 dark:text-secondary">{ABOUT.description}</h3>
             <div className="flex gap-6 flex-col">
               <div className="flex justify-center lg:inline-block order-2">
                 <Link
