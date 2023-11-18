@@ -12,7 +12,9 @@ const Socials: React.FC<SocialsProps> = ({ variant, shadowColor }) => {
     <div className="flex items-center justify-start py-4 gap-12">
       {SOCIALS.map((social) => (
         <Link href={social.href} key={social.key} target="_blank">
-          <div className={`socialIcon ${variant} ${shadowColor}`}>
+          <div
+            className={`socialIcon ${variant} ${shadowColor} dark:shadow-writing`}
+          >
             {social.key === "email" && (
               <div className="text-blue">
                 <AiOutlineMail size={25} />
