@@ -19,7 +19,7 @@ const Hero = () => {
           />
         </div>
         <div className="items-end text-center pb-4">
-          <span className="hidden lg:inline-block text-white animate-bounce hover:text-gray dark:hover:text-blue">
+          <span className="hidden lg:inline-block text-white animate-bounce hover:text-gray dark:hover:text-blue transition duration-150 ease-in">
             <Link href="#experience">
               <FaAnglesDown size={30} />
             </Link>
