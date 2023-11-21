@@ -21,7 +21,7 @@ const WeatherDynamic = () => {
   }, []);
 
   return (
-    <div className="card card_secondary w-full flex flex-col items-center text-center justify-center gap-4">
+    <div className="card card_secondary w-full flex flex-col items-center text-center justify-center gap-4 dark:text-secondary">
       <p className="font-bold text-2xl font-shareTech">
         The weather where I am currently:
       </p>

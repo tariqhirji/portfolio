@@ -4,7 +4,10 @@ import Skillbars from "@/components/Skillbars";
 
 const Skills = () => {
   return (
-    <section id="skills" className="pt-16 flex justify-start bg-secondary">
+    <section
+      id="skills"
+      className="pt-16 flex justify-start bg-secondary dark:bg-dark1"
+    >
       <div className="sectionContainer">
         <h1 className="sectionHeading">{SKILLS.title}</h1>
         <h2 className="sectionSubheading">{SKILLS.subtitle}</h2>

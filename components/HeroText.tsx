@@ -5,10 +5,14 @@ import { HERO_CONTENT } from "@/constants";
 
 const HeroText = () => {
   return (
-    <div className="flex flex-col gap-6 2xl:gap-10">
+
+    <div className="flex flex-col gap-10 max-lg:mt-20">
+
       <Typewriter />
-      <h2>{HERO_CONTENT.subtitle}</h2>
-      <div className="flex text-white items-center">
+      <h2 className="text-black dark:text-secondary">
+        {HERO_CONTENT.subtitle}
+      </h2>
+      <div className="flex text-white dark:text-slate items-center">
         <MdLocationOn size={25} className="animate-bounce" />
         <h2 className="ml-3 w-full">{HERO_CONTENT.location}</h2>
       </div>

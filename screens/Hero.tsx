@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section id="hero" className="flex bg-blue h-full">
+    <section id="hero" className="flex bg-blue dark:bg-dark1 h-full">
       <div className="sectionContainer lg:flex lg:flex-col lg:justify-between">
         <div className="pt-20 lg:flex lg:items-center my-auto">
           <HeroText />
@@ -19,7 +19,7 @@ const Hero = () => {
           />
         </div>
         <div className="items-end text-center pb-4">
-          <span className="hidden lg:inline-block text-white animate-bounce hover:text-gray">
+          <span className="hidden lg:inline-block text-white animate-bounce hover:text-gray dark:hover:text-blue transition duration-150 ease-in">
             <Link href="#experience">
               <FaAnglesDown size={30} />
             </Link>

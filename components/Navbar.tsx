@@ -1,7 +1,13 @@
 "use client";
+import useColorTheme from "@/app/hooks/useColorTheme";
 import { NAV_LINKS } from "@/constants";
 import { Disclosure } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  XMarkIcon,
+  SunIcon,
+  MoonIcon,
+} from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
@@ -12,38 +18,43 @@ function classNames(...classes: string[]) {
 export default function Example() {
   const [section, setSection] = useState("hero");
   const [navBgColor, setNavBgColor] = useState("blue");
+  const [colorTheme, setColorTheme] = useColorTheme();
 
   const changeColor = () => {
-    if (window.scrollY > document.getElementById("contact")!.offsetTop - 70) {
-      setNavBgColor("secondary");
-      setSection("contact");
-    } else if (
-      window.scrollY >
-      document.getElementById("about")!.offsetTop - 70
-    ) {
-      setNavBgColor("white");
-      setSection("about");
-    } else if (
-      window.scrollY >
-      document.getElementById("projects")!.offsetTop - 70
-    ) {
-      setNavBgColor("white");
-      setSection("projects");
-    } else if (
-      window.scrollY >
-      document.getElementById("skills")!.offsetTop - 70
-    ) {
-      setNavBgColor("secondary");
-      setSection("skills");
-    } else if (
-      window.scrollY >
-      document.getElementById("experience")!.offsetTop - 70
-    ) {
-      setNavBgColor("transparent");
-      setSection("experience");
+    if (typeof window !== "undefined") {
+      if (window.scrollY > document.getElementById("contact")!.offsetTop - 70) {
+        setNavBgColor("secondary");
+        setSection("contact");
+      } else if (
+        window.scrollY >
+        document.getElementById("about")!.offsetTop - 70
+      ) {
+        setNavBgColor("white");
+        setSection("about");
+      } else if (
+        window.scrollY >
+        document.getElementById("projects")!.offsetTop - 70
+      ) {
+        setNavBgColor("white");
+        setSection("projects");
+      } else if (
+        window.scrollY >
+        document.getElementById("skills")!.offsetTop - 70
+      ) {
+        setNavBgColor("secondary");
+        setSection("skills");
+      } else if (
+        window.scrollY >
+        document.getElementById("experience")!.offsetTop - 70
+      ) {
+        setNavBgColor("transparent");
+        setSection("experience");
+      } else {
+        setNavBgColor("blue");
+        setSection("hero");
+      }
     } else {
-      setNavBgColor("blue");
-      setSection("hero");
+      null;
     }
   };
 
@@ -56,7 +67,8 @@ export default function Example() {
       as="nav"
       className={`fixed w-full z-[100] ${
         navBgColor === "white" ? "bg-white" : `bg-${navBgColor}`
-      }`}
+      }
+        ${section === "experience" ? "dark:bg-transparent" : "dark:bg-dark1"}`}
       id="nav"
     >
       {({ open }) => (
@@ -81,9 +93,9 @@ export default function Example() {
                   href="/#hero"
                   className={classNames(
                     section === "hero"
-                      ? "bg-gray text-white"
-                      : "text-black hover:bg-gray hover:text-white",
-                    "rounded-md px-3 py-2"
+                      ? "bg-gray text-secondary dark:text-blue"
+                      : "text-black dark:text-secondary hover:bg-gray hover:text-secondary dark:hover:text-blue",
+                    "rounded-md px-3 py-2 transition duration-200"
                   )}
                 >
                   Tariq Hirji
@@ -99,15 +111,29 @@ export default function Example() {
                       href={link.href}
                       className={classNames(
                         section === link.key
-                          ? "bg-gray text-white"
-                          : "text-black hover:bg-gray hover:text-white",
-                        "rounded-md px-3 py-2 text-sm font-medium"
+                          ? "bg-gray text-secondary dark:text-blue"
+                          : "text-black dark:text-secondary hover:bg-gray hover:text-secondary dark:hover:text-blue",
+                        "rounded-md px-3 py-2 text-sm font-medium transition duration-200"
                       )}
                       aria-current={section === link.key ? "page" : undefined}
                     >
                       <p className="text-lg uppercase">{link.label}</p>
                     </Link>
                   ))}
+                  <button
+                    className="dark:text-white text-black bg-sky-500 dark:bg-green-500"
+                    onClick={() =>
+                      setColorTheme(colorTheme === "light" ? "dark" : "light")
+                    }
+                  >
+                    <div className="border p-2 transition duration-150 ease-in-out rounded hover:border-dark1 hover:bg-dark1 hover:text-white dark:hover:bg-blue dark:hover:border-blue dark:hover:text-[#ffff00]">
+                      {colorTheme === "light" ? (
+                        <MoonIcon className="block h-5 w-5 " />
+                      ) : (
+                        <SunIcon className="block h-5 w-5" />
+                      )}
+                    </div>
+                  </button>
                 </div>
               </div>
             </div>

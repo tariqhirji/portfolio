@@ -7,6 +7,7 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./screens/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     colors: {
       white: "#FFFFFF",
@@ -16,6 +17,7 @@ const config: Config = {
       writing: "#2B2B2B",
       dark1: "#121212",
       transparent: "transparent",
+      slate: "#4A4A4A",
       gray: "#374151",
       gray50: "#f9fafb",
       gray300: "#d1d5db",

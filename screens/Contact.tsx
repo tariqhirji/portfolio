@@ -6,7 +6,7 @@ import { CONTACT } from "@/constants";
 
 const Contact = () => {
   return (
-    <section id="contact" className="pt-16 flex bg-secondary">
+    <section id="contact" className="pt-16 flex bg-secondary dark:bg-dark1">
       <div className="sectionContainer flex flex-col gap-0 2xl:gap-14 justify-start md:justify-between">
         {/* Headings */}
         <div className="flex flex-col">

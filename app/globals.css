@@ -53,10 +53,10 @@
     @apply container mx-auto px-6 lg:px-8 2xl:px-4 w-full;
   }
   .sectionHeading {
-    @apply pt-8 w-full uppercase font-shareTech;
+    @apply pt-8 w-full uppercase font-shareTech text-black dark:text-secondary;
   }
   .sectionSubheading {
-    @apply py-8 font-light;
+    @apply py-8 font-light text-black dark:text-secondary;
   }
   .socialIcon {
     @apply rounded-full shadow-lg p-5 cursor-pointer hover:scale-125 ease-in duration-300;
@@ -71,24 +71,27 @@
     @apply p-4 shadow-lg rounded-md;
   }
   .card_white {
-    @apply bg-white;
+    @apply bg-white dark:bg-slate;
   }
   .card_secondary {
-    @apply bg-secondary;
+    @apply bg-secondary dark:bg-slate;
   }
   .btn {
     @apply px-4 py-2 rounded-md flex items-center justify-center;
   }
   .btn_blue {
-    @apply text-white bg-blue hover:bg-[#8b85ff];
+    @apply text-white bg-blue hover:bg-[#8b85ff] dark:bg-secondary dark:text-blue dark:hover:bg-secondary/70;
   }
   .btn_disabled {
-    @apply bg-gray300 text-gray cursor-not-allowed;
+    @apply bg-gray300 text-gray cursor-not-allowed dark:bg-[#2b2b2b] dark:text-slate;
   }
   .projectCard {
     @apply rounded-md p-0;
   }
   .badge {
-    @apply inline-flex items-center rounded-md bg-white px-2 py-1 text-sm font-medium ring-1 ring-inset ring-gray;
+    @apply inline-flex items-center rounded-md bg-white dark:bg-dark1 text-black dark:text-secondary px-2 py-1 text-sm font-medium ring-1 ring-inset ring-gray;
+  }
+  .traitSVG {
+    @apply h-52 w-52 text-writing dark:text-secondary;
   }
 }

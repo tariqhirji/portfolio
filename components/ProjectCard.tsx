@@ -47,14 +47,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             : "w-full order-2"
         }`}
       >
-        <h2 className="font-bold">{title}</h2>
-        <h2 className="text-gray font-light">{subtitle}</h2>
+        <h2 className="font-bold dark:text-secondary">{title}</h2>
+        <h2 className="text-gray dark:text-gray300 font-light">{subtitle}</h2>
         <div className="badges inline-flex gap-x-4 gap-y-2 flex-wrap">
           {badges.map((badge) => (
             <Badge text={badge.title} key={badge.title} />
           ))}
         </div>
-        <p>{description}</p>
+        <p className="dark:text-secondary">{description}</p>
         <div>
           {buttonUrl !== undefined ? (
             <Link href={buttonUrl} target="_blank">

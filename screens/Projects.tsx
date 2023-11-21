@@ -11,7 +11,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-16 flex justify-start">
+    <section id="projects" className="pt-16 flex justify-start dark:bg-dark1">
       <div className="sectionContainer flex flex-col mb-4">
         <h1 className="sectionHeading">{PROJECTS.title}</h1>
         <h2 className="sectionSubheading">{PROJECTS.subtitle}</h2>
