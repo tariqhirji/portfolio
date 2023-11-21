@@ -91,4 +91,7 @@
   .badge {
     @apply inline-flex items-center rounded-md bg-white dark:bg-dark1 text-black dark:text-secondary px-2 py-1 text-sm font-medium ring-1 ring-inset ring-gray;
   }
+  .traitSVG {
+    @apply h-52 w-52 text-writing dark:text-secondary;
+  }
 }

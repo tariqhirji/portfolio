@@ -5,7 +5,7 @@ import { HERO_CONTENT } from "@/constants";
 
 const HeroText = () => {
   return (
-    <div className="flex flex-col gap-10 max-lg:mt-20 ">
+    <div className="flex flex-col gap-10 max-lg:mt-20">
       <Typewriter />
       <h2 className="text-black dark:text-secondary">
         {HERO_CONTENT.subtitle}
