@@ -2,6 +2,7 @@
 import { FormEventHandler, useState } from "react";
 import Button from "./Button";
 import FormInput from "./FormInput";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -11,7 +12,24 @@ const ContactForm = () => {
   const handleSubmit: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     // Make API call and clear form
-    alert(name + " " + email + " " + message);
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAIL_SERVICE!,
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE!,
+        { name, email, message },
+        process.env.NEXT_PUBLIC_EMAIL_ID!
+      )
+      .then((result) => {
+        console.log(result.text);
+        setName("");
+        setEmail("");
+        setMessage("");
+        alert("Message successfully sent!");
+      })
+      .catch((error) => {
+        console.log(error);
+        alert("Error! Please email me at tariqhirji@gmail.com and let me know");
+      });
   };
 
   return (

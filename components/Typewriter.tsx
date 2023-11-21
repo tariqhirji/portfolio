@@ -15,6 +15,7 @@ const Typewritter = () => {
       {TYPEWRITER.staticForeward}
       <span className="text-white dark:text-blue">{text}</span>
       <Cursor cursorColor="white" />
+
       <br />
       {TYPEWRITER.staticAfterward}
       <span>{TYPEWRITER.name}</span>
