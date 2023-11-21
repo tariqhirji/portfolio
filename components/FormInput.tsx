@@ -17,7 +17,7 @@ const FormInput: React.FC<FormInputProps> = ({
     <div>
       <div className="mb-6">
         <label
-          htmlFor="contactName"
+          htmlFor={type}
           className="block mb-2 text-sm text-gray dark:text-secondary pl-2"
         >
           {label}
@@ -25,7 +25,7 @@ const FormInput: React.FC<FormInputProps> = ({
         {type === "text" || type === "email" ? (
           <input
             type={type}
-            id="contactName"
+            id={type}
             value={value}
             onChange={(e) => setValue(e.target.value)}
             className="bg-gray50 border dark:bg-slate border-gray300 dark:border-writing text-gray dark:text-secondary text-sm rounded-lg focus:border-2 focus:ring-blue focus:border-blue dark:focus:ring-blue dark:focus:border-blue outline-none block w-full p-2.5 "
@@ -34,7 +34,7 @@ const FormInput: React.FC<FormInputProps> = ({
           />
         ) : (
           <textarea
-            id="message"
+            id={type}
             rows={4}
             value={value}
             onChange={(e) => setValue(e.target.value)}
