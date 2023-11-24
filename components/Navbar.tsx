@@ -1,13 +1,7 @@
 "use client";
-import useColorTheme from "@/app/hooks/useColorTheme";
 import { NAV_LINKS } from "@/constants";
 import { Disclosure } from "@headlessui/react";
-import {
-  Bars3Icon,
-  XMarkIcon,
-  SunIcon,
-  MoonIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
@@ -18,7 +12,6 @@ function classNames(...classes: string[]) {
 export default function Example() {
   const [section, setSection] = useState("hero");
   const [navBgColor, setNavBgColor] = useState("blue");
-  const [colorTheme, setColorTheme] = useColorTheme();
 
   const changeColor = () => {
     if (typeof window !== "undefined") {
@@ -115,25 +108,10 @@ export default function Example() {
                           : "text-black dark:text-secondary hover:bg-gray hover:text-secondary dark:hover:text-blue",
                         "rounded-md px-3 py-2 text-sm font-medium transition duration-200"
                       )}
-                      aria-current={section === link.key ? "page" : undefined}
                     >
                       <p className="text-lg uppercase">{link.label}</p>
                     </Link>
                   ))}
-                  <button
-                    className="dark:text-white text-black bg-sky-500 dark:bg-green-500"
-                    onClick={() =>
-                      setColorTheme(colorTheme === "light" ? "dark" : "light")
-                    }
-                  >
-                    <div className="border p-2 transition duration-150 ease-in-out rounded hover:border-dark1 hover:bg-dark1 hover:text-white dark:hover:bg-blue dark:hover:border-blue dark:hover:text-[#ffff00]">
-                      {colorTheme === "light" ? (
-                        <MoonIcon className="block h-5 w-5 " />
-                      ) : (
-                        <SunIcon className="block h-5 w-5" />
-                      )}
-                    </div>
-                  </button>
                 </div>
               </div>
             </div>

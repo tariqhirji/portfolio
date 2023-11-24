@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={"font-firaSans"}>
-        {/* <Navbar /> */}
+        <Navbar />
         <main>{children}</main>
       </body>
     </html>
