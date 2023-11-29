@@ -16,8 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={"font-firaSans"}>
-        <Navbar />
-        <main>{children}</main>
+        <main>
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );
