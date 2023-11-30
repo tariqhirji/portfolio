@@ -54,7 +54,7 @@ export default function Example() {
   return (
     <Disclosure
       as="nav"
-      className={`fixed w-full z-[100] ${
+      className={`fixed w-full z-[100] transition duration-200 ${
         navBgColor === "white" ? "bg-white" : `bg-${navBgColor}`
       }`}
       id="nav"
@@ -83,7 +83,7 @@ export default function Example() {
                     section === "hero"
                       ? "bg-gray text-white"
                       : "text-black hover:bg-gray hover:text-white",
-                    "rounded-md px-3 py-2"
+                    "rounded-md px-3 py-2 transition duration-200"
                   )}
                 >
                   Tariq Hirji
@@ -101,7 +101,7 @@ export default function Example() {
                         section === link.key
                           ? "bg-gray text-white"
                           : "text-black hover:bg-gray hover:text-white",
-                        "rounded-md px-3 py-2 text-sm font-medium"
+                        "rounded-md px-3 py-2 text-sm font-medium transition duration-200"
                       )}
                       aria-current={section === link.key ? "page" : undefined}
                     >
@@ -124,7 +124,7 @@ export default function Example() {
                     section === link.key
                       ? "bg-gray text-white"
                       : "text-black hover:bg-gray hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
+                    "block rounded-md px-3 py-2 text-base font-medium transition duration-200"
                   )}
                   aria-current={section === link.key ? "page" : undefined}
                 >
