@@ -9,6 +9,7 @@ import Contact from "@/screens/Contact";
 export default function Home() {
   return (
     <div className="mx-auto min-h-screen">
+      <Navbar />
       <Hero />
       <Experience />
       <Skills />
