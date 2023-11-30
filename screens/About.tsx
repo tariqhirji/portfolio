@@ -16,19 +16,6 @@ const About = () => {
             <h1 className="sectionHeading">{ABOUT.title}</h1>
             <h3 className="mt-3 dark:text-secondary">{ABOUT.description}</h3>
             <div className="flex gap-6 flex-col">
-              <div className="flex justify-center lg:inline-block order-2">
-                <Link
-                  href="../Tariq_Resume_Nov2023-compressed.pdf"
-                  target="_blank"
-                >
-                  <Button
-                    isDisabled={false}
-                    text="View Resume"
-                    type="button"
-                    fullWidth={true}
-                  />
-                </Link>
-              </div>
               <div className="flex w-full justify-center order-1">
                 <Socials
                   variant="socialIcon_secondary"
@@ -38,9 +25,22 @@ const About = () => {
             </div>
           </div>
           {/* Right Side - Weather + Sport Dynamics */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:pt-32">
+          <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:pt-32 justify-start">
+            <div className="justify-center lg:inline-block">
+              <Link
+                href="../Tariq_Resume_Nov2023-compressed.pdf"
+                target="_blank"
+              >
+                <Button
+                  isDisabled={false}
+                  text="View Resume"
+                  type="button"
+                  fullWidth={true}
+                />
+              </Link>
+            </div>
             <WeatherDynamic />
-            <SportsDynamic />
+            {/* <SportsDynamic /> */}
           </div>
         </div>
 

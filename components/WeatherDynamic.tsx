@@ -21,25 +21,23 @@ const WeatherDynamic = () => {
   }, []);
 
   return (
-    <div className="card card_secondary w-full flex flex-col items-center text-center justify-center gap-4 dark:text-secondary">
+    <div className="card card_secondary w-full flex flex-col items-center text-center justify-center gap-2 dark:text-secondary">
       <p className="font-bold text-2xl font-shareTech">
         The weather where I am currently:
       </p>
-      <div className="flex gap-8">
-        {!icon ? (
-          "..."
-        ) : (
-          <Image
-            src={`https://openweathermap.org/img/w/${icon}.png`}
-            alt="weather"
-            width={100}
-            height={100}
-          />
-        )}
-        <div className="flex flex-col items-center justify-center">
-          <p className="font-bold text-lg">{temp}&deg;C</p>
-          <p className="italic font-light text-lg">{desc}</p>
-        </div>
+      {!icon ? (
+        "..."
+      ) : (
+        <Image
+          src={`https://openweathermap.org/img/w/${icon}.png`}
+          alt="weather"
+          width={100}
+          height={100}
+        />
+      )}
+      <div className="flex flex-col gap-1 items-center justify-center mb-3">
+        <p className="font-bold text-lg">{temp.toFixed(1)}&deg;C</p>
+        <p className="italic font-light text-lg">{desc}</p>
       </div>
     </div>
   );
