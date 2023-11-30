@@ -273,7 +273,7 @@ export const DEGREE_PLANNER = {
 export const ABOUT = {
   title: "About",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla in metus id posuere. Fusce et tellus velit. Etiam ullamcorper blandit pharetra. Praesent vitae euismod dolor. Aenean semper sapien at tortor sodales, sit amet blandit lorem lacinia. Quisque dapibus lacus libero, vel pellentesque sem molestie id. Nunc ut ipsum mauris. Donec placerat velit sit amet nisl elementum, et auctor risus commodo. Nam aliquam nisi orci, sed efficitur purus rutrum vel. Quisque fringilla egestas erat, egestas ultrices est tempus sit amet. Maecenas lacinia in leo egestas consectetur.",
+    "Growing up, I always loved 3 things: cool technology, sports and games. I believe that this combination led me to this path of software development I have embarked on, each providing a different aspect to the type of developer I am. My interest in technology led me to its core - HTML, CSS and JS, and from then I've been in the tech rabbit hole. From my love of sports, I learned to trust and rely on those around me and to compete with others and myself. Finally, I attribute my sense of UX/UI to games, as they allowed me to understand what really good -- and really bad -- user experiences feels like.",
 };
 
 export const TEAM_PLAYER = {

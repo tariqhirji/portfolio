@@ -33,7 +33,7 @@ const About = () => {
               >
                 <Button
                   isDisabled={false}
-                  text="View Resume"
+                  text="View my Resumé"
                   type="button"
                   fullWidth={true}
                 />
