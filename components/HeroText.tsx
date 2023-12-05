@@ -5,9 +5,7 @@ import { HERO_CONTENT } from "@/constants";
 
 const HeroText = () => {
   return (
-
-    <div className="flex flex-col gap-10 max-lg:mt-20">
-
+    <div className="flex flex-col gap-10 lg:mt-20">
       <Typewriter />
       <h2 className="text-black dark:text-secondary">
         {HERO_CONTENT.subtitle}
@@ -17,7 +15,7 @@ const HeroText = () => {
         <h2 className="ml-3 w-full">{HERO_CONTENT.location}</h2>
       </div>
       <div className="flex justify-center lg:justify-start mb-4">
-      <Socials variant="socialIcon_white" shadowColor="shadow-black" />
+        <Socials variant="socialIcon_white" shadowColor="shadow-black" />
       </div>
     </div>
   );

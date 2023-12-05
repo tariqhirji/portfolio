@@ -50,7 +50,7 @@
     @apply font-shareTech;
   }
   .sectionContainer {
-    @apply container mx-auto px-6 lg:px-8 2xl:px-4 w-full;
+    @apply container mx-auto px-8 2xl:px-4 w-full;
   }
   .sectionHeading {
     @apply pt-8 w-full uppercase font-shareTech text-black dark:text-secondary;
