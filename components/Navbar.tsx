@@ -1,14 +1,10 @@
 "use client";
 import { NAV_LINKS } from "@/constants";
 import { Disclosure } from "@headlessui/react";
-import {
-  Bars3Icon,
-  XMarkIcon,
-  SunIcon,
-  MoonIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -76,10 +72,13 @@ export default function Example() {
     >
       {({ open }) => (
         <div>
-          <div className="relative flex h-16 items-center justify-between mx-auto container px-4">
+          <div className="relative flex h-16 items-center justify-between mx-auto container px-6 lg:px-4">
             {/* Mobile menu button*/}
-            <div className="absolute right-0 flex items-center sm:hidden">
-              <Disclosure.Button className="relative inline-flex items-center mx-4 justify-center rounded-md p-2 hover:bg-gray hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+
+            <div className="absolute right-6 flex gap-4 items-center sm:hidden">
+              <ThemeSwitcher theme={theme} toggleTheme={toggleTheme} />
+
+              <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 hover:bg-gray hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white dark:text-secondary">
                 <span className="sr-only">Open main menu</span>
                 {open ? (
                   <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -123,25 +122,14 @@ export default function Example() {
                       <p className="text-lg uppercase">{link.label}</p>
                     </Link>
                   ))}
-                  <button
-                    onClick={toggleTheme}
-                    className="dark:text-white text-black bg-sky-500 dark:bg-green-500"
-                  >
-                    <div className="border p-2 transition duration-150 ease-in-out rounded hover:border-dark1 hover:bg-dark1 hover:text-white dark:hover:bg-blue dark:hover:border-blue dark:hover:text-[#ffff00]">
-                      {theme === "light" ? (
-                        <MoonIcon className="h-5 w-5 block" />
-                      ) : (
-                        <SunIcon className="h-5 w-5 block" />
-                      )}
-                    </div>
-                  </button>
+                  <ThemeSwitcher theme={theme} toggleTheme={toggleTheme} />
                 </div>
               </div>
             </div>
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="space-y-1 px-6 lg:px-2 pb-3 pt-2">
               {NAV_LINKS.map((link) => (
                 <Disclosure.Button
                   key={link.key}
@@ -149,8 +137,8 @@ export default function Example() {
                   href={link.href}
                   className={classNames(
                     section === link.key
-                      ? "bg-gray text-white"
-                      : "text-black hover:bg-gray hover:text-white",
+                      ? "bg-gray text-white dark:text-blue"
+                      : "text-black hover:bg-gray hover:text-white dark:text-secondary",
                     "block rounded-md px-3 py-2 text-base font-medium transition duration-200"
                   )}
                   aria-current={section === link.key ? "page" : undefined}

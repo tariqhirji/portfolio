@@ -12,7 +12,7 @@ export const NAV_LINKS = [
 
 export const TYPEWRITER = {
   staticForeward: "Hello ",
-  dynamicWords: ["world,", "strangers,", "spiders,", "techlings,", "drifters,"],
+  dynamicWords: ["world,", "visitors,", "spiders,", "techlings,", "drifters,"],
   staticAfterward: "I am ",
   name: "Tariq Hirji",
 };
@@ -47,27 +47,27 @@ export const FRONTEND = {
     },
     {
       type: "CSS",
-      level: 87,
+      level: 88,
     },
     {
       type: "JavaScript",
-      level: 85,
+      level: 86,
     },
     {
       type: "React.js",
-      level: 82,
+      level: 84,
     },
     {
       type: "TypeScript",
-      level: 80,
+      level: 81,
     },
     {
       type: "TailwindCSS",
-      level: 77,
+      level: 80,
     },
     {
       type: "Angular",
-      level: 74,
+      level: 75,
     },
   ],
   colors: {
@@ -85,11 +85,11 @@ export const BACKEND = {
   skills: [
     {
       type: "Node.js",
-      level: 86,
+      level: 87,
     },
     {
       type: "REST API",
-      level: 83,
+      level: 84,
     },
     {
       type: "Java",
@@ -139,11 +139,11 @@ export const DESIGN_DEVOPS = {
     },
     {
       type: "Docker",
-      level: 73,
+      level: 74,
     },
     {
-      type: "Jenkins",
-      level: 68,
+      type: "ClickUp",
+      level: 72,
     },
   ],
   colors: {
@@ -161,7 +161,7 @@ export const DATA_SCIENCE = {
   skills: [
     {
       type: "Anaconda",
-      level: 87,
+      level: 86,
     },
     {
       type: "Jupyter",
@@ -169,7 +169,7 @@ export const DATA_SCIENCE = {
     },
     {
       type: "Pandas",
-      level: 83,
+      level: 82,
     },
     {
       type: "Tensorflow",
