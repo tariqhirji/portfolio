@@ -38,14 +38,14 @@ const ContactForm = () => {
         <FormInput
           type="text"
           label="Name"
-          placeholder="Billy Bob"
+          placeholder="Your Name"
           value={name}
           setValue={setName}
         />
         <FormInput
           type="email"
           label="Email"
-          placeholder="Billybob@outlook.com"
+          placeholder="You@email.com"
           value={email}
           setValue={setEmail}
         />
