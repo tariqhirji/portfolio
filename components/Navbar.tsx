@@ -1,7 +1,12 @@
 "use client";
 import { NAV_LINKS } from "@/constants";
 import { Disclosure } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  XMarkIcon,
+  SunIcon,
+  MoonIcon,
+} from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
@@ -120,9 +125,15 @@ export default function Example() {
                   ))}
                   <button
                     onClick={toggleTheme}
-                    className="text-dark1 dark:text-secondary"
+                    className="dark:text-white text-black bg-sky-500 dark:bg-green-500"
                   >
-                    Toggle
+                    <div className="border p-2 transition duration-150 ease-in-out rounded hover:border-dark1 hover:bg-dark1 hover:text-white dark:hover:bg-blue dark:hover:border-blue dark:hover:text-[#ffff00]">
+                      {theme === "light" ? (
+                        <MoonIcon className="h-5 w-5 block" />
+                      ) : (
+                        <SunIcon className="h-5 w-5 block" />
+                      )}
+                    </div>
                   </button>
                 </div>
               </div>
