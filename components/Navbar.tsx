@@ -12,6 +12,7 @@ function classNames(...classes: string[]) {
 export default function Example() {
   const [section, setSection] = useState("hero");
   const [navBgColor, setNavBgColor] = useState("blue");
+  const [theme, setTheme] = useState("light");
 
   const changeColor = () => {
     if (window.scrollY > document.getElementById("contact")!.offsetTop - 70) {
@@ -47,16 +48,25 @@ export default function Example() {
     }
   };
 
+  const toggleTheme = (): void => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", changeColor);
-  }, []);
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
 
   return (
     <Disclosure
       as="nav"
-      className={`fixed w-full z-[100] transition duration-200 ${
+      className={`fixed w-full z-[100] ${
         navBgColor === "white" ? "bg-white" : `bg-${navBgColor}`
-      }`}
+      } ${section === "experience" ? "dark:bg-transparent" : "dark:bg-dark1"}`}
       id="nav"
     >
       {({ open }) => (
@@ -81,8 +91,8 @@ export default function Example() {
                   href="/#hero"
                   className={classNames(
                     section === "hero"
-                      ? "bg-gray text-white"
-                      : "text-black hover:bg-gray hover:text-white",
+                      ? "bg-gray text-white dark:text-blue"
+                      : "text-black hover:bg-gray hover:text-white dark:text-secondary dark:hover:text-blue",
                     "rounded-md px-3 py-2 transition duration-200"
                   )}
                 >
@@ -99,8 +109,8 @@ export default function Example() {
                       href={link.href}
                       className={classNames(
                         section === link.key
-                          ? "bg-gray text-white"
-                          : "text-black hover:bg-gray hover:text-white",
+                          ? "bg-gray text-white dark:text-blue"
+                          : "text-black hover:bg-gray hover:text-white dark:text-secondary dark:hover:text-blue",
                         "rounded-md px-3 py-2 text-sm font-medium transition duration-200"
                       )}
                       aria-current={section === link.key ? "page" : undefined}
@@ -108,6 +118,12 @@ export default function Example() {
                       <p className="text-lg uppercase">{link.label}</p>
                     </Link>
                   ))}
+                  <button
+                    onClick={toggleTheme}
+                    className="text-dark1 dark:text-secondary"
+                  >
+                    Toggle
+                  </button>
                 </div>
               </div>
             </div>
