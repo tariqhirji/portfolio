@@ -8,14 +8,14 @@ const Hero = () => {
   return (
     <section id="hero" className="flex bg-blue dark:bg-dark1 h-full">
       <div className="sectionContainer lg:flex lg:flex-col lg:justify-between">
-        <div className="pt-20 lg:flex lg:items-center my-auto">
+        <div className="pt-20 lg:pt-12 lg:flex lg:items-center my-auto">
           <HeroText />
           <Image
             src={Tariq}
             alt="tariq"
             width={500}
             height={500}
-            className="lg:mx-4 lg:max-2xl:mt-6"
+            className="mx-auto justify-center lg:mx-4 lg:max-2xl:mt-6"
           />
         </div>
         <div className="items-end text-center pb-4">

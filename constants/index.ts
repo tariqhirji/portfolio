@@ -273,7 +273,7 @@ export const DEGREE_PLANNER = {
 export const ABOUT = {
   title: "About",
   description:
-    "Growing up, I always loved 3 things: cool technology, sports and games. I believe that it is this combination that led me along this path of software development that I have embarked on, each providing a different aspect to the type of developer I am. My interest in technology eventually led me to its frontend core - HTML, CSS and JS - and from then onward I developed a curiousity for every piece of software I used. From my love of sports, I learned to trust myself and my teammates and that competition and conflict are blessings in disguise. Finally, I attribute my sense of UX/UI to games, as they allowed me to truly understand what really good (and really bad) user experiences feels like.",
+    "Growing up, I always loved 3 things: cool technology, sports and games. I believe that it is this combination that led me along this path of software development that I have embarked on, each providing a different aspect to the type of developer I am. My interest in technology eventually led me to its frontend core - HTML, CSS and JS - and from then onward I developed a curiousity for every piece of software I used. From my love of sports, I learned to trust myself and my teammates and that competition and conflict can sometimes be blessings in disguise. Finally, I attribute my sense of UX/UI to games, as they allowed me to truly understand what really good (and really bad) user experiences feels like.",
 };
 
 export const TEAM_PLAYER = {

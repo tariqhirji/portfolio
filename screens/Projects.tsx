@@ -16,19 +16,7 @@ const Projects = () => {
         <h1 className="sectionHeading">{PROJECTS.title}</h1>
         <h2 className="sectionSubheading">{PROJECTS.subtitle}</h2>
 
-        <div className="flex flex-col md:grid md:grid-cols-12 gap-6 h-full">
-          <ProjectCard
-            title={DEEPFAKE.title}
-            subtitle={DEEPFAKE.subtitle}
-            badges={DEEPFAKE.badges}
-            description={DEEPFAKE.description}
-            isVertical={false}
-            mediaType="video"
-            mediaURL={DEEPFAKE.URL}
-            status="inactive"
-            buttonText={DEEPFAKE.buttonText}
-            buttonIcon="private"
-          />
+        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-6 h-full">
           <ProjectCard
             title={RASPBERRY_PONG.title}
             subtitle={RASPBERRY_PONG.subtitle}
@@ -41,6 +29,19 @@ const Projects = () => {
             buttonText={RASPBERRY_PONG.buttonText}
             buttonIcon="shutdown"
           />
+          <ProjectCard
+            title={DEEPFAKE.title}
+            subtitle={DEEPFAKE.subtitle}
+            badges={DEEPFAKE.badges}
+            description={DEEPFAKE.description}
+            isVertical={false}
+            mediaType="video"
+            mediaURL={DEEPFAKE.URL}
+            status="inactive"
+            buttonText={DEEPFAKE.buttonText}
+            buttonIcon="private"
+          />
+
           <ProjectCard
             title={DEGREE_PLANNER.title}
             subtitle={DEGREE_PLANNER.subtitle}

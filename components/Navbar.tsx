@@ -75,7 +75,7 @@ export default function Example() {
           <div className="relative flex h-16 items-center justify-between mx-auto container px-6 lg:px-4">
             {/* Mobile menu button*/}
 
-            <div className="absolute right-6 flex gap-4 items-center sm:hidden">
+            <div className="absolute right-6 flex gap-4 items-center lg:hidden">
               <ThemeSwitcher theme={theme} toggleTheme={toggleTheme} />
 
               <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 hover:bg-gray hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white dark:text-secondary">
@@ -105,7 +105,7 @@ export default function Example() {
               </div>
 
               {/* Nav Links */}
-              <div className="hidden sm:block">
+              <div className="hidden lg:block">
                 <div className="flex gap-4">
                   {NAV_LINKS.map((link) => (
                     <Link
@@ -128,7 +128,7 @@ export default function Example() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="lg:hidden">
             <div className="space-y-1 px-6 lg:px-2 pb-3 pt-2">
               {NAV_LINKS.map((link) => (
                 <Disclosure.Button

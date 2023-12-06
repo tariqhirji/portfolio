@@ -35,15 +35,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div
       className={`projectCard card card_secondary ${
         !isVertical
-          ? "lg:col-span-8 flex flex-col lg:flex-row"
-          : "col-span-4 row-span-2 flex flex-col"
+          ? "flex flex-col w-full lg:col-span-8 lg:flex-row"
+          : "flex flex-col col-span-4 row-span-2 "
       }`}
     >
       {/* Card Content */}
       <div
         className={`flex flex-col gap-5 p-5  ${
           !isVertical
-            ? "order-2 lg:order-1 w-full lg:w-[60%]"
+            ? "order-2 lg:order-2 w-full lg:w-[60%]"
             : "w-full order-2"
         }`}
       >
@@ -82,7 +82,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <article
         className={`${
           !isVertical
-            ? "w-full lg:w-[40%] order-1 lg:order-2"
+            ? "w-full lg:w-[40%] order-1 lg:order-1"
             : "w-full h-[50%] order-1"
         }`}
       >
@@ -92,7 +92,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             alt="Degree Planner"
             width={0}
             height={0}
-            className={`max-sm:min-h-[300px] ${
+            className={`max-lg:min-h-[300px] ${
               !isVertical ? "rounded-t-md lg:rounded-r-md" : "rounded-t-md"
             }`}
             style={{ width: "100%", height: "100%" }} // optional
@@ -103,7 +103,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             width="100%"
             height="100%"
             title="YouTube video player"
-            className={`max-sm:min-h-[300px] ${
+            className={`max-lg:min-h-[300px] ${
               !isVertical ? "rounded-t-md lg:rounded-r-md" : "rounded-t-md"
             }`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
