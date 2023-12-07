@@ -93,7 +93,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             width={0}
             height={0}
             className={`max-lg:min-h-[300px] ${
-              !isVertical ? "rounded-t-md lg:rounded-r-md" : "rounded-t-md"
+              !isVertical
+                ? "sm:max-md:rounded-t-md lg:rounded-l-md"
+                : "rounded-t-md"
             }`}
             style={{ width: "100%", height: "100%" }} // optional
           />
@@ -104,7 +106,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             height="100%"
             title="YouTube video player"
             className={`max-lg:min-h-[300px] ${
-              !isVertical ? "rounded-t-md lg:rounded-r-md" : "rounded-t-md"
+              !isVertical
+                ? "sm:max-md:rounded-t-md lg:rounded-l-md"
+                : "rounded-t-md"
             }`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
