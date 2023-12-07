@@ -23,6 +23,7 @@ const Skillbars = () => {
           colors={FRONTEND.colors}
           skills={FRONTEND.skills}
           barBackground={FRONTEND.barBackground}
+          symbolColor={FRONTEND.symbolColor}
           animationDelay={500}
         />
       </div>
@@ -34,6 +35,7 @@ const Skillbars = () => {
           colors={DESIGN_DEVOPS.colors}
           skills={DESIGN_DEVOPS.skills}
           barBackground={DESIGN_DEVOPS.barBackground}
+          symbolColor={DESIGN_DEVOPS.symbolColor}
           animationDelay={500}
         />
       </div>
@@ -45,6 +47,7 @@ const Skillbars = () => {
           colors={BACKEND.colors}
           skills={BACKEND.skills}
           barBackground={BACKEND.barBackground}
+          symbolColor={BACKEND.symbolColor}
           animationDelay={500}
         />
       </div>
@@ -56,6 +59,7 @@ const Skillbars = () => {
         <SkillBar
           colors={DATA_SCIENCE.colors}
           skills={DATA_SCIENCE.skills}
+          symbolColor={DATA_SCIENCE.symbolColor}
           barBackground={DATA_SCIENCE.barBackground}
           animationDelay={500}
         />
@@ -67,6 +71,7 @@ const Skillbars = () => {
         <SkillBar
           colors={TEST_FRAMEWORKS.colors}
           skills={TEST_FRAMEWORKS.skills}
+          symbolColor={TEST_FRAMEWORKS.symbolColor}
           barBackground={TEST_FRAMEWORKS.barBackground}
           animationDelay={500}
         />

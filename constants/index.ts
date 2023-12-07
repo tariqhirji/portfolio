@@ -77,7 +77,8 @@ export const FRONTEND = {
       background: "#2980b9",
     },
   },
-  barBackground: "#DDD",
+  barBackground: "#E6E6E6",
+  symbolColor: "#4A4A4A",
 };
 
 export const BACKEND = {
@@ -115,7 +116,8 @@ export const BACKEND = {
       background: "#185437",
     },
   },
-  barBackground: "#DDD",
+  barBackground: "#E6E6E6",
+  symbolColor: "#4A4A4A",
 };
 
 export const DESIGN_DEVOPS = {
@@ -153,7 +155,8 @@ export const DESIGN_DEVOPS = {
       background: "#8643B5",
     },
   },
-  barBackground: "#DDD",
+  barBackground: "#E6E6E6",
+  symbolColor: "#4A4A4A",
 };
 
 export const DATA_SCIENCE = {
@@ -183,7 +186,8 @@ export const DATA_SCIENCE = {
       background: "#870808",
     },
   },
-  barBackground: "#DDD",
+  barBackground: "#E6E6E6",
+  symbolColor: "#4A4A4A",
 };
 export const TEST_FRAMEWORKS = {
   title: "testing tools",
@@ -212,7 +216,8 @@ export const TEST_FRAMEWORKS = {
       background: "#818708",
     },
   },
-  barBackground: "#DDD",
+  barBackground: "#E6E6E6",
+  symbolColor: "#4A4A4A",
 };
 
 export const PROJECTS = {
