@@ -21,6 +21,7 @@ const config: Config = {
       gray: "#374151",
       gray50: "#f9fafb",
       gray300: "#d1d5db",
+      writing2: "#101010",
     },
     fontFamily: {
       shareTech: "'Share Tech Mono', monospace",

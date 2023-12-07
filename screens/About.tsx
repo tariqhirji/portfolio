@@ -14,7 +14,9 @@ const About = () => {
           {/* Left Side - About text and details */}
           <div className="w-full lg:w-1/2 flex flex-col gap-6">
             <h1 className="sectionHeading">{ABOUT.title}</h1>
-            <h3 className="mt-3 dark:text-secondary">{ABOUT.description}</h3>
+            <h3 className="mt-3 dark:text-secondary text-writing2">
+              {ABOUT.description}
+            </h3>
             <div className="flex gap-6 flex-col">
               <div className="flex w-full justify-center order-1">
                 <Socials

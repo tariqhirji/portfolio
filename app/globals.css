@@ -53,10 +53,10 @@
     @apply container mx-auto px-8 2xl:px-4 w-full;
   }
   .sectionHeading {
-    @apply pt-8 w-full uppercase font-shareTech text-black dark:text-secondary;
+    @apply pt-8 w-full uppercase font-shareTech text-writing2 dark:text-secondary;
   }
   .sectionSubheading {
-    @apply py-8 font-light text-black dark:text-secondary;
+    @apply py-8 font-light text-writing2 dark:text-secondary;
   }
   .socialIcon {
     @apply rounded-full shadow-lg p-5 cursor-pointer hover:scale-125 ease-in duration-300;
@@ -89,7 +89,7 @@
     @apply rounded-md p-0;
   }
   .badge {
-    @apply inline-flex items-center rounded-md bg-white dark:bg-dark1 text-black dark:text-secondary px-2 py-1 text-sm font-medium ring-1 ring-inset ring-gray;
+    @apply inline-flex items-center rounded-md bg-white dark:bg-dark1 text-writing2 dark:text-secondary px-2 py-1 text-sm font-medium ring-1 ring-inset ring-gray;
   }
   .traitSVG {
     @apply h-52 w-52 text-writing dark:text-secondary;

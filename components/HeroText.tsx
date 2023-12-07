@@ -7,7 +7,7 @@ const HeroText = () => {
   return (
     <div className="flex flex-col gap-8 lg:gap-6 xl:gap-10 lg:mt-20">
       <Typewriter />
-      <h2 className="text-black dark:text-secondary">
+      <h2 className="text-writing2 dark:text-secondary">
         {HERO_CONTENT.subtitle}
       </h2>
       <div className="flex text-white dark:text-slate items-center">

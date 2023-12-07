@@ -11,7 +11,7 @@ const Typewritter = () => {
   });
 
   return (
-    <h1 className="font-shareTech text-black dark:text-secondary">
+    <h1 className="font-shareTech text-writing2 dark:text-secondary">
       {TYPEWRITER.staticForeward}
       <span className="text-white dark:text-blue">
         <br className="block md:hidden lg:block xl:hidden" />

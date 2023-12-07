@@ -96,7 +96,7 @@ export default function Example() {
                   className={classNames(
                     section === "hero"
                       ? "bg-gray text-white dark:text-blue"
-                      : "text-black hover:bg-gray hover:text-white dark:text-secondary dark:hover:text-blue",
+                      : "text-writing2 hover:bg-gray hover:text-white dark:text-secondary dark:hover:text-blue",
                     "rounded-md px-3 py-2 transition duration-200"
                   )}
                 >
@@ -114,7 +114,7 @@ export default function Example() {
                       className={classNames(
                         section === link.key
                           ? "bg-gray text-white dark:text-blue"
-                          : "text-black hover:bg-gray hover:text-white dark:text-secondary dark:hover:text-blue",
+                          : "text-writing2 hover:bg-gray hover:text-white dark:text-secondary dark:hover:text-blue",
                         "rounded-md px-3 py-2 text-sm font-medium transition duration-200"
                       )}
                       aria-current={section === link.key ? "page" : undefined}
@@ -138,7 +138,7 @@ export default function Example() {
                   className={classNames(
                     section === link.key
                       ? "bg-gray text-white dark:text-blue"
-                      : "text-black hover:bg-gray hover:text-white dark:text-secondary",
+                      : "text-writing2 hover:bg-gray hover:text-white dark:text-secondary",
                     "block rounded-md px-3 py-2 text-base font-medium transition duration-200"
                   )}
                   aria-current={section === link.key ? "page" : undefined}

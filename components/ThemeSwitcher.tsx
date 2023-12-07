@@ -12,7 +12,7 @@ const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({
   return (
     <button
       onClick={toggleTheme}
-      className="dark:text-white text-black bg-sky-500 dark:bg-green-500"
+      className="dark:text-white text-writing2 bg-sky-500 dark:bg-green-500"
     >
       <div className="border p-2 transition duration-150 ease-in-out rounded hover:border-dark1 hover:bg-dark1 hover:text-white dark:hover:bg-blue dark:hover:border-blue dark:hover:text-[#ffff00]">
         {theme === "light" ? (
