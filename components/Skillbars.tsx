@@ -24,7 +24,7 @@ const Skillbars = () => {
           skills={FRONTEND.skills}
           barBackground={FRONTEND.barBackground}
           symbolColor={FRONTEND.symbolColor}
-          animationDelay={500}
+          animationDelay={100}
         />
       </div>
       <div className="card card_white col-span-2 lg:col-span-1 order-2 lg:order-1">
@@ -36,7 +36,7 @@ const Skillbars = () => {
           skills={DESIGN_DEVOPS.skills}
           barBackground={DESIGN_DEVOPS.barBackground}
           symbolColor={DESIGN_DEVOPS.symbolColor}
-          animationDelay={500}
+          animationDelay={100}
         />
       </div>
       <div className="card card_white col-span-2 lg:col-span-1 order-1 lg:order-2">
@@ -48,7 +48,7 @@ const Skillbars = () => {
           skills={BACKEND.skills}
           barBackground={BACKEND.barBackground}
           symbolColor={BACKEND.symbolColor}
-          animationDelay={500}
+          animationDelay={100}
         />
       </div>
 
@@ -61,7 +61,7 @@ const Skillbars = () => {
           skills={DATA_SCIENCE.skills}
           symbolColor={DATA_SCIENCE.symbolColor}
           barBackground={DATA_SCIENCE.barBackground}
-          animationDelay={500}
+          animationDelay={100}
         />
       </div>
       <div className="card card_white col-span-2 lg:col-span-1 order-4">
@@ -73,7 +73,7 @@ const Skillbars = () => {
           skills={TEST_FRAMEWORKS.skills}
           symbolColor={TEST_FRAMEWORKS.symbolColor}
           barBackground={TEST_FRAMEWORKS.barBackground}
-          animationDelay={500}
+          animationDelay={100}
         />
       </div>
     </div>
