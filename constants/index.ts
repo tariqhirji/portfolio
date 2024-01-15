@@ -35,7 +35,7 @@ export const SOCIALS = [
 
 export const SKILLS = {
   title: "skills",
-  subtitle: "My 2023 player statline for the world of software development.",
+  subtitle: "My 2023 player statline for the world of software development",
 };
 
 export const FRONTEND = {
@@ -222,7 +222,7 @@ export const TEST_FRAMEWORKS = {
 
 export const PROJECTS = {
   title: "projects",
-  subtitle: "Some of my favourite things that I've built or helped build.",
+  subtitle: "Some of my favourite things that I've built or helped build",
 };
 
 export const DEEPFAKE = {

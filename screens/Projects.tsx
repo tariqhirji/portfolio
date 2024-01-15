@@ -14,7 +14,9 @@ const Projects = () => {
     <section id="projects" className="pt-16 flex justify-start dark:bg-dark1">
       <div className="sectionContainer flex flex-col mb-4">
         <h1 className="sectionHeading">{PROJECTS.title}</h1>
-        <h2 className="sectionSubheading">{PROJECTS.subtitle}</h2>
+        <h2 className="sectionSubheading">
+          {PROJECTS.subtitle} <span className="ml-2">&#128736;</span>
+        </h2>
 
         <div className="flex flex-col lg:grid lg:grid-cols-12 gap-6 h-full">
           <ProjectCard

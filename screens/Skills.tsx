@@ -10,7 +10,10 @@ const Skills = () => {
     >
       <div className="sectionContainer">
         <h1 className="sectionHeading">{SKILLS.title}</h1>
-        <h2 className="sectionSubheading">{SKILLS.subtitle}</h2>
+        <h2 className="sectionSubheading">
+          {SKILLS.subtitle}
+          <span className="ml-2">&#128202;</span>
+        </h2>
         <Skillbars />
       </div>
     </section>
