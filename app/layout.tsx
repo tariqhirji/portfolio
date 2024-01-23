@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Tariq Hirji - Software Developer",
   description:
-    "Tariqs Hirji's home on the internet, showcasing his skills and favourite projects",
+    "Tariq Hirji's home on the internet, showcasing his software development and design skills and favourite projects",
 };
 
 export default function RootLayout({
