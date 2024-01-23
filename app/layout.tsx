@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Tariq Hirji - Software Junkie",
+  title: "Tariq Hirji - Software Developer",
   description:
     "Tariqs Hirji's home on the internet, showcasing his skills and favourite projects",
 };
