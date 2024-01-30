@@ -30,7 +30,7 @@ const About = () => {
           <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:pt-32 justify-start">
             <div className="justify-center lg:inline-block">
               <Link
-                href="../Tariq_Resume_Nov2023-compressed.pdf"
+                href="../public/TariqHirji-Feb2024-Resume.pdf"
                 target="_blank"
               >
                 <Button
