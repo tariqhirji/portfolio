@@ -29,10 +29,7 @@ const About = () => {
           {/* Right Side - Weather + Sport Dynamics */}
           <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:pt-32 justify-start">
             <div className="justify-center lg:inline-block">
-              <Link
-                href="../public/TariqHirji-Feb2024-Resume.pdf"
-                target="_blank"
-              >
+              <Link href="../TariqHirji-Feb2024-Resume.pdf" target="_blank">
                 <Button
                   isDisabled={false}
                   text="View my Resumé"
